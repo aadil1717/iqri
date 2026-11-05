@@ -1,0 +1,202 @@
+{
+  "mode": "native",
+  "methodology": "Public studio recitations. Timings exclude audio capture, network, and rendering. Same audio and context before/after; warmup followed by three alternating timed runs. Not a live-user accuracy benchmark.",
+  "tests": [
+    {
+      "name": "Start at arbitrary ayah",
+      "expected": "112:3",
+      "actual": "112:3",
+      "status": "matched",
+      "searchTier": "surah",
+      "processingMs": 535,
+      "timing": {
+        "acousticMs": 518,
+        "decodingMs": 2,
+        "matchingMs": 7,
+        "wordAlignmentMs": 8
+      }
+    },
+    {
+      "name": "Start deep inside Al-Baqarah",
+      "expected": "2:255",
+      "actual": "2:255",
+      "status": "matched",
+      "searchTier": "surah",
+      "processingMs": 1108,
+      "timing": {
+        "acousticMs": 1012,
+        "decodingMs": 1,
+        "matchingMs": 81,
+        "wordAlignmentMs": 15
+      }
+    },
+    {
+      "name": "Jump far beyond current neighborhood",
+      "expected": "2:255",
+      "actual": "2:255",
+      "status": "matched",
+      "searchTier": "surah",
+      "processingMs": 1052,
+      "timing": {
+        "acousticMs": 972,
+        "decodingMs": 1,
+        "matchingMs": 75,
+        "wordAlignmentMs": 3
+      }
+    },
+    {
+      "name": "Forward jump",
+      "expected": "112:4",
+      "actual": "112:4",
+      "status": "matched",
+      "searchTier": "nearby",
+      "processingMs": 658,
+      "timing": {
+        "acousticMs": 655,
+        "decodingMs": 1,
+        "matchingMs": 1,
+        "wordAlignmentMs": 1
+      }
+    },
+    {
+      "name": "Backward jump",
+      "expected": "112:2",
+      "actual": "112:2",
+      "status": "matched",
+      "searchTier": "nearby",
+      "processingMs": 420,
+      "timing": {
+        "acousticMs": 418,
+        "decodingMs": 1,
+        "matchingMs": 1,
+        "wordAlignmentMs": 1
+      }
+    },
+    {
+      "name": "Repeat same ayah",
+      "expected": "112:2",
+      "actual": "112:2",
+      "status": "matched",
+      "searchTier": "nearby",
+      "processingMs": 428,
+      "timing": {
+        "acousticMs": 425,
+        "decodingMs": 1,
+        "matchingMs": 1,
+        "wordAlignmentMs": 1
+      }
+    },
+    {
+      "name": "Wrong selected surah abstains",
+      "expected": null,
+      "actual": null,
+      "status": "uncertain",
+      "searchTier": "surah",
+      "processingMs": 535,
+      "timing": {
+        "acousticMs": 532,
+        "decodingMs": 1,
+        "matchingMs": 2,
+        "wordAlignmentMs": 0
+      }
+    },
+    {
+      "name": "Auto reacquires a different surah",
+      "expected": "112:4",
+      "actual": "112:4",
+      "status": "matched",
+      "searchTier": "global",
+      "processingMs": 618,
+      "timing": {
+        "acousticMs": 616,
+        "decodingMs": 0,
+        "matchingMs": 1,
+        "wordAlignmentMs": 1
+      }
+    },
+    {
+      "name": "Al-Fatiha context resolves a shared phrase",
+      "expected": "1:2",
+      "actual": "1:2",
+      "status": "matched",
+      "searchTier": "surah",
+      "processingMs": 489,
+      "timing": {
+        "acousticMs": 487,
+        "decodingMs": 0,
+        "matchingMs": 1,
+        "wordAlignmentMs": 1
+      }
+    },
+    {
+      "name": "Repeated refrain remains ambiguous",
+      "expected": null,
+      "actual": null,
+      "status": "ambiguous",
+      "searchTier": "surah",
+      "processingMs": 1062,
+      "timing": {
+        "acousticMs": 1060,
+        "decodingMs": 1,
+        "matchingMs": 1,
+        "wordAlignmentMs": 0
+      }
+    },
+    {
+      "name": "Repeated refrain resolves from context",
+      "expected": "55:13",
+      "actual": "55:13",
+      "status": "matched",
+      "searchTier": "nearby",
+      "processingMs": 1076,
+      "timing": {
+        "acousticMs": 1074,
+        "decodingMs": 1,
+        "matchingMs": 1,
+        "wordAlignmentMs": 1
+      }
+    }
+  ],
+  "benchmark": [
+    {
+      "file": "112003",
+      "durationSeconds": 4,
+      "beforeMs": 568,
+      "afterMs": 335,
+      "beforeMatchingMs": 235,
+      "afterMatchingMs": 1,
+      "beforeReference": "112:3",
+      "beforeStatus": "matched",
+      "afterTier": "surah",
+      "afterReference": "112:3",
+      "afterStatus": "matched"
+    },
+    {
+      "file": "112004",
+      "durationSeconds": 4,
+      "beforeMs": 651,
+      "afterMs": 347,
+      "beforeMatchingMs": 301,
+      "afterMatchingMs": 1,
+      "beforeReference": "112:4",
+      "beforeStatus": "matched",
+      "afterTier": "surah",
+      "afterReference": "112:4",
+      "afterStatus": "matched"
+    },
+    {
+      "file": "002255",
+      "durationSeconds": 12,
+      "beforeMs": 1323,
+      "afterMs": 926,
+      "beforeMatchingMs": 442,
+      "afterMatchingMs": 55,
+      "beforeReference": "2:255",
+      "beforeStatus": "matched",
+      "afterTier": "surah",
+      "afterReference": "2:255",
+      "afterStatus": "matched"
+    }
+  ],
+  "passed": true
+}

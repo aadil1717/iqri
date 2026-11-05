@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How the Iqri demo handles microphone audio, reading preferences, and online requests.">
+  <title>Privacy · Iqri</title>
+  <style>
+    :root{font-family:Arial,sans-serif;color:#20352e;background:#f8f7f2;color-scheme:light}*{box-sizing:border-box}body{margin:0}main{max-width:780px;margin:auto;padding:42px 24px 70px}a{color:#163f35;text-underline-offset:3px}a:focus-visible{outline:2px solid #ae8c4e;outline-offset:5px}.back{font-size:14px}h1{font-family:Georgia,serif;font-weight:400;font-size:43px;margin:42px 0 12px}h2{font-size:19px;margin:32px 0 12px}p,li{font-size:16px;line-height:1.8}.date{font-size:13px;color:#6e7c72}.lead{font-size:20px;line-height:1.6}footer{border-top:1px solid #e2e5dc;margin-top:40px;padding-top:22px;font-size:14px}footer a{margin-right:20px}
+  </style>
+</head>
+<body><main>
+  <a class="back" href="/">← Back to Iqri</a>
+  <h1>Your recitation, your device.</h1>
+  <p class="date">Privacy notes · November 5, 2026</p>
+  <p class="lead">Iqri’s demo does not require an account. Voice recognition runs on your device, and the app does not intentionally save your recordings.</p>
+
+  <h2>Microphone and audio</h2>
+  <p>The app requests microphone access after you choose to start reciting. You can stop listening at any time. On iPhone, microphone access can be changed in Settings for Iqri; in a browser, use the site’s microphone settings. The iPhone app stops listening when it goes into the background or the audio session is interrupted. Returning to the app does not restart the microphone automatically.</p>
+  <p>Short audio segments are held in memory while recognition runs. The iPhone app processes them on your phone using its included recognition model. In the Windows local demo, the browser sends those segments to the Iqri service on the same computer at <code>127.0.0.1</code>. In browser mode, the model processes them in the browser. Iqri does not send those recordings to Quran.com, Hugging Face, Google Fonts, or an analytics service. If you choose an audio file, it is processed through the same local recognition path.</p>
+
+  <h2>What stays on your device</h2>
+  <p>Reading preferences and saved ayahs are stored locally in the app or browser. Downloaded model or app files may also be cached by the browser. On the web, clear Iqri’s site data to remove its preferences, saved ayahs, and caches; you may then need to download the model again. Deleting the iPhone app removes its locally stored preferences and saved ayahs. Its recognition model is included in the app and is restored when you reinstall it. There is no Iqri account or cloud bookmark synchronization in this demo.</p>
+
+  <h2>Online requests</h2>
+  <ul>
+    <li><strong>English word meanings:</strong> Iqri requests the displayed ayah’s reference from Quran.com. During live English word tracking, it also requests the immediately next ayah in the same surah to prepare the meaning before you reach it. These requests contain the reference, such as <code>112:1</code>, and normal web-request information, including your network address. They do not contain your audio. Results stay in memory, limited to 50 ayahs and six hours; they are not an offline word database.</li>
+    <li><strong>Recognition assets:</strong> browser mode may download the public Abdou Quran ASR Small voice model (about 36 MB) and its vocabulary from an identified, fixed version on Hugging Face. The iPhone app includes these verified files and does not need to download the model at first launch. The local Windows package uses its prepared model files. Browser model downloads expose ordinary connection information to the download provider, not your recording.</li>
+    <li><strong>Fonts:</strong> the app’s visual styles request fonts from Google Fonts. These requests also expose ordinary web-request information to Google.</li>
+    <li><strong>Hosting:</strong> if you use a hosted copy, that host receives requests for the app’s files and may keep its own technical logs. The supplied local demo is served from your computer. A hosting provider’s owner login is separate from using Iqri; the app itself has no sign-in.</li>
+  </ul>
+  <p>Iqri includes no analytics tracking or advertising integration. External providers operate under their own policies: <a href="https://quran.com/privacy">Quran.com privacy</a>, <a href="https://huggingface.co/privacy">Hugging Face privacy</a>, and <a href="https://developers.google.com/fonts/faq/privacy">Google Fonts privacy</a>. Word meanings are subject to <a href="https://api-docs.quran.com/legal/developer-terms/">Quran Foundation’s developer terms</a>.</p>
+
+  <h2>Your choices</h2>
+  <p>You can read the bundled translations without turning on the microphone. Full-ayah mode avoids requesting word meanings for that view. You can hide Arabic or translation independently, stop recognition, remove saved ayahs, and clear site data. This page describes this demo; a future service with accounts or different processing would need updated privacy information.</p>
+  <footer><a href="/">Return to Iqri</a><a href="/terms.html">Use and source notes</a></footer>
+</main></body>
+</html>

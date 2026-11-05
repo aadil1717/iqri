@@ -1,0 +1,47 @@
+{
+  "mode": "native",
+  "loadedMs": 4199,
+  "tests": [
+    {
+      "name": "silence",
+      "status": "silence"
+    },
+    {
+      "file": "112001",
+      "expected": "112:1",
+      "actual": "112:1",
+      "status": "matched",
+      "processingMs": 761,
+      "transcript": "قل هو الله احد",
+      "candidates": 1
+    },
+    {
+      "file": "001002",
+      "expected": "1:2",
+      "actual": "1:2",
+      "status": "matched",
+      "processingMs": 506,
+      "transcript": "الحمد لله رب العالمين",
+      "candidates": 1
+    },
+    {
+      "file": "055013",
+      "expected": null,
+      "actual": null,
+      "status": "ambiguous",
+      "processingMs": 840,
+      "transcript": "فباي الاء ربكما تكذبان",
+      "candidates": 31
+    },
+    {
+      "file": "055013",
+      "expected": "55:13",
+      "actual": "55:13",
+      "status": "matched",
+      "processingMs": 733,
+      "transcript": "فباي الاء ربكما تكذبان",
+      "candidates": 1
+    }
+  ],
+  "passed": true
+}

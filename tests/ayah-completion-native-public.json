@@ -1,0 +1,3250 @@
+{
+  "model": "Abdou/quran-asr-small",
+  "revision": "004f898639f3127a74eac1b898a2cb3ef0b5268d",
+  "created": "2026-11-04T21:16:42.408Z",
+  "methodology": "Independent cached EveryAyah Husary public recitations, deterministic synthetic noise and zero-valued silence. Native CPU recognition receives consecutive 100 ms PCM chunks without wall-clock sleeps. Completion is checked during feed, before stop and without supplying the next ayah. Timing is on the supplied audio timeline, not a live-user latency measurement. No private recording is used.",
+  "tests": [
+    {
+      "name": "112:1-finishes-before-next-audio",
+      "description": "Automatic recognition receives only 112:1 and silence. No 112:2 audio is available; completion must arrive while listening.",
+      "expectedReferences": [
+        "112:1"
+      ],
+      "actualReferences": [
+        "112:1"
+      ],
+      "durationSeconds": 7.8253125,
+      "occurrenceWindows": [
+        {
+          "after": 0,
+          "before": 125205
+        }
+      ],
+      "passed": true,
+      "issues": [],
+      "completions": [
+        {
+          "type": "ayah-complete",
+          "verseKey": "112:1",
+          "surah": 112,
+          "ayah": 1,
+          "audioEndSample": 72752,
+          "completedAtSample": 83200,
+          "occurrenceId": "completion-public-112:1-finishes-before-next-audio:1",
+          "prediction": {
+            "surah": 112,
+            "ayah": 1,
+            "wordIndex": 4,
+            "score": 1,
+            "status": "matched",
+            "transcript": "قه احد",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "112:1",
+              "surah": 112,
+              "ayah": 1,
+              "wordIndex": 4,
+              "wordCount": 4,
+              "arabicWord": "احد",
+              "observedWord": "احد",
+              "canonicalText": "قل هو الله احد",
+              "canonicalWords": [
+                "قل",
+                "هو",
+                "الله",
+                "احد"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "word-detected",
+              "estimatedAudioStartMs": 612,
+              "estimatedAudioEndMs": 1347,
+              "clipDurationMs": 1755,
+              "timingIsApproximate": true,
+              "matchedCharacters": 3,
+              "audioEndSample": 72752
+            },
+            "processingMs": 17,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 83200,
+          "observedAtSeconds": 5.2,
+          "delivery": "feed"
+        }
+      ],
+      "events": [
+        {
+          "type": "status",
+          "audioEndSample": 12800,
+          "prediction": {
+            "status": "silence",
+            "surah": 0,
+            "ayah": 0,
+            "score": 0,
+            "transcript": "",
+            "wordProgress": null
+          },
+          "observedThroughSample": 12800,
+          "observedAtSeconds": 0.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "طور",
+          "audioEndSample": 19200,
+          "observedThroughSample": 19200,
+          "observedAtSeconds": 1.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "status",
+          "audioEndSample": 19200,
+          "prediction": {
+            "surah": 0,
+            "ayah": 0,
+            "ayah_end": null,
+            "score": 0,
+            "transcript": "طور",
+            "searchTier": "waiting",
+            "lookupDeferred": false,
+            "status": "uncertain",
+            "candidates": [],
+            "wordProgress": null,
+            "processingMs": 48,
+            "recommendedWindowSeconds": 2
+          },
+          "observedThroughSample": 19200,
+          "observedAtSeconds": 1.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ط",
+          "audioEndSample": 22400,
+          "observedThroughSample": 22400,
+          "observedAtSeconds": 1.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ق ال",
+          "audioEndSample": 25600,
+          "observedThroughSample": 25600,
+          "observedAtSeconds": 1.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ال",
+          "audioEndSample": 28800,
+          "observedThroughSample": 28800,
+          "observedAtSeconds": 1.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ق",
+          "audioEndSample": 32000,
+          "observedThroughSample": 32000,
+          "observedAtSeconds": 2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ه",
+          "audioEndSample": 35200,
+          "observedThroughSample": 35200,
+          "observedAtSeconds": 2.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قله",
+          "audioEndSample": 38400,
+          "observedThroughSample": 38400,
+          "observedAtSeconds": 2.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ه",
+          "audioEndSample": 41600,
+          "observedThroughSample": 41600,
+          "observedAtSeconds": 2.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو ا",
+          "audioEndSample": 44800,
+          "observedThroughSample": 44800,
+          "observedAtSeconds": 2.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو اله د",
+          "audioEndSample": 48000,
+          "observedThroughSample": 48000,
+          "observedAtSeconds": 3,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو الله احد",
+          "audioEndSample": 51200,
+          "observedThroughSample": 51200,
+          "observedAtSeconds": 3.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو الله",
+          "audioEndSample": 54400,
+          "observedThroughSample": 54400,
+          "observedAtSeconds": 3.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "progress",
+          "audioEndSample": 45984,
+          "prediction": {
+            "surah": 112,
+            "ayah": 1,
+            "score": 1,
+            "status": "matched",
+            "transcript": "قل هو الله",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "112:1",
+              "surah": 112,
+              "ayah": 1,
+              "wordIndex": 3,
+              "wordCount": 4,
+              "arabicWord": "الله",
+              "observedWord": "الله",
+              "canonicalText": "قل هو الله احد",
+              "canonicalWords": [
+                "قل",
+                "هو",
+                "الله",
+                "احد"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "word-detected",
+              "estimatedAudioStartMs": 2105,
+              "estimatedAudioEndMs": 2874,
+              "clipDurationMs": 3157,
+              "timingIsApproximate": true,
+              "matchedCharacters": 4,
+              "audioEndSample": 45984
+            },
+            "processingMs": 31,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 54400,
+          "observedAtSeconds": 3.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "واليه",
+          "audioEndSample": 57600,
+          "observedThroughSample": 57600,
+          "observedAtSeconds": 3.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "والاه",
+          "audioEndSample": 60800,
+          "observedThroughSample": 60800,
+          "observedAtSeconds": 3.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل الله د",
+          "audioEndSample": 64000,
+          "observedThroughSample": 64000,
+          "observedAtSeconds": 4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل الله اد",
+          "audioEndSample": 67200,
+          "observedThroughSample": 67200,
+          "observedAtSeconds": 4.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل الله احد",
+          "audioEndSample": 70400,
+          "observedThroughSample": 70400,
+          "observedAtSeconds": 4.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ق ه احد",
+          "audioEndSample": 73600,
+          "observedThroughSample": 73600,
+          "observedAtSeconds": 4.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "progress",
+          "audioEndSample": 67072,
+          "prediction": {
+            "surah": 112,
+            "ayah": 1,
+            "wordIndex": 3,
+            "score": 1,
+            "status": "matched",
+            "transcript": "ق ه احد",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "112:1",
+              "surah": 112,
+              "ayah": 1,
+              "wordIndex": 4,
+              "wordCount": 4,
+              "arabicWord": "احد",
+              "observedWord": "اح",
+              "canonicalText": "قل هو الله احد",
+              "canonicalWords": [
+                "قل",
+                "هو",
+                "الله",
+                "احد"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "partial-word",
+              "estimatedAudioStartMs": 1224,
+              "estimatedAudioEndMs": 1592,
+              "clipDurationMs": 1755,
+              "timingIsApproximate": true,
+              "matchedCharacters": 2,
+              "audioEndSample": 67072
+            },
+            "processingMs": 19,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 73600,
+          "observedAtSeconds": 4.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل له احد",
+          "audioEndSample": 76800,
+          "observedThroughSample": 76800,
+          "observedAtSeconds": 4.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ه احد",
+          "audioEndSample": 80000,
+          "observedThroughSample": 80000,
+          "observedAtSeconds": 5,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قه احد",
+          "audioEndSample": 83200,
+          "observedThroughSample": 83200,
+          "observedAtSeconds": 5.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "ayah-complete",
+          "verseKey": "112:1",
+          "surah": 112,
+          "ayah": 1,
+          "audioEndSample": 72752,
+          "completedAtSample": 83200,
+          "occurrenceId": "completion-public-112:1-finishes-before-next-audio:1",
+          "prediction": {
+            "surah": 112,
+            "ayah": 1,
+            "wordIndex": 4,
+            "score": 1,
+            "status": "matched",
+            "transcript": "قه احد",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "112:1",
+              "surah": 112,
+              "ayah": 1,
+              "wordIndex": 4,
+              "wordCount": 4,
+              "arabicWord": "احد",
+              "observedWord": "احد",
+              "canonicalText": "قل هو الله احد",
+              "canonicalWords": [
+                "قل",
+                "هو",
+                "الله",
+                "احد"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "word-detected",
+              "estimatedAudioStartMs": 612,
+              "estimatedAudioEndMs": 1347,
+              "clipDurationMs": 1755,
+              "timingIsApproximate": true,
+              "matchedCharacters": 3,
+              "audioEndSample": 72752
+            },
+            "processingMs": 17,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 83200,
+          "observedAtSeconds": 5.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "احد",
+          "audioEndSample": 86400,
+          "observedThroughSample": 86400,
+          "observedAtSeconds": 5.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "اهد",
+          "audioEndSample": 89600,
+          "observedThroughSample": 89600,
+          "observedAtSeconds": 5.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "status",
+          "audioEndSample": 92800,
+          "prediction": {
+            "status": "silence",
+            "surah": 0,
+            "ayah": 0,
+            "score": 0,
+            "transcript": "",
+            "wordProgress": null
+          },
+          "observedThroughSample": 92800,
+          "observedAtSeconds": 5.8,
+          "delivery": "feed"
+        }
+      ]
+    },
+    {
+      "name": "112:1-long-pause-emits-once",
+      "description": "Extra silence must not turn overlapping old evidence into repeated completions.",
+      "expectedReferences": [
+        "112:1"
+      ],
+      "actualReferences": [
+        "112:1"
+      ],
+      "durationSeconds": 11.8253125,
+      "occurrenceWindows": [],
+      "passed": true,
+      "issues": [],
+      "completions": [
+        {
+          "type": "ayah-complete",
+          "verseKey": "112:1",
+          "surah": 112,
+          "ayah": 1,
+          "audioEndSample": 72752,
+          "completedAtSample": 83200,
+          "occurrenceId": "completion-public-112:1-long-pause-emits-once:1",
+          "prediction": {
+            "surah": 112,
+            "ayah": 1,
+            "wordIndex": 4,
+            "score": 0.88,
+            "status": "matched",
+            "transcript": "قه احد",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "112:1",
+              "surah": 112,
+              "ayah": 1,
+              "wordIndex": 4,
+              "wordCount": 4,
+              "arabicWord": "احد",
+              "observedWord": "احد",
+              "canonicalText": "قل هو الله احد",
+              "canonicalWords": [
+                "قل",
+                "هو",
+                "الله",
+                "احد"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "word-detected",
+              "estimatedAudioStartMs": 612,
+              "estimatedAudioEndMs": 1347,
+              "clipDurationMs": 1755,
+              "timingIsApproximate": true,
+              "matchedCharacters": 3,
+              "audioEndSample": 72752
+            },
+            "processingMs": 20,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 83200,
+          "observedAtSeconds": 5.2,
+          "delivery": "feed"
+        }
+      ],
+      "events": [
+        {
+          "type": "status",
+          "audioEndSample": 12800,
+          "prediction": {
+            "status": "silence",
+            "surah": 0,
+            "ayah": 0,
+            "score": 0,
+            "transcript": "",
+            "wordProgress": null
+          },
+          "observedThroughSample": 12800,
+          "observedAtSeconds": 0.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "طور",
+          "audioEndSample": 19200,
+          "observedThroughSample": 19200,
+          "observedAtSeconds": 1.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "status",
+          "audioEndSample": 19200,
+          "prediction": {
+            "surah": 0,
+            "ayah": 0,
+            "ayah_end": null,
+            "score": 0,
+            "transcript": "طور",
+            "searchTier": "waiting",
+            "lookupDeferred": false,
+            "status": "uncertain",
+            "candidates": [],
+            "wordProgress": null,
+            "processingMs": 13,
+            "recommendedWindowSeconds": 2
+          },
+          "observedThroughSample": 19200,
+          "observedAtSeconds": 1.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ط",
+          "audioEndSample": 22400,
+          "observedThroughSample": 22400,
+          "observedAtSeconds": 1.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ق ال",
+          "audioEndSample": 25600,
+          "observedThroughSample": 25600,
+          "observedAtSeconds": 1.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ال",
+          "audioEndSample": 28800,
+          "observedThroughSample": 28800,
+          "observedAtSeconds": 1.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ق",
+          "audioEndSample": 32000,
+          "observedThroughSample": 32000,
+          "observedAtSeconds": 2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ه",
+          "audioEndSample": 35200,
+          "observedThroughSample": 35200,
+          "observedAtSeconds": 2.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قله",
+          "audioEndSample": 38400,
+          "observedThroughSample": 38400,
+          "observedAtSeconds": 2.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ه",
+          "audioEndSample": 41600,
+          "observedThroughSample": 41600,
+          "observedAtSeconds": 2.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو ا",
+          "audioEndSample": 44800,
+          "observedThroughSample": 44800,
+          "observedAtSeconds": 2.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو اله د",
+          "audioEndSample": 48000,
+          "observedThroughSample": 48000,
+          "observedAtSeconds": 3,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو الله احد",
+          "audioEndSample": 51200,
+          "observedThroughSample": 51200,
+          "observedAtSeconds": 3.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو الله",
+          "audioEndSample": 54400,
+          "observedThroughSample": 54400,
+          "observedAtSeconds": 3.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "progress",
+          "audioEndSample": 45984,
+          "prediction": {
+            "surah": 112,
+            "ayah": 1,
+            "score": 0.88,
+            "status": "matched",
+            "transcript": "قل هو الله",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "112:1",
+              "surah": 112,
+              "ayah": 1,
+              "wordIndex": 3,
+              "wordCount": 4,
+              "arabicWord": "الله",
+              "observedWord": "الله",
+              "canonicalText": "قل هو الله احد",
+              "canonicalWords": [
+                "قل",
+                "هو",
+                "الله",
+                "احد"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "word-detected",
+              "estimatedAudioStartMs": 2105,
+              "estimatedAudioEndMs": 2874,
+              "clipDurationMs": 3157,
+              "timingIsApproximate": true,
+              "matchedCharacters": 4,
+              "audioEndSample": 45984
+            },
+            "processingMs": 28,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 54400,
+          "observedAtSeconds": 3.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "واليه",
+          "audioEndSample": 57600,
+          "observedThroughSample": 57600,
+          "observedAtSeconds": 3.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "والاه",
+          "audioEndSample": 60800,
+          "observedThroughSample": 60800,
+          "observedAtSeconds": 3.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل الله د",
+          "audioEndSample": 64000,
+          "observedThroughSample": 64000,
+          "observedAtSeconds": 4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل الله اد",
+          "audioEndSample": 67200,
+          "observedThroughSample": 67200,
+          "observedAtSeconds": 4.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل الله احد",
+          "audioEndSample": 70400,
+          "observedThroughSample": 70400,
+          "observedAtSeconds": 4.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ق ه احد",
+          "audioEndSample": 73600,
+          "observedThroughSample": 73600,
+          "observedAtSeconds": 4.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "progress",
+          "audioEndSample": 67072,
+          "prediction": {
+            "surah": 112,
+            "ayah": 1,
+            "wordIndex": 3,
+            "score": 0.88,
+            "status": "matched",
+            "transcript": "ق ه احد",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "112:1",
+              "surah": 112,
+              "ayah": 1,
+              "wordIndex": 4,
+              "wordCount": 4,
+              "arabicWord": "احد",
+              "observedWord": "اح",
+              "canonicalText": "قل هو الله احد",
+              "canonicalWords": [
+                "قل",
+                "هو",
+                "الله",
+                "احد"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "partial-word",
+              "estimatedAudioStartMs": 1224,
+              "estimatedAudioEndMs": 1592,
+              "clipDurationMs": 1755,
+              "timingIsApproximate": true,
+              "matchedCharacters": 2,
+              "audioEndSample": 67072
+            },
+            "processingMs": 21,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 73600,
+          "observedAtSeconds": 4.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل له احد",
+          "audioEndSample": 76800,
+          "observedThroughSample": 76800,
+          "observedAtSeconds": 4.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ه احد",
+          "audioEndSample": 80000,
+          "observedThroughSample": 80000,
+          "observedAtSeconds": 5,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قه احد",
+          "audioEndSample": 83200,
+          "observedThroughSample": 83200,
+          "observedAtSeconds": 5.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "ayah-complete",
+          "verseKey": "112:1",
+          "surah": 112,
+          "ayah": 1,
+          "audioEndSample": 72752,
+          "completedAtSample": 83200,
+          "occurrenceId": "completion-public-112:1-long-pause-emits-once:1",
+          "prediction": {
+            "surah": 112,
+            "ayah": 1,
+            "wordIndex": 4,
+            "score": 0.88,
+            "status": "matched",
+            "transcript": "قه احد",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "112:1",
+              "surah": 112,
+              "ayah": 1,
+              "wordIndex": 4,
+              "wordCount": 4,
+              "arabicWord": "احد",
+              "observedWord": "احد",
+              "canonicalText": "قل هو الله احد",
+              "canonicalWords": [
+                "قل",
+                "هو",
+                "الله",
+                "احد"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "word-detected",
+              "estimatedAudioStartMs": 612,
+              "estimatedAudioEndMs": 1347,
+              "clipDurationMs": 1755,
+              "timingIsApproximate": true,
+              "matchedCharacters": 3,
+              "audioEndSample": 72752
+            },
+            "processingMs": 20,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 83200,
+          "observedAtSeconds": 5.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "احد",
+          "audioEndSample": 86400,
+          "observedThroughSample": 86400,
+          "observedAtSeconds": 5.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "اهد",
+          "audioEndSample": 89600,
+          "observedThroughSample": 89600,
+          "observedAtSeconds": 5.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "status",
+          "audioEndSample": 92800,
+          "prediction": {
+            "status": "silence",
+            "surah": 0,
+            "ayah": 0,
+            "score": 0,
+            "transcript": "",
+            "wordProgress": null
+          },
+          "observedThroughSample": 92800,
+          "observedAtSeconds": 5.8,
+          "delivery": "feed"
+        }
+      ]
+    },
+    {
+      "name": "112:1-midverse-clipped",
+      "description": "The clip stops before the final word of 112:1. A mid-ayah pause must not complete it.",
+      "expectedReferences": [],
+      "actualReferences": [],
+      "durationSeconds": 5.2,
+      "occurrenceWindows": [],
+      "passed": true,
+      "issues": [],
+      "completions": [],
+      "events": [
+        {
+          "type": "status",
+          "audioEndSample": 12800,
+          "prediction": {
+            "status": "silence",
+            "surah": 0,
+            "ayah": 0,
+            "score": 0,
+            "transcript": "",
+            "wordProgress": null
+          },
+          "observedThroughSample": 12800,
+          "observedAtSeconds": 0.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "طور",
+          "audioEndSample": 19200,
+          "observedThroughSample": 19200,
+          "observedAtSeconds": 1.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "status",
+          "audioEndSample": 19200,
+          "prediction": {
+            "surah": 0,
+            "ayah": 0,
+            "ayah_end": null,
+            "score": 0,
+            "transcript": "طور",
+            "searchTier": "waiting",
+            "lookupDeferred": false,
+            "status": "uncertain",
+            "candidates": [],
+            "wordProgress": null,
+            "processingMs": 17,
+            "recommendedWindowSeconds": 2
+          },
+          "observedThroughSample": 19200,
+          "observedAtSeconds": 1.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ط",
+          "audioEndSample": 22400,
+          "observedThroughSample": 22400,
+          "observedAtSeconds": 1.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ق ال",
+          "audioEndSample": 25600,
+          "observedThroughSample": 25600,
+          "observedAtSeconds": 1.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ال",
+          "audioEndSample": 28800,
+          "observedThroughSample": 28800,
+          "observedAtSeconds": 1.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ق",
+          "audioEndSample": 32000,
+          "observedThroughSample": 32000,
+          "observedAtSeconds": 2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ه",
+          "audioEndSample": 35200,
+          "observedThroughSample": 35200,
+          "observedAtSeconds": 2.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قله",
+          "audioEndSample": 38400,
+          "observedThroughSample": 38400,
+          "observedAtSeconds": 2.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ه",
+          "audioEndSample": 41600,
+          "observedThroughSample": 41600,
+          "observedAtSeconds": 2.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو ا",
+          "audioEndSample": 44800,
+          "observedThroughSample": 44800,
+          "observedAtSeconds": 2.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو اله د",
+          "audioEndSample": 48000,
+          "observedThroughSample": 48000,
+          "observedAtSeconds": 3,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو الله احد",
+          "audioEndSample": 51200,
+          "observedThroughSample": 51200,
+          "observedAtSeconds": 3.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو اللهد",
+          "audioEndSample": 54400,
+          "observedThroughSample": 54400,
+          "observedAtSeconds": 3.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "progress",
+          "audioEndSample": 45984,
+          "prediction": {
+            "surah": 112,
+            "ayah": 1,
+            "score": 0.88,
+            "status": "matched",
+            "transcript": "قل هو اللهد",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "112:1",
+              "surah": 112,
+              "ayah": 1,
+              "wordIndex": 3,
+              "wordCount": 4,
+              "arabicWord": "الله",
+              "observedWord": "الله",
+              "canonicalText": "قل هو الله احد",
+              "canonicalWords": [
+                "قل",
+                "هو",
+                "الله",
+                "احد"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "word-detected",
+              "estimatedAudioStartMs": 2105,
+              "estimatedAudioEndMs": 2874,
+              "clipDurationMs": 3157,
+              "timingIsApproximate": true,
+              "matchedCharacters": 4,
+              "audioEndSample": 45984
+            },
+            "processingMs": 38,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 54400,
+          "observedAtSeconds": 3.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "والا",
+          "audioEndSample": 57600,
+          "observedThroughSample": 57600,
+          "observedAtSeconds": 3.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ول",
+          "audioEndSample": 60800,
+          "observedThroughSample": 60800,
+          "observedAtSeconds": 3.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "status",
+          "audioEndSample": 64000,
+          "prediction": {
+            "status": "silence",
+            "surah": 0,
+            "ayah": 0,
+            "score": 0,
+            "transcript": "",
+            "wordProgress": null
+          },
+          "observedThroughSample": 64000,
+          "observedAtSeconds": 4,
+          "delivery": "feed"
+        }
+      ]
+    },
+    {
+      "name": "112:1-final-word-cut-short",
+      "description": "The final word has not been fully supplied. A predicted ending followed by silence must not count as completion.",
+      "expectedReferences": [],
+      "actualReferences": [],
+      "durationSeconds": 5.8,
+      "occurrenceWindows": [],
+      "passed": true,
+      "issues": [],
+      "completions": [],
+      "events": [
+        {
+          "type": "status",
+          "audioEndSample": 12800,
+          "prediction": {
+            "status": "silence",
+            "surah": 0,
+            "ayah": 0,
+            "score": 0,
+            "transcript": "",
+            "wordProgress": null
+          },
+          "observedThroughSample": 12800,
+          "observedAtSeconds": 0.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "طور",
+          "audioEndSample": 19200,
+          "observedThroughSample": 19200,
+          "observedAtSeconds": 1.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "status",
+          "audioEndSample": 19200,
+          "prediction": {
+            "surah": 0,
+            "ayah": 0,
+            "ayah_end": null,
+            "score": 0,
+            "transcript": "طور",
+            "searchTier": "waiting",
+            "lookupDeferred": false,
+            "status": "uncertain",
+            "candidates": [],
+            "wordProgress": null,
+            "processingMs": 16,
+            "recommendedWindowSeconds": 2
+          },
+          "observedThroughSample": 19200,
+          "observedAtSeconds": 1.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ط",
+          "audioEndSample": 22400,
+          "observedThroughSample": 22400,
+          "observedAtSeconds": 1.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ق ال",
+          "audioEndSample": 25600,
+          "observedThroughSample": 25600,
+          "observedAtSeconds": 1.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ال",
+          "audioEndSample": 28800,
+          "observedThroughSample": 28800,
+          "observedAtSeconds": 1.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ق",
+          "audioEndSample": 32000,
+          "observedThroughSample": 32000,
+          "observedAtSeconds": 2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ه",
+          "audioEndSample": 35200,
+          "observedThroughSample": 35200,
+          "observedAtSeconds": 2.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قله",
+          "audioEndSample": 38400,
+          "observedThroughSample": 38400,
+          "observedAtSeconds": 2.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ه",
+          "audioEndSample": 41600,
+          "observedThroughSample": 41600,
+          "observedAtSeconds": 2.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو ا",
+          "audioEndSample": 44800,
+          "observedThroughSample": 44800,
+          "observedAtSeconds": 2.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو اله د",
+          "audioEndSample": 48000,
+          "observedThroughSample": 48000,
+          "observedAtSeconds": 3,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو الله احد",
+          "audioEndSample": 51200,
+          "observedThroughSample": 51200,
+          "observedAtSeconds": 3.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو الله",
+          "audioEndSample": 54400,
+          "observedThroughSample": 54400,
+          "observedAtSeconds": 3.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "progress",
+          "audioEndSample": 45984,
+          "prediction": {
+            "surah": 112,
+            "ayah": 1,
+            "score": 0.88,
+            "status": "matched",
+            "transcript": "قل هو الله",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "112:1",
+              "surah": 112,
+              "ayah": 1,
+              "wordIndex": 3,
+              "wordCount": 4,
+              "arabicWord": "الله",
+              "observedWord": "الله",
+              "canonicalText": "قل هو الله احد",
+              "canonicalWords": [
+                "قل",
+                "هو",
+                "الله",
+                "احد"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "word-detected",
+              "estimatedAudioStartMs": 2105,
+              "estimatedAudioEndMs": 2874,
+              "clipDurationMs": 3157,
+              "timingIsApproximate": true,
+              "matchedCharacters": 4,
+              "audioEndSample": 45984
+            },
+            "processingMs": 37,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 54400,
+          "observedAtSeconds": 3.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "واليه",
+          "audioEndSample": 57600,
+          "observedThroughSample": 57600,
+          "observedAtSeconds": 3.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "والاه",
+          "audioEndSample": 60800,
+          "observedThroughSample": 60800,
+          "observedAtSeconds": 3.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "الاه",
+          "audioEndSample": 64000,
+          "observedThroughSample": 64000,
+          "observedAtSeconds": 4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "مه",
+          "audioEndSample": 67200,
+          "observedThroughSample": 67200,
+          "observedAtSeconds": 4.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "لاه",
+          "audioEndSample": 70400,
+          "observedThroughSample": 70400,
+          "observedAtSeconds": 4.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "status",
+          "audioEndSample": 73600,
+          "prediction": {
+            "status": "silence",
+            "surah": 0,
+            "ayah": 0,
+            "score": 0,
+            "transcript": "",
+            "wordProgress": null
+          },
+          "observedThroughSample": 73600,
+          "observedAtSeconds": 4.6,
+          "delivery": "feed"
+        }
+      ]
+    },
+    {
+      "name": "112:1-repeated-occurrences",
+      "description": "The same recording is recited twice in one session. Both occurrences need separate IDs; the first must complete before the second audio begins.",
+      "expectedReferences": [
+        "112:1",
+        "112:1"
+      ],
+      "actualReferences": [
+        "112:1",
+        "112:1"
+      ],
+      "durationSeconds": 15.650625,
+      "occurrenceWindows": [
+        {
+          "after": 0,
+          "before": 125205
+        },
+        {
+          "after": 125205,
+          "before": 250410
+        }
+      ],
+      "passed": true,
+      "issues": [],
+      "completions": [
+        {
+          "type": "ayah-complete",
+          "verseKey": "112:1",
+          "surah": 112,
+          "ayah": 1,
+          "audioEndSample": 72752,
+          "completedAtSample": 83200,
+          "occurrenceId": "completion-public-112:1-repeated-occurrences:1",
+          "prediction": {
+            "surah": 112,
+            "ayah": 1,
+            "wordIndex": 4,
+            "score": 0.88,
+            "status": "matched",
+            "transcript": "قه احد",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "112:1",
+              "surah": 112,
+              "ayah": 1,
+              "wordIndex": 4,
+              "wordCount": 4,
+              "arabicWord": "احد",
+              "observedWord": "احد",
+              "canonicalText": "قل هو الله احد",
+              "canonicalWords": [
+                "قل",
+                "هو",
+                "الله",
+                "احد"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "word-detected",
+              "estimatedAudioStartMs": 612,
+              "estimatedAudioEndMs": 1347,
+              "clipDurationMs": 1755,
+              "timingIsApproximate": true,
+              "matchedCharacters": 3,
+              "audioEndSample": 72752
+            },
+            "processingMs": 24,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 83200,
+          "observedAtSeconds": 5.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "ayah-complete",
+          "verseKey": "112:1",
+          "surah": 112,
+          "ayah": 1,
+          "audioEndSample": 197552,
+          "completedAtSample": 208000,
+          "occurrenceId": "completion-public-112:1-repeated-occurrences:2",
+          "prediction": {
+            "surah": 112,
+            "ayah": 1,
+            "wordIndex": 4,
+            "score": 0.88,
+            "status": "matched",
+            "transcript": "ه احد",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "112:1",
+              "surah": 112,
+              "ayah": 1,
+              "wordIndex": 4,
+              "wordCount": 4,
+              "arabicWord": "احد",
+              "observedWord": "احد",
+              "canonicalText": "قل هو الله احد",
+              "canonicalWords": [
+                "قل",
+                "هو",
+                "الله",
+                "احد"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "word-detected",
+              "estimatedAudioStartMs": 653,
+              "estimatedAudioEndMs": 1347,
+              "clipDurationMs": 1755,
+              "timingIsApproximate": true,
+              "matchedCharacters": 3,
+              "audioEndSample": 197552
+            },
+            "processingMs": 29,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 208000,
+          "observedAtSeconds": 13,
+          "delivery": "feed"
+        }
+      ],
+      "events": [
+        {
+          "type": "status",
+          "audioEndSample": 12800,
+          "prediction": {
+            "status": "silence",
+            "surah": 0,
+            "ayah": 0,
+            "score": 0,
+            "transcript": "",
+            "wordProgress": null
+          },
+          "observedThroughSample": 12800,
+          "observedAtSeconds": 0.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "طور",
+          "audioEndSample": 19200,
+          "observedThroughSample": 19200,
+          "observedAtSeconds": 1.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "status",
+          "audioEndSample": 19200,
+          "prediction": {
+            "surah": 0,
+            "ayah": 0,
+            "ayah_end": null,
+            "score": 0,
+            "transcript": "طور",
+            "searchTier": "waiting",
+            "lookupDeferred": false,
+            "status": "uncertain",
+            "candidates": [],
+            "wordProgress": null,
+            "processingMs": 17,
+            "recommendedWindowSeconds": 2
+          },
+          "observedThroughSample": 19200,
+          "observedAtSeconds": 1.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ط",
+          "audioEndSample": 22400,
+          "observedThroughSample": 22400,
+          "observedAtSeconds": 1.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ق ال",
+          "audioEndSample": 25600,
+          "observedThroughSample": 25600,
+          "observedAtSeconds": 1.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ال",
+          "audioEndSample": 28800,
+          "observedThroughSample": 28800,
+          "observedAtSeconds": 1.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ق",
+          "audioEndSample": 32000,
+          "observedThroughSample": 32000,
+          "observedAtSeconds": 2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ه",
+          "audioEndSample": 35200,
+          "observedThroughSample": 35200,
+          "observedAtSeconds": 2.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قله",
+          "audioEndSample": 38400,
+          "observedThroughSample": 38400,
+          "observedAtSeconds": 2.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ه",
+          "audioEndSample": 41600,
+          "observedThroughSample": 41600,
+          "observedAtSeconds": 2.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو ا",
+          "audioEndSample": 44800,
+          "observedThroughSample": 44800,
+          "observedAtSeconds": 2.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو اله د",
+          "audioEndSample": 48000,
+          "observedThroughSample": 48000,
+          "observedAtSeconds": 3,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو الله احد",
+          "audioEndSample": 51200,
+          "observedThroughSample": 51200,
+          "observedAtSeconds": 3.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو الله",
+          "audioEndSample": 54400,
+          "observedThroughSample": 54400,
+          "observedAtSeconds": 3.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "progress",
+          "audioEndSample": 45984,
+          "prediction": {
+            "surah": 112,
+            "ayah": 1,
+            "score": 0.88,
+            "status": "matched",
+            "transcript": "قل هو الله",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "112:1",
+              "surah": 112,
+              "ayah": 1,
+              "wordIndex": 3,
+              "wordCount": 4,
+              "arabicWord": "الله",
+              "observedWord": "الله",
+              "canonicalText": "قل هو الله احد",
+              "canonicalWords": [
+                "قل",
+                "هو",
+                "الله",
+                "احد"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "word-detected",
+              "estimatedAudioStartMs": 2105,
+              "estimatedAudioEndMs": 2874,
+              "clipDurationMs": 3157,
+              "timingIsApproximate": true,
+              "matchedCharacters": 4,
+              "audioEndSample": 45984
+            },
+            "processingMs": 36,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 54400,
+          "observedAtSeconds": 3.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "واليه",
+          "audioEndSample": 57600,
+          "observedThroughSample": 57600,
+          "observedAtSeconds": 3.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "والاه",
+          "audioEndSample": 60800,
+          "observedThroughSample": 60800,
+          "observedAtSeconds": 3.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل الله د",
+          "audioEndSample": 64000,
+          "observedThroughSample": 64000,
+          "observedAtSeconds": 4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل الله اد",
+          "audioEndSample": 67200,
+          "observedThroughSample": 67200,
+          "observedAtSeconds": 4.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل الله احد",
+          "audioEndSample": 70400,
+          "observedThroughSample": 70400,
+          "observedAtSeconds": 4.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ق ه احد",
+          "audioEndSample": 73600,
+          "observedThroughSample": 73600,
+          "observedAtSeconds": 4.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "progress",
+          "audioEndSample": 67072,
+          "prediction": {
+            "surah": 112,
+            "ayah": 1,
+            "wordIndex": 3,
+            "score": 0.88,
+            "status": "matched",
+            "transcript": "ق ه احد",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "112:1",
+              "surah": 112,
+              "ayah": 1,
+              "wordIndex": 4,
+              "wordCount": 4,
+              "arabicWord": "احد",
+              "observedWord": "اح",
+              "canonicalText": "قل هو الله احد",
+              "canonicalWords": [
+                "قل",
+                "هو",
+                "الله",
+                "احد"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "partial-word",
+              "estimatedAudioStartMs": 1224,
+              "estimatedAudioEndMs": 1592,
+              "clipDurationMs": 1755,
+              "timingIsApproximate": true,
+              "matchedCharacters": 2,
+              "audioEndSample": 67072
+            },
+            "processingMs": 26,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 73600,
+          "observedAtSeconds": 4.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل له احد",
+          "audioEndSample": 76800,
+          "observedThroughSample": 76800,
+          "observedAtSeconds": 4.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ه احد",
+          "audioEndSample": 80000,
+          "observedThroughSample": 80000,
+          "observedAtSeconds": 5,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قه احد",
+          "audioEndSample": 83200,
+          "observedThroughSample": 83200,
+          "observedAtSeconds": 5.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "ayah-complete",
+          "verseKey": "112:1",
+          "surah": 112,
+          "ayah": 1,
+          "audioEndSample": 72752,
+          "completedAtSample": 83200,
+          "occurrenceId": "completion-public-112:1-repeated-occurrences:1",
+          "prediction": {
+            "surah": 112,
+            "ayah": 1,
+            "wordIndex": 4,
+            "score": 0.88,
+            "status": "matched",
+            "transcript": "قه احد",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "112:1",
+              "surah": 112,
+              "ayah": 1,
+              "wordIndex": 4,
+              "wordCount": 4,
+              "arabicWord": "احد",
+              "observedWord": "احد",
+              "canonicalText": "قل هو الله احد",
+              "canonicalWords": [
+                "قل",
+                "هو",
+                "الله",
+                "احد"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "word-detected",
+              "estimatedAudioStartMs": 612,
+              "estimatedAudioEndMs": 1347,
+              "clipDurationMs": 1755,
+              "timingIsApproximate": true,
+              "matchedCharacters": 3,
+              "audioEndSample": 72752
+            },
+            "processingMs": 24,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 83200,
+          "observedAtSeconds": 5.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "احد",
+          "audioEndSample": 86400,
+          "observedThroughSample": 86400,
+          "observedAtSeconds": 5.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "اهد",
+          "audioEndSample": 89600,
+          "observedThroughSample": 89600,
+          "observedAtSeconds": 5.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "status",
+          "audioEndSample": 92800,
+          "prediction": {
+            "status": "silence",
+            "surah": 0,
+            "ayah": 0,
+            "score": 0,
+            "transcript": "",
+            "wordProgress": null
+          },
+          "observedThroughSample": 92800,
+          "observedAtSeconds": 5.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "",
+          "audioEndSample": 140800,
+          "observedThroughSample": 140800,
+          "observedAtSeconds": 8.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ق",
+          "audioEndSample": 144000,
+          "observedThroughSample": 144000,
+          "observedAtSeconds": 9,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "",
+          "audioEndSample": 147200,
+          "observedThroughSample": 147200,
+          "observedAtSeconds": 9.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "الله",
+          "audioEndSample": 150400,
+          "observedThroughSample": 150400,
+          "observedAtSeconds": 9.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل الله",
+          "audioEndSample": 153600,
+          "observedThroughSample": 153600,
+          "observedAtSeconds": 9.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل اله",
+          "audioEndSample": 156800,
+          "observedThroughSample": 156800,
+          "observedAtSeconds": 9.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو د",
+          "audioEndSample": 160000,
+          "observedThroughSample": 160000,
+          "observedAtSeconds": 10,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ه",
+          "audioEndSample": 163200,
+          "observedThroughSample": 163200,
+          "observedAtSeconds": 10.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو اه",
+          "audioEndSample": 169600,
+          "observedThroughSample": 169600,
+          "observedAtSeconds": 10.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو اله اد",
+          "audioEndSample": 172800,
+          "observedThroughSample": 172800,
+          "observedAtSeconds": 10.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل هو الله",
+          "audioEndSample": 176000,
+          "observedThroughSample": 176000,
+          "observedAtSeconds": 11,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "هو الا",
+          "audioEndSample": 179200,
+          "observedThroughSample": 179200,
+          "observedAtSeconds": 11.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "والي",
+          "audioEndSample": 182400,
+          "observedThroughSample": 182400,
+          "observedAtSeconds": 11.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "والاهر",
+          "audioEndSample": 185600,
+          "observedThroughSample": 185600,
+          "observedAtSeconds": 11.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل الله د",
+          "audioEndSample": 188800,
+          "observedThroughSample": 188800,
+          "observedAtSeconds": 11.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل الله اد",
+          "audioEndSample": 192000,
+          "observedThroughSample": 192000,
+          "observedAtSeconds": 12,
+          "delivery": "feed"
+        },
+        {
+          "type": "progress",
+          "audioEndSample": 154512,
+          "prediction": {
+            "surah": 112,
+            "ayah": 1,
+            "wordIndex": 4,
+            "score": 0.88,
+            "status": "matched",
+            "transcript": "قل هو الله احد",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "112:1",
+              "surah": 112,
+              "ayah": 1,
+              "wordIndex": 2,
+              "wordCount": 4,
+              "arabicWord": "هو",
+              "observedWord": "هو",
+              "canonicalText": "قل هو الله احد",
+              "canonicalWords": [
+                "قل",
+                "هو",
+                "الله",
+                "احد"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "word-detected",
+              "estimatedAudioStartMs": 1293,
+              "estimatedAudioEndMs": 1657,
+              "clipDurationMs": 3758,
+              "timingIsApproximate": true,
+              "matchedCharacters": 2,
+              "audioEndSample": 154512
+            },
+            "processingMs": 46,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 192000,
+          "observedAtSeconds": 12,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل الله احد",
+          "audioEndSample": 195200,
+          "observedThroughSample": 195200,
+          "observedAtSeconds": 12.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ق الله احد",
+          "audioEndSample": 198400,
+          "observedThroughSample": 198400,
+          "observedAtSeconds": 12.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل له احد",
+          "audioEndSample": 201600,
+          "observedThroughSample": 201600,
+          "observedAtSeconds": 12.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "progress",
+          "audioEndSample": 197680,
+          "prediction": {
+            "surah": 112,
+            "ayah": 1,
+            "wordIndex": 2,
+            "score": 0.88,
+            "status": "matched",
+            "transcript": "قل له احد",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "112:1",
+              "surah": 112,
+              "ayah": 1,
+              "wordIndex": 4,
+              "wordCount": 4,
+              "arabicWord": "احد",
+              "observedWord": "احد",
+              "canonicalText": "قل هو الله احد",
+              "canonicalWords": [
+                "قل",
+                "هو",
+                "الله",
+                "احد"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "word-detected",
+              "estimatedAudioStartMs": 1020,
+              "estimatedAudioEndMs": 1755,
+              "clipDurationMs": 1755,
+              "timingIsApproximate": true,
+              "matchedCharacters": 3,
+              "audioEndSample": 197680
+            },
+            "processingMs": 25,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 201600,
+          "observedAtSeconds": 12.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ه احد",
+          "audioEndSample": 204800,
+          "observedThroughSample": 204800,
+          "observedAtSeconds": 12.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ه احد",
+          "audioEndSample": 208000,
+          "observedThroughSample": 208000,
+          "observedAtSeconds": 13,
+          "delivery": "feed"
+        },
+        {
+          "type": "ayah-complete",
+          "verseKey": "112:1",
+          "surah": 112,
+          "ayah": 1,
+          "audioEndSample": 197552,
+          "completedAtSample": 208000,
+          "occurrenceId": "completion-public-112:1-repeated-occurrences:2",
+          "prediction": {
+            "surah": 112,
+            "ayah": 1,
+            "wordIndex": 4,
+            "score": 0.88,
+            "status": "matched",
+            "transcript": "ه احد",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "112:1",
+              "surah": 112,
+              "ayah": 1,
+              "wordIndex": 4,
+              "wordCount": 4,
+              "arabicWord": "احد",
+              "observedWord": "احد",
+              "canonicalText": "قل هو الله احد",
+              "canonicalWords": [
+                "قل",
+                "هو",
+                "الله",
+                "احد"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "word-detected",
+              "estimatedAudioStartMs": 653,
+              "estimatedAudioEndMs": 1347,
+              "clipDurationMs": 1755,
+              "timingIsApproximate": true,
+              "matchedCharacters": 3,
+              "audioEndSample": 197552
+            },
+            "processingMs": 29,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 208000,
+          "observedAtSeconds": 13,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "قل ه احد",
+          "audioEndSample": 211200,
+          "observedThroughSample": 211200,
+          "observedAtSeconds": 13.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "اهد",
+          "audioEndSample": 214400,
+          "observedThroughSample": 214400,
+          "observedAtSeconds": 13.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "status",
+          "audioEndSample": 217600,
+          "prediction": {
+            "status": "silence",
+            "surah": 0,
+            "ayah": 0,
+            "score": 0,
+            "transcript": "",
+            "wordProgress": null
+          },
+          "observedThroughSample": 217600,
+          "observedAtSeconds": 13.6,
+          "delivery": "feed"
+        }
+      ]
+    },
+    {
+      "name": "2:255-excerpt-is-not-complete",
+      "description": "Only the opening 12 seconds of a much longer ayah are supplied. Silence cannot finish the unspoken remainder.",
+      "expectedReferences": [],
+      "actualReferences": [],
+      "durationSeconds": 14,
+      "occurrenceWindows": [],
+      "passed": true,
+      "issues": [],
+      "completions": [],
+      "events": [
+        {
+          "type": "status",
+          "audioEndSample": 12800,
+          "prediction": {
+            "status": "silence",
+            "surah": 0,
+            "ayah": 0,
+            "score": 0,
+            "transcript": "",
+            "wordProgress": null
+          },
+          "observedThroughSample": 12800,
+          "observedAtSeconds": 0.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ال صمد",
+          "audioEndSample": 25600,
+          "observedThroughSample": 25600,
+          "observedAtSeconds": 1.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "status",
+          "audioEndSample": 25600,
+          "prediction": {
+            "surah": 0,
+            "ayah": 0,
+            "ayah_end": null,
+            "score": 0,
+            "transcript": "ال صمد",
+            "searchTier": "surah",
+            "lookupDeferred": false,
+            "status": "uncertain",
+            "candidates": [],
+            "wordProgress": null,
+            "processingMs": 23,
+            "recommendedWindowSeconds": 2
+          },
+          "observedThroughSample": 25600,
+          "observedAtSeconds": 1.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "الله الصمد",
+          "audioEndSample": 28800,
+          "observedThroughSample": 28800,
+          "observedAtSeconds": 1.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "الله المد",
+          "audioEndSample": 41600,
+          "observedThroughSample": 41600,
+          "observedAtSeconds": 2.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "الله الد",
+          "audioEndSample": 44800,
+          "observedThroughSample": 44800,
+          "observedAtSeconds": 2.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "الله ال",
+          "audioEndSample": 48000,
+          "observedThroughSample": 48000,
+          "observedAtSeconds": 3,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "الله الا",
+          "audioEndSample": 67200,
+          "observedThroughSample": 67200,
+          "observedAtSeconds": 4.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "الله لا ا",
+          "audioEndSample": 70400,
+          "observedThroughSample": 70400,
+          "observedAtSeconds": 4.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "الله لا لال",
+          "audioEndSample": 73600,
+          "observedThroughSample": 73600,
+          "observedAtSeconds": 4.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "الله لا اله حس",
+          "audioEndSample": 76800,
+          "observedThroughSample": 76800,
+          "observedAtSeconds": 4.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "الله لا اله احا سحس",
+          "audioEndSample": 80000,
+          "observedThroughSample": 80000,
+          "observedAtSeconds": 5,
+          "delivery": "feed"
+        },
+        {
+          "type": "tentative",
+          "audioEndSample": 80620,
+          "candidate": {
+            "surah": 2,
+            "ayah": 255,
+            "score": 0.9873769291014549
+          },
+          "candidates": [
+            {
+              "surah": 2,
+              "ayah": 255,
+              "score": 0.9873769291014549
+            }
+          ],
+          "reason": "partial-match",
+          "observedThroughSample": 83200,
+          "observedAtSeconds": 5.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "الله لا اله ا اعحذي",
+          "audioEndSample": 83200,
+          "observedThroughSample": 83200,
+          "observedAtSeconds": 5.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "الله لا اله الا انا الحقي",
+          "audioEndSample": 86400,
+          "observedThroughSample": 86400,
+          "observedAtSeconds": 5.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "الله لا اله الا احزي الحقي",
+          "audioEndSample": 89600,
+          "observedThroughSample": 89600,
+          "observedAtSeconds": 5.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "status",
+          "audioEndSample": 89600,
+          "prediction": {
+            "surah": 2,
+            "ayah": 255,
+            "ayah_end": null,
+            "score": 1,
+            "transcript": "الله لا اله الا احزي الحقي",
+            "searchTier": "surah",
+            "acquisition": true,
+            "acquisitionEvidence": "stable-acoustic-words",
+            "acquisitionAudioEndSample": 77997,
+            "status": "matched",
+            "candidates": [
+              {
+                "surah": 2,
+                "ayah": 255,
+                "ayah_end": null
+              }
+            ],
+            "wordProgress": null,
+            "processingMs": 60,
+            "recommendedWindowSeconds": 2
+          },
+          "observedThroughSample": 89600,
+          "observedAtSeconds": 5.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "الله لا اله الا اهاحز الحقي",
+          "audioEndSample": 92800,
+          "observedThroughSample": 92800,
+          "observedAtSeconds": 5.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "progress",
+          "audioEndSample": 73472,
+          "prediction": {
+            "surah": 2,
+            "ayah": 255,
+            "score": 1,
+            "status": "matched",
+            "transcript": "الله لا اله الا اهاحز الحقي",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "2:255",
+              "surah": 2,
+              "ayah": 255,
+              "wordIndex": 3,
+              "wordCount": 50,
+              "arabicWord": "اله",
+              "observedWord": "اله",
+              "canonicalText": "الله لا اله الا هو الحي القيوم لا تاخذه سنه ولا نوم له ما في السماوات وما في الارض من ذا الذي يشفع عنده الا باذنه يعلم ما بين ايديهم وما خلفهم ولا يحيطون بشيء من علمه الا بما شاء وسع كرسيه السماوات والارض ولا يئوده حفظهما وهو العلي العظيم",
+              "canonicalWords": [
+                "الله",
+                "لا",
+                "اله",
+                "الا",
+                "هو",
+                "الحي",
+                "القيوم",
+                "لا",
+                "تاخذه",
+                "سنه",
+                "ولا",
+                "نوم",
+                "له",
+                "ما",
+                "في",
+                "السماوات",
+                "وما",
+                "في",
+                "الارض",
+                "من",
+                "ذا",
+                "الذي",
+                "يشفع",
+                "عنده",
+                "الا",
+                "باذنه",
+                "يعلم",
+                "ما",
+                "بين",
+                "ايديهم",
+                "وما",
+                "خلفهم",
+                "ولا",
+                "يحيطون",
+                "بشيء",
+                "من",
+                "علمه",
+                "الا",
+                "بما",
+                "شاء",
+                "وسع",
+                "كرسيه",
+                "السماوات",
+                "والارض",
+                "ولا",
+                "يئوده",
+                "حفظهما",
+                "وهو",
+                "العلي",
+                "العظيم"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "word-detected",
+              "estimatedAudioStartMs": 3988,
+              "estimatedAudioEndMs": 4592,
+              "clipDurationMs": 5558,
+              "timingIsApproximate": true,
+              "matchedCharacters": 3,
+              "audioEndSample": 73472
+            },
+            "processingMs": 64,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 92800,
+          "observedAtSeconds": 5.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "له له الا هو الحي",
+          "audioEndSample": 96000,
+          "observedThroughSample": 96000,
+          "observedAtSeconds": 6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "له اله الا هو الحي الحيم",
+          "audioEndSample": 99200,
+          "observedThroughSample": 99200,
+          "observedAtSeconds": 6.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "progress",
+          "audioEndSample": 88752,
+          "prediction": {
+            "surah": 2,
+            "ayah": 255,
+            "wordIndex": 3,
+            "score": 1,
+            "status": "matched",
+            "transcript": "له اله الا هو الحي الحيم",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "2:255",
+              "surah": 2,
+              "ayah": 255,
+              "wordIndex": 5,
+              "wordCount": 50,
+              "arabicWord": "هو",
+              "observedWord": "هو",
+              "canonicalText": "الله لا اله الا هو الحي القيوم لا تاخذه سنه ولا نوم له ما في السماوات وما في الارض من ذا الذي يشفع عنده الا باذنه يعلم ما بين ايديهم وما خلفهم ولا يحيطون بشيء من علمه الا بما شاء وسع كرسيه السماوات والارض ولا يئوده حفظهما وهو العلي العظيم",
+              "canonicalWords": [
+                "الله",
+                "لا",
+                "اله",
+                "الا",
+                "هو",
+                "الحي",
+                "القيوم",
+                "لا",
+                "تاخذه",
+                "سنه",
+                "ولا",
+                "نوم",
+                "له",
+                "ما",
+                "في",
+                "السماوات",
+                "وما",
+                "في",
+                "الارض",
+                "من",
+                "ذا",
+                "الذي",
+                "يشفع",
+                "عنده",
+                "الا",
+                "باذنه",
+                "يعلم",
+                "ما",
+                "بين",
+                "ايديهم",
+                "وما",
+                "خلفهم",
+                "ولا",
+                "يحيطون",
+                "بشيء",
+                "من",
+                "علمه",
+                "الا",
+                "بما",
+                "شاء",
+                "وسع",
+                "كرسيه",
+                "السماوات",
+                "والارض",
+                "ولا",
+                "يئوده",
+                "حفظهما",
+                "وهو",
+                "العلي",
+                "العظيم"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "word-detected",
+              "estimatedAudioStartMs": 1224,
+              "estimatedAudioEndMs": 1347,
+              "clipDurationMs": 1755,
+              "timingIsApproximate": true,
+              "matchedCharacters": 2,
+              "audioEndSample": 88752
+            },
+            "processingMs": 27,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 99200,
+          "observedAtSeconds": 6.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "لا اله الا هو الوح الحميم",
+          "audioEndSample": 102400,
+          "observedThroughSample": 102400,
+          "observedAtSeconds": 6.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "tentative",
+          "audioEndSample": 102988,
+          "candidate": {
+            "surah": 2,
+            "ayah": 255,
+            "score": 1
+          },
+          "candidates": [
+            {
+              "surah": 2,
+              "ayah": 255,
+              "score": 1
+            }
+          ],
+          "reason": "partial-match",
+          "observedThroughSample": 105600,
+          "observedAtSeconds": 6.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "لا اله الا هو الحي القوم",
+          "audioEndSample": 105600,
+          "observedThroughSample": 105600,
+          "observedAtSeconds": 6.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "tentative",
+          "audioEndSample": 105535,
+          "candidate": {
+            "surah": 2,
+            "ayah": 255,
+            "score": 1
+          },
+          "candidates": [
+            {
+              "surah": 2,
+              "ayah": 255,
+              "score": 1
+            }
+          ],
+          "reason": "partial-match",
+          "observedThroughSample": 108800,
+          "observedAtSeconds": 6.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "الا هو الحي القور",
+          "audioEndSample": 108800,
+          "observedThroughSample": 108800,
+          "observedAtSeconds": 6.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "progress",
+          "audioEndSample": 102272,
+          "prediction": {
+            "surah": 2,
+            "ayah": 255,
+            "wordIndex": 5,
+            "score": 1,
+            "status": "matched",
+            "transcript": "الا هو الحي القور",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "2:255",
+              "surah": 2,
+              "ayah": 255,
+              "wordIndex": 6,
+              "wordCount": 50,
+              "arabicWord": "الحي",
+              "observedWord": "الحي",
+              "canonicalText": "الله لا اله الا هو الحي القيوم لا تاخذه سنه ولا نوم له ما في السماوات وما في الارض من ذا الذي يشفع عنده الا باذنه يعلم ما بين ايديهم وما خلفهم ولا يحيطون بشيء من علمه الا بما شاء وسع كرسيه السماوات والارض ولا يئوده حفظهما وهو العلي العظيم",
+              "canonicalWords": [
+                "الله",
+                "لا",
+                "اله",
+                "الا",
+                "هو",
+                "الحي",
+                "القيوم",
+                "لا",
+                "تاخذه",
+                "سنه",
+                "ولا",
+                "نوم",
+                "له",
+                "ما",
+                "في",
+                "السماوات",
+                "وما",
+                "في",
+                "الارض",
+                "من",
+                "ذا",
+                "الذي",
+                "يشفع",
+                "عنده",
+                "الا",
+                "باذنه",
+                "يعلم",
+                "ما",
+                "بين",
+                "ايديهم",
+                "وما",
+                "خلفهم",
+                "ولا",
+                "يحيطون",
+                "بشيء",
+                "من",
+                "علمه",
+                "الا",
+                "بما",
+                "شاء",
+                "وسع",
+                "كرسيه",
+                "السماوات",
+                "والارض",
+                "ولا",
+                "يئوده",
+                "حفظهما",
+                "وهو",
+                "العلي",
+                "العظيم"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "word-detected",
+              "estimatedAudioStartMs": 1061,
+              "estimatedAudioEndMs": 1592,
+              "clipDurationMs": 1755,
+              "timingIsApproximate": true,
+              "matchedCharacters": 4,
+              "audioEndSample": 102272
+            },
+            "processingMs": 26,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 108800,
+          "observedAtSeconds": 6.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ال هو لحي القون",
+          "audioEndSample": 112000,
+          "observedThroughSample": 112000,
+          "observedAtSeconds": 7,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "هو الحي القيم",
+          "audioEndSample": 115200,
+          "observedThroughSample": 115200,
+          "observedAtSeconds": 7.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "progress",
+          "audioEndSample": 109328,
+          "prediction": {
+            "surah": 2,
+            "ayah": 255,
+            "wordIndex": 6,
+            "score": 1,
+            "status": "matched",
+            "transcript": "هو الحي القيم",
+            "searchTier": "tracking",
+            "wordProgress": {
+              "verseKey": "2:255",
+              "surah": 2,
+              "ayah": 255,
+              "wordIndex": 7,
+              "wordCount": 50,
+              "arabicWord": "القيوم",
+              "observedWord": "الق",
+              "canonicalText": "الله لا اله الا هو الحي القيوم لا تاخذه سنه ولا نوم له ما في السماوات وما في الارض من ذا الذي يشفع عنده الا باذنه يعلم ما بين ايديهم وما خلفهم ولا يحيطون بشيء من علمه الا بما شاء وسع كرسيه السماوات والارض ولا يئوده حفظهما وهو العلي العظيم",
+              "canonicalWords": [
+                "الله",
+                "لا",
+                "اله",
+                "الا",
+                "هو",
+                "الحي",
+                "القيوم",
+                "لا",
+                "تاخذه",
+                "سنه",
+                "ولا",
+                "نوم",
+                "له",
+                "ما",
+                "في",
+                "السماوات",
+                "وما",
+                "في",
+                "الارض",
+                "من",
+                "ذا",
+                "الذي",
+                "يشفع",
+                "عنده",
+                "الا",
+                "باذنه",
+                "يعلم",
+                "ما",
+                "بين",
+                "ايديهم",
+                "وما",
+                "خلفهم",
+                "ولا",
+                "يحيطون",
+                "بشيء",
+                "من",
+                "علمه",
+                "الا",
+                "بما",
+                "شاء",
+                "وسع",
+                "كرسيه",
+                "السماوات",
+                "والارض",
+                "ولا",
+                "يئوده",
+                "حفظهما",
+                "وهو",
+                "العلي",
+                "العظيم"
+              ],
+              "source": "acoustic-ctc-alignment",
+              "quality": "partial-word",
+              "estimatedAudioStartMs": 1388,
+              "estimatedAudioEndMs": 1633,
+              "clipDurationMs": 1755,
+              "timingIsApproximate": true,
+              "matchedCharacters": 3,
+              "audioEndSample": 109328
+            },
+            "processingMs": 24,
+            "recommendedWindowSeconds": 2,
+            "ayah_end": null
+          },
+          "observedThroughSample": 115200,
+          "observedAtSeconds": 7.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "tentative",
+          "audioEndSample": 113176,
+          "candidate": {
+            "surah": 2,
+            "ayah": 255,
+            "score": 0.9597596739606814
+          },
+          "candidates": [
+            {
+              "surah": 2,
+              "ayah": 255,
+              "score": 0.9597596739606814
+            }
+          ],
+          "reason": "partial-match",
+          "observedThroughSample": 118400,
+          "observedAtSeconds": 7.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "لهو الحي القيون",
+          "audioEndSample": 118400,
+          "observedThroughSample": 118400,
+          "observedAtSeconds": 7.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "tentative",
+          "audioEndSample": 113763,
+          "candidate": {
+            "surah": 2,
+            "ayah": 255,
+            "score": 0.9773033395659508
+          },
+          "candidates": [
+            {
+              "surah": 2,
+              "ayah": 255,
+              "score": 0.9773033395659508
+            }
+          ],
+          "reason": "partial-match",
+          "observedThroughSample": 121600,
+          "observedAtSeconds": 7.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "وهو الحي القيون",
+          "audioEndSample": 121600,
+          "observedThroughSample": 121600,
+          "observedAtSeconds": 7.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "وحي القيرون",
+          "audioEndSample": 124800,
+          "observedThroughSample": 124800,
+          "observedAtSeconds": 7.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "حي القيون",
+          "audioEndSample": 128000,
+          "observedThroughSample": 128000,
+          "observedAtSeconds": 8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ين القيرون",
+          "audioEndSample": 131200,
+          "observedThroughSample": 131200,
+          "observedAtSeconds": 8.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "الون",
+          "audioEndSample": 134400,
+          "observedThroughSample": 134400,
+          "observedAtSeconds": 8.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "طون",
+          "audioEndSample": 137600,
+          "observedThroughSample": 137600,
+          "observedAtSeconds": 8.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "طوم",
+          "audioEndSample": 140800,
+          "observedThroughSample": 140800,
+          "observedAtSeconds": 8.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "status",
+          "audioEndSample": 140800,
+          "prediction": {
+            "surah": 0,
+            "ayah": 0,
+            "ayah_end": null,
+            "score": 0,
+            "transcript": "طوم",
+            "searchTier": "waiting",
+            "lookupDeferred": false,
+            "status": "uncertain",
+            "candidates": [],
+            "wordProgress": null,
+            "processingMs": 24,
+            "recommendedWindowSeconds": 2
+          },
+          "observedThroughSample": 140800,
+          "observedAtSeconds": 8.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ن",
+          "audioEndSample": 144000,
+          "observedThroughSample": 144000,
+          "observedAtSeconds": 9,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ح",
+          "audioEndSample": 147200,
+          "observedThroughSample": 147200,
+          "observedAtSeconds": 9.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "طنوه",
+          "audioEndSample": 150400,
+          "observedThroughSample": 150400,
+          "observedAtSeconds": 9.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "status",
+          "audioEndSample": 153600,
+          "prediction": {
+            "status": "silence",
+            "surah": 0,
+            "ayah": 0,
+            "score": 0,
+            "transcript": "",
+            "wordProgress": null
+          },
+          "observedThroughSample": 153600,
+          "observedAtSeconds": 9.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "طي",
+          "audioEndSample": 166400,
+          "observedThroughSample": 166400,
+          "observedAtSeconds": 10.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "status",
+          "audioEndSample": 166400,
+          "prediction": {
+            "surah": 0,
+            "ayah": 0,
+            "ayah_end": null,
+            "score": 0,
+            "transcript": "طي",
+            "searchTier": "waiting",
+            "lookupDeferred": false,
+            "status": "uncertain",
+            "candidates": [],
+            "wordProgress": null,
+            "processingMs": 42,
+            "recommendedWindowSeconds": 2
+          },
+          "observedThroughSample": 166400,
+          "observedAtSeconds": 10.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ط",
+          "audioEndSample": 169600,
+          "observedThroughSample": 169600,
+          "observedAtSeconds": 10.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ط لا ظ",
+          "audioEndSample": 176000,
+          "observedThroughSample": 176000,
+          "observedAtSeconds": 11,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "خين لا تاخون",
+          "audioEndSample": 179200,
+          "observedThroughSample": 179200,
+          "observedAtSeconds": 11.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "خلين لا تاخدن",
+          "audioEndSample": 182400,
+          "observedThroughSample": 182400,
+          "observedAtSeconds": 11.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "خالين لا تاخد",
+          "audioEndSample": 185600,
+          "observedThroughSample": 185600,
+          "observedAtSeconds": 11.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "خاليون لا تاخد",
+          "audioEndSample": 188800,
+          "observedThroughSample": 188800,
+          "observedAtSeconds": 11.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "اليونلا تاخذس",
+          "audioEndSample": 192000,
+          "observedThroughSample": 192000,
+          "observedAtSeconds": 12,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "لاليون لا تاخذهس",
+          "audioEndSample": 195200,
+          "observedThroughSample": 195200,
+          "observedAtSeconds": 12.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "واليوم لا تاخذهسر",
+          "audioEndSample": 198400,
+          "observedThroughSample": 198400,
+          "observedAtSeconds": 12.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "وايوم لا تاخذهسر",
+          "audioEndSample": 201600,
+          "observedThroughSample": 201600,
+          "observedAtSeconds": 12.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "status",
+          "audioEndSample": 204800,
+          "prediction": {
+            "status": "silence",
+            "surah": 0,
+            "ayah": 0,
+            "score": 0,
+            "transcript": "",
+            "wordProgress": null
+          },
+          "observedThroughSample": 204800,
+          "observedAtSeconds": 12.8,
+          "delivery": "feed"
+        }
+      ]
+    },
+    {
+      "name": "noise-then-silence",
+      "description": "Deterministic non-speech noise followed by silence must not complete a Quran ayah.",
+      "expectedReferences": [],
+      "actualReferences": [],
+      "durationSeconds": 6,
+      "occurrenceWindows": [],
+      "passed": true,
+      "issues": [],
+      "completions": [],
+      "events": [
+        {
+          "type": "transcript",
+          "transcript": "ن",
+          "audioEndSample": 12800,
+          "observedThroughSample": 12800,
+          "observedAtSeconds": 0.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "status",
+          "audioEndSample": 12800,
+          "prediction": {
+            "surah": 0,
+            "ayah": 0,
+            "ayah_end": null,
+            "score": 0,
+            "transcript": "ن",
+            "searchTier": "waiting",
+            "lookupDeferred": false,
+            "status": "uncertain",
+            "candidates": [],
+            "wordProgress": null,
+            "processingMs": 16,
+            "recommendedWindowSeconds": 2
+          },
+          "observedThroughSample": 12800,
+          "observedAtSeconds": 0.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ين",
+          "audioEndSample": 22400,
+          "observedThroughSample": 22400,
+          "observedAtSeconds": 1.4,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "اين",
+          "audioEndSample": 25600,
+          "observedThroughSample": 25600,
+          "observedAtSeconds": 1.6,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ين",
+          "audioEndSample": 28800,
+          "observedThroughSample": 28800,
+          "observedAtSeconds": 1.8,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ا ل اين",
+          "audioEndSample": 32000,
+          "observedThroughSample": 32000,
+          "observedAtSeconds": 2,
+          "delivery": "feed"
+        },
+        {
+          "type": "transcript",
+          "transcript": "ين",
+          "audioEndSample": 35200,
+          "observedThroughSample": 35200,
+          "observedAtSeconds": 2.2,
+          "delivery": "feed"
+        },
+        {
+          "type": "status",
+          "audioEndSample": 70400,
+          "prediction": {
+            "status": "silence",
+            "surah": 0,
+            "ayah": 0,
+            "score": 0,
+            "transcript": "",
+            "wordProgress": null
+          },
+          "observedThroughSample": 70400,
+          "observedAtSeconds": 4.4,
+          "delivery": "feed"
+        }
+      ]
+    },
+    {
+      "name": "silence-only",
+      "description": "Silence alone has no final-word acoustic evidence.",
+      "expectedReferences": [],
+      "actualReferences": [],
+      "durationSeconds": 5,
+      "occurrenceWindows": [],
+      "passed": true,
+      "issues": [],
+      "completions": [],
+      "events": [
+        {
+          "type": "status",
+          "audioEndSample": 12800,
+          "prediction": {
+            "status": "silence",
+            "surah": 0,
+            "ayah": 0,
+            "score": 0,
+            "transcript": "",
+            "wordProgress": null
+          },
+          "observedThroughSample": 12800,
+          "observedAtSeconds": 0.8,
+          "delivery": "feed"
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "sourceHashes": {
+    "streaming-engine.js": "d8fe27b289692b720d30a3682602b999433b2009ac92a7ab5f3cd64e9d7e9ae6",
+    "word-progress.js": "72029da8464a64a405a26765a4dba4a0bd70c1aac3a58d201f972d9530f0538c",
+    "context-matcher.js": "a5137f5c5184cf90ab48c8739c32f3f32a80305a7cd60a780013eb01244a3165",
+    "ayah-completion.js": "6f5421c279d98a403b54c39cc8007e6a7da0f41464234c73bf0de78127d5afed",
+    "acquisition.js": "cfc3f2f66d2f347dacf8f744de058c4823245bad79e9fc6dd2556400c02f4136"
+  },
+  "passed": true
+}

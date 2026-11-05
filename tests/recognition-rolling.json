@@ -1,0 +1,110 @@
+{
+  "boundaries": [
+    {
+      "ayah": 1,
+      "start": 0,
+      "end": 5.8253125
+    },
+    {
+      "ayah": 2,
+      "start": 5.8253125,
+      "end": 10.8669375
+    },
+    {
+      "ayah": 3,
+      "start": 10.8669375,
+      "end": 16.79675
+    },
+    {
+      "ayah": 4,
+      "start": 16.79675,
+      "end": 24.9208125
+    }
+  ],
+  "observations": [
+    {
+      "seconds": 3.5,
+      "status": "matched",
+      "verse": "112:1",
+      "transcript": "قل هوو الله",
+      "processingMs": 527
+    },
+    {
+      "seconds": 5.5,
+      "status": "matched",
+      "verse": "112:1",
+      "transcript": "قل هو الله احد",
+      "processingMs": 441
+    },
+    {
+      "seconds": 7.5,
+      "status": "matched",
+      "verse": "112:1",
+      "transcript": "قل هو الله احد الل",
+      "processingMs": 564
+    },
+    {
+      "seconds": 9.5,
+      "status": "matched",
+      "verse": "112:2",
+      "transcript": "قل هوو الله ا احد الل الصمد",
+      "processingMs": 729
+    },
+    {
+      "seconds": 11.5,
+      "status": "matched",
+      "verse": "112:2",
+      "transcript": "قل هو الله احد الله الصمد",
+      "processingMs": 906
+    },
+    {
+      "seconds": 13.5,
+      "status": "matched",
+      "verse": "112:2",
+      "transcript": "قل هو الله احد الله الصمد لم يلد",
+      "processingMs": 896
+    },
+    {
+      "seconds": 15.5,
+      "status": "matched",
+      "verse": "112:3",
+      "transcript": "الله احد الله الصمد لم يلد ولم يولد",
+      "processingMs": 1182
+    },
+    {
+      "seconds": 17.5,
+      "status": "matched",
+      "verse": "112:3",
+      "transcript": "الله الصمد لم يلد ولم يولد",
+      "processingMs": 828
+    },
+    {
+      "seconds": 19.5,
+      "status": "uncertain",
+      "verse": null,
+      "transcript": "الله الصمد لم يلد ولم يولد ولم يكن له",
+      "processingMs": 929
+    },
+    {
+      "seconds": 21.5,
+      "status": "matched",
+      "verse": "112:4",
+      "transcript": "لم يلد ولم يولد ولم يكن له كفوا",
+      "processingMs": 806
+    },
+    {
+      "seconds": 23.5,
+      "status": "matched",
+      "verse": "112:4",
+      "transcript": "لم يلد ولم يولد ولم يكن له كفوا احد",
+      "processingMs": 1071
+    },
+    {
+      "seconds": 24.92,
+      "status": "matched",
+      "verse": "112:4",
+      "transcript": "ولم يلد ولم يكن له كفوا احد",
+      "processingMs": 835
+    }
+  ]
+}

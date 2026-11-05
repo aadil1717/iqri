@@ -1,0 +1,1526 @@
+{
+  "created": "2026-11-04T21:15:55.604Z",
+  "label": "final-scheduling",
+  "private": false,
+  "sourceHashes": {
+    "acquisition.js": "cfc3f2f66d2f347dacf8f744de058c4823245bad79e9fc6dd2556400c02f4136",
+    "ayah-completion.js": "6f5421c279d98a403b54c39cc8007e6a7da0f41464234c73bf0de78127d5afed",
+    "config.js": "494c17720cd11832c61d0147f965e46112df23301debc45ab036f869b74003bb",
+    "context-matcher.js": "a5137f5c5184cf90ab48c8739c32f3f32a80305a7cd60a780013eb01244a3165",
+    "engine.js": "e7467f18695fc1ae54a0f182706ef101c881ca9be1664a168ed96b3a34bc8e02",
+    "fbank.js": "f073d2e74c730d0299006a5e831ac585c18fbbcf9a1c1748b42922d8a27c0e6d",
+    "node-engine.js": "88ec063111febb7743562e1912be35d64073e1b9907bf2692e382cb2954914fc",
+    "quran-decoder.js": "4817962c808b6995d2eb22ab7e0840369e0e693ce9bdaaa9865988d33b088ced",
+    "quran-orthography.js": "a7eb8b42996b808cdd980ab534cdf90a078867cd0d06dfc1cc36134a43f72f71",
+    "streaming-engine.js": "d8fe27b289692b720d30a3682602b999433b2009ac92a7ab5f3cd64e9d7e9ae6",
+    "word-progress.js": "72029da8464a64a405a26765a4dba4a0bd70c1aac3a58d201f972d9530f0538c",
+    "worker.js": "fa0b322d3226932d060f17ef9b9b24b0dfea63ff5ad3d8683ba8ce235da2524d"
+  },
+  "loadMs": 1881.9625,
+  "benchmarkSha256": "00bd6be01ba26910fa847e371115adff7917c357d58ca93600dd75dea8a5c502",
+  "methodology": "Actual integrated native engine; independent consecutive 100 ms chunks in automatic mode. Each fixture runs from its original beginning through at most eight seconds after the provisional sustained-energy onset, followed by two seconds quiet. Native audio-position timings are not real-time browser/UI latency. Onsets are signal-derived and approximate, not manual phonetic annotations. Tentative top choices, candidate groups and confirmed claims are reported separately.",
+  "cases": [
+    {
+      "reference": "71:1",
+      "source": "https://everyayah.com/data/Husary_128kbps/071001.mp3",
+      "fixture": "071001.f32",
+      "fixtureSha256": "feebaf6da1bfe6fa40ce26154943cc3cebd4ae829d637e214f665dab42af0973",
+      "inputPcmWithSilenceSha256": "725cadc49a7ecee7fd3a7fd10015fff5619ae3b8c55885ef36d861fd7f2b3487",
+      "clipAudioSeconds": 8.12,
+      "provisionalSpeechOnsetSeconds": 0.12,
+      "firstAnyTentativeSeconds": 5.8,
+      "firstTargetTentativeSeconds": 5.8,
+      "firstTargetCandidateGroupSeconds": 5.8,
+      "firstConfirmedSeconds": 6.2,
+      "firstHighlightSeconds": 6.2,
+      "firstTargetTentativeAfterProvisionalOnset": 5.68,
+      "firstTargetGroupAfterProvisionalOnset": 5.68,
+      "firstConfirmedAfterProvisionalOnset": 6.08,
+      "firstHighlightAfterProvisionalOnset": 6.08,
+      "candidateGroupWithinFiveSeconds": false,
+      "nonTargetTopTentatives": [],
+      "groupsMissingTarget": [],
+      "tentativeIntervals": [
+        {
+          "reference": "71:1",
+          "candidates": [
+            "71:1"
+          ],
+          "startSeconds": 5.8,
+          "endSeconds": 6,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "71:1",
+          "candidates": [
+            "71:1"
+          ],
+          "startSeconds": 6,
+          "endSeconds": 6.2,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        }
+      ],
+      "nonTargetTopTentativeSeconds": 0,
+      "tentativeMissingTargetSeconds": 0,
+      "wrongConfirmed": [],
+      "events": [
+        {
+          "type": "tentative",
+          "atSeconds": 5.8,
+          "audioEndSeconds": 5.5180625,
+          "reference": "71:1",
+          "candidates": [
+            "71:1"
+          ],
+          "score": 1,
+          "reason": "partial-match"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 6,
+          "audioEndSeconds": 5.758375,
+          "reference": "71:1",
+          "candidates": [
+            "71:1"
+          ],
+          "score": 1,
+          "reason": "partial-match"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 6.2,
+          "reference": "71:1",
+          "wordReference": "71:1",
+          "wordIndex": 3,
+          "audioEndSeconds": 5.757
+        },
+        {
+          "type": "progress",
+          "atSeconds": 7.8,
+          "reference": "71:1",
+          "wordReference": "71:1",
+          "wordIndex": 4,
+          "audioEndSeconds": 6.547
+        },
+        {
+          "type": "progress",
+          "atSeconds": 8.2,
+          "reference": "71:1",
+          "wordReference": "71:1",
+          "wordIndex": 5,
+          "audioEndSeconds": 7.955
+        }
+      ],
+      "wallProcessingMs": 1517.3761,
+      "firstUsefulLocationAfterProvisionalOnset": 5.68,
+      "usefulLocationWithinFiveSeconds": false
+    },
+    {
+      "reference": "71:2",
+      "source": "https://everyayah.com/data/Husary_128kbps/071002.mp3",
+      "fixture": "071002.f32",
+      "fixtureSha256": "864a467794e1eacb6f6ce648eae681f70619609ee7a55e66142dcc4304b46daf",
+      "inputPcmWithSilenceSha256": "3b9564a111af2d39f49f77c0635a4890fc3f63c62c9b146a1a44636711b785c8",
+      "clipAudioSeconds": 9.22,
+      "provisionalSpeechOnsetSeconds": 1.22,
+      "firstAnyTentativeSeconds": 5.6,
+      "firstTargetTentativeSeconds": 5.6,
+      "firstTargetCandidateGroupSeconds": 5.6,
+      "firstConfirmedSeconds": null,
+      "firstHighlightSeconds": null,
+      "firstTargetTentativeAfterProvisionalOnset": 4.38,
+      "firstTargetGroupAfterProvisionalOnset": 4.38,
+      "firstConfirmedAfterProvisionalOnset": null,
+      "firstHighlightAfterProvisionalOnset": null,
+      "candidateGroupWithinFiveSeconds": true,
+      "nonTargetTopTentatives": [],
+      "groupsMissingTarget": [],
+      "tentativeIntervals": [
+        {
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "startSeconds": 5.6,
+          "endSeconds": 5.8,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "startSeconds": 5.8,
+          "endSeconds": 6,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "startSeconds": 6,
+          "endSeconds": 6.2,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "startSeconds": 6.2,
+          "endSeconds": 6.4,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "startSeconds": 6.4,
+          "endSeconds": 6.6,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "startSeconds": 6.6,
+          "endSeconds": 7,
+          "durationSeconds": 0.4,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "startSeconds": 7,
+          "endSeconds": 7.2,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "startSeconds": 7.2,
+          "endSeconds": 8.8,
+          "durationSeconds": 1.6,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "startSeconds": 8.8,
+          "endSeconds": 9,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "startSeconds": 9,
+          "endSeconds": 11.22,
+          "durationSeconds": 2.22,
+          "targetIncluded": true,
+          "topIsTarget": true
+        }
+      ],
+      "nonTargetTopTentativeSeconds": 0,
+      "tentativeMissingTargetSeconds": 0,
+      "wrongConfirmed": [],
+      "events": [
+        {
+          "type": "tentative",
+          "atSeconds": 5.6,
+          "audioEndSeconds": 5.3985625,
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "score": 1,
+          "reason": "partial-match"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 5.8,
+          "audioEndSeconds": 5.638875,
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "score": 1,
+          "reason": "partial-match"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 6,
+          "audioEndSeconds": 5.677875,
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "score": 1,
+          "reason": "partial-match"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 6.2,
+          "audioEndSeconds": 5.9986875,
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "score": 1,
+          "reason": "partial-match"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 6.4,
+          "audioEndSeconds": 6.2389375,
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "score": 1,
+          "reason": "partial-match"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 6.6,
+          "audioEndSeconds": 6.277875,
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "score": 1,
+          "reason": "partial-match"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 7,
+          "audioEndSeconds": 6.3154375,
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "score": 1,
+          "reason": "partial-match"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 7.2,
+          "audioEndSeconds": 6.9986875,
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "score": 1,
+          "reason": "partial-match"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 8.8,
+          "audioEndSeconds": 8.31675,
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "score": 0.937199079324947,
+          "reason": "partial-match"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 9,
+          "audioEndSeconds": 8.3556875,
+          "reference": "71:2",
+          "candidates": [
+            "71:2"
+          ],
+          "score": 0.905252346451668,
+          "reason": "partial-match"
+        }
+      ],
+      "wallProcessingMs": 2320.2909,
+      "firstUsefulLocationAfterProvisionalOnset": 4.38,
+      "usefulLocationWithinFiveSeconds": true
+    },
+    {
+      "reference": "71:4",
+      "source": "https://everyayah.com/data/Husary_128kbps/071004.mp3",
+      "fixture": "071004.f32",
+      "fixtureSha256": "b4c2c9beb53860f9afa83d9fb13c55dab9f76484280d08705744e82612c51c9f",
+      "inputPcmWithSilenceSha256": "8abc0be5b442763bf0557efaa6df7c6cb6a0333de03abeb49810e470e70bf539",
+      "clipAudioSeconds": 8.0600625,
+      "provisionalSpeechOnsetSeconds": 0.06,
+      "firstAnyTentativeSeconds": 4.8,
+      "firstTargetTentativeSeconds": 4.8,
+      "firstTargetCandidateGroupSeconds": 4.8,
+      "firstConfirmedSeconds": null,
+      "firstHighlightSeconds": null,
+      "firstTargetTentativeAfterProvisionalOnset": 4.74,
+      "firstTargetGroupAfterProvisionalOnset": 4.74,
+      "firstConfirmedAfterProvisionalOnset": null,
+      "firstHighlightAfterProvisionalOnset": null,
+      "candidateGroupWithinFiveSeconds": true,
+      "nonTargetTopTentatives": [],
+      "groupsMissingTarget": [],
+      "tentativeIntervals": [
+        {
+          "reference": "71:4",
+          "candidates": [
+            "71:4",
+            "46:31"
+          ],
+          "startSeconds": 4.8,
+          "endSeconds": 5.2,
+          "durationSeconds": 0.4,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "71:4",
+          "candidates": [
+            "71:4",
+            "46:31"
+          ],
+          "startSeconds": 5.2,
+          "endSeconds": 5.4,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "71:4",
+          "candidates": [
+            "71:4",
+            "46:31"
+          ],
+          "startSeconds": 5.4,
+          "endSeconds": 5.6,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "71:4",
+          "candidates": [
+            "71:4",
+            "46:31"
+          ],
+          "startSeconds": 5.6,
+          "endSeconds": 5.8,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "71:4",
+          "candidates": [
+            "71:4",
+            "46:31"
+          ],
+          "startSeconds": 5.8,
+          "endSeconds": 6,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "71:4",
+          "candidates": [
+            "71:4",
+            "46:31"
+          ],
+          "startSeconds": 6,
+          "endSeconds": 7,
+          "durationSeconds": 1,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "71:4",
+          "candidates": [
+            "71:4",
+            "14:10",
+            "46:31"
+          ],
+          "startSeconds": 7,
+          "endSeconds": 10.0600625,
+          "durationSeconds": 3.0601,
+          "targetIncluded": true,
+          "topIsTarget": true
+        }
+      ],
+      "nonTargetTopTentativeSeconds": 0,
+      "tentativeMissingTargetSeconds": 0,
+      "wrongConfirmed": [],
+      "events": [
+        {
+          "type": "tentative",
+          "atSeconds": 4.8,
+          "audioEndSeconds": 4.2353125,
+          "reference": "71:4",
+          "candidates": [
+            "71:4",
+            "46:31"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 5.2,
+          "audioEndSeconds": 4.8371875,
+          "reference": "71:4",
+          "candidates": [
+            "71:4",
+            "46:31"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 5.4,
+          "audioEndSeconds": 5.2388125,
+          "reference": "71:4",
+          "candidates": [
+            "71:4",
+            "46:31"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 5.6,
+          "audioEndSeconds": 5.35825,
+          "reference": "71:4",
+          "candidates": [
+            "71:4",
+            "46:31"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 5.8,
+          "audioEndSeconds": 5.39725,
+          "reference": "71:4",
+          "candidates": [
+            "71:4",
+            "46:31"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 6,
+          "audioEndSeconds": 5.758375,
+          "reference": "71:4",
+          "candidates": [
+            "71:4",
+            "46:31"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 7,
+          "audioEndSeconds": 6.718125,
+          "reference": "71:4",
+          "candidates": [
+            "71:4",
+            "14:10",
+            "46:31"
+          ],
+          "score": 0.9183682399602916,
+          "reason": "shared-phrase"
+        }
+      ],
+      "wallProcessingMs": 2231.0775,
+      "firstUsefulLocationAfterProvisionalOnset": 4.74,
+      "usefulLocationWithinFiveSeconds": true
+    },
+    {
+      "reference": "71:5",
+      "source": "https://everyayah.com/data/Husary_128kbps/071005.mp3",
+      "fixture": "071005.f32",
+      "fixtureSha256": "db3b97f882016f5e77a3e7399a0042ccaf2977b8c037a76e07c33dbb0a767524",
+      "inputPcmWithSilenceSha256": "ba2936d9563ad7443d34789cce553b9d00793d254119e2e2a1ec19d3f81f4aa6",
+      "clipAudioSeconds": 8.42,
+      "provisionalSpeechOnsetSeconds": 0.42,
+      "firstAnyTentativeSeconds": null,
+      "firstTargetTentativeSeconds": null,
+      "firstTargetCandidateGroupSeconds": null,
+      "firstConfirmedSeconds": 6.4,
+      "firstHighlightSeconds": 6.4,
+      "firstTargetTentativeAfterProvisionalOnset": null,
+      "firstTargetGroupAfterProvisionalOnset": null,
+      "firstConfirmedAfterProvisionalOnset": 5.98,
+      "firstHighlightAfterProvisionalOnset": 5.98,
+      "candidateGroupWithinFiveSeconds": false,
+      "nonTargetTopTentatives": [],
+      "groupsMissingTarget": [],
+      "tentativeIntervals": [],
+      "nonTargetTopTentativeSeconds": 0,
+      "tentativeMissingTargetSeconds": 0,
+      "wrongConfirmed": [],
+      "events": [
+        {
+          "type": "progress",
+          "atSeconds": 6.4,
+          "reference": "71:5",
+          "wordReference": "71:5",
+          "wordIndex": 5,
+          "audioEndSeconds": 5.997
+        },
+        {
+          "type": "progress",
+          "atSeconds": 7.2,
+          "reference": "71:5",
+          "wordReference": "71:5",
+          "wordIndex": 6,
+          "audioEndSeconds": 6.588
+        }
+      ],
+      "wallProcessingMs": 1690.519,
+      "firstUsefulLocationAfterProvisionalOnset": 5.98,
+      "usefulLocationWithinFiveSeconds": false
+    },
+    {
+      "reference": "112:1",
+      "source": "https://everyayah.com/data/Husary_128kbps/112001.mp3",
+      "fixture": "112001.f32",
+      "fixtureSha256": "ad882deff5044c1e09cd8dbdf5d5f0d87a111b5849a5b6413d97ac440f2c7fb8",
+      "inputPcmWithSilenceSha256": "cb290625fe8f7aa4a30880348e7eabb38a34c55aa0b1d379dd0810f55b821010",
+      "clipAudioSeconds": 5.8253125,
+      "provisionalSpeechOnsetSeconds": 0.8,
+      "firstAnyTentativeSeconds": null,
+      "firstTargetTentativeSeconds": null,
+      "firstTargetCandidateGroupSeconds": null,
+      "firstConfirmedSeconds": 3.4,
+      "firstHighlightSeconds": 3.4,
+      "firstTargetTentativeAfterProvisionalOnset": null,
+      "firstTargetGroupAfterProvisionalOnset": null,
+      "firstConfirmedAfterProvisionalOnset": 2.6,
+      "firstHighlightAfterProvisionalOnset": 2.6,
+      "candidateGroupWithinFiveSeconds": false,
+      "nonTargetTopTentatives": [],
+      "groupsMissingTarget": [],
+      "tentativeIntervals": [],
+      "nonTargetTopTentativeSeconds": 0,
+      "tentativeMissingTargetSeconds": 0,
+      "wrongConfirmed": [],
+      "events": [
+        {
+          "type": "progress",
+          "atSeconds": 3.4,
+          "reference": "112:1",
+          "wordReference": "112:1",
+          "wordIndex": 3,
+          "audioEndSeconds": 2.874
+        },
+        {
+          "type": "progress",
+          "atSeconds": 4.6,
+          "reference": "112:1",
+          "wordReference": "112:1",
+          "wordIndex": 4,
+          "audioEndSeconds": 4.192
+        },
+        {
+          "type": "ayah-complete",
+          "atSeconds": 5.2,
+          "reference": "112:1",
+          "wordReference": "112:1",
+          "wordIndex": 4,
+          "audioEndSeconds": 4.547
+        }
+      ],
+      "wallProcessingMs": 740.1575,
+      "firstUsefulLocationAfterProvisionalOnset": 2.6,
+      "usefulLocationWithinFiveSeconds": true
+    },
+    {
+      "reference": "112:2",
+      "source": "https://everyayah.com/data/Husary_128kbps/112002.mp3",
+      "fixture": "112002.f32",
+      "fixtureSha256": "7099912a08f913bc601f06f2dc0085eb8bbac55b5dd38b54bd7b762c3a28da76",
+      "inputPcmWithSilenceSha256": "6a8f616b5cb5d50b73f2dff77a6a03c80682ceafb25f9223dbb49bcdcb1c2e41",
+      "clipAudioSeconds": 5.041625,
+      "provisionalSpeechOnsetSeconds": 0.64,
+      "firstAnyTentativeSeconds": null,
+      "firstTargetTentativeSeconds": null,
+      "firstTargetCandidateGroupSeconds": null,
+      "firstConfirmedSeconds": 4.2,
+      "firstHighlightSeconds": 4.2,
+      "firstTargetTentativeAfterProvisionalOnset": null,
+      "firstTargetGroupAfterProvisionalOnset": null,
+      "firstConfirmedAfterProvisionalOnset": 3.56,
+      "firstHighlightAfterProvisionalOnset": 3.56,
+      "candidateGroupWithinFiveSeconds": false,
+      "nonTargetTopTentatives": [],
+      "groupsMissingTarget": [],
+      "tentativeIntervals": [],
+      "nonTargetTopTentativeSeconds": 0,
+      "tentativeMissingTargetSeconds": 0,
+      "wrongConfirmed": [],
+      "events": [
+        {
+          "type": "progress",
+          "atSeconds": 4.2,
+          "reference": "112:2",
+          "wordReference": "112:2",
+          "wordIndex": 2,
+          "audioEndSeconds": 3.675
+        },
+        {
+          "type": "ayah-complete",
+          "atSeconds": 4.4,
+          "reference": "112:2",
+          "wordReference": "112:2",
+          "wordIndex": 2,
+          "audioEndSeconds": 3.665
+        }
+      ],
+      "wallProcessingMs": 635.1966,
+      "firstUsefulLocationAfterProvisionalOnset": 3.56,
+      "usefulLocationWithinFiveSeconds": true
+    },
+    {
+      "reference": "112:3",
+      "source": "https://everyayah.com/data/Husary_128kbps/112003.mp3",
+      "fixture": "112003.f32",
+      "fixtureSha256": "9c205ff235dbf24c915f9e61f6b111140520384bff87618ce496f8f0b59a3c95",
+      "inputPcmWithSilenceSha256": "8279b506a57f34a5d5254f92c83d5724f3623c3ff7680f00859683ad94273e8e",
+      "clipAudioSeconds": 5.9298125,
+      "provisionalSpeechOnsetSeconds": 0.42,
+      "firstAnyTentativeSeconds": null,
+      "firstTargetTentativeSeconds": null,
+      "firstTargetCandidateGroupSeconds": null,
+      "firstConfirmedSeconds": 2.4,
+      "firstHighlightSeconds": 2.4,
+      "firstTargetTentativeAfterProvisionalOnset": null,
+      "firstTargetGroupAfterProvisionalOnset": null,
+      "firstConfirmedAfterProvisionalOnset": 1.98,
+      "firstHighlightAfterProvisionalOnset": 1.98,
+      "candidateGroupWithinFiveSeconds": false,
+      "nonTargetTopTentatives": [],
+      "groupsMissingTarget": [],
+      "tentativeIntervals": [],
+      "nonTargetTopTentativeSeconds": 0,
+      "tentativeMissingTargetSeconds": 0,
+      "wrongConfirmed": [],
+      "events": [
+        {
+          "type": "progress",
+          "atSeconds": 2.4,
+          "reference": "112:3",
+          "wordReference": "112:3",
+          "wordIndex": 2,
+          "audioEndSeconds": 1.953
+        },
+        {
+          "type": "progress",
+          "atSeconds": 4,
+          "reference": "112:3",
+          "wordReference": "112:3",
+          "wordIndex": 3,
+          "audioEndSeconds": 3.152
+        },
+        {
+          "type": "progress",
+          "atSeconds": 4.4,
+          "reference": "112:3",
+          "wordReference": "112:3",
+          "wordIndex": 4,
+          "audioEndSeconds": 4.114
+        },
+        {
+          "type": "ayah-complete",
+          "atSeconds": 5.4,
+          "reference": "112:3",
+          "wordReference": "112:3",
+          "wordIndex": 4,
+          "audioEndSeconds": 4.834
+        }
+      ],
+      "wallProcessingMs": 699.5555,
+      "firstUsefulLocationAfterProvisionalOnset": 1.98,
+      "usefulLocationWithinFiveSeconds": true
+    },
+    {
+      "reference": "112:4",
+      "source": "https://everyayah.com/data/Husary_128kbps/112004.mp3",
+      "fixture": "112004.f32",
+      "fixtureSha256": "e985482fda8170f692be3a8a8caa06d9f655695e7fc60b0e7174d632dccb2c37",
+      "inputPcmWithSilenceSha256": "a2a312b753be75185b8661e01b212af5efa9bf805929d5c62040da0a8a0ae54d",
+      "clipAudioSeconds": 8.1240625,
+      "provisionalSpeechOnsetSeconds": 0.18,
+      "firstAnyTentativeSeconds": 3.2,
+      "firstTargetTentativeSeconds": 3.2,
+      "firstTargetCandidateGroupSeconds": 3.2,
+      "firstConfirmedSeconds": 3.8,
+      "firstHighlightSeconds": 3.8,
+      "firstTargetTentativeAfterProvisionalOnset": 3.02,
+      "firstTargetGroupAfterProvisionalOnset": 3.02,
+      "firstConfirmedAfterProvisionalOnset": 3.62,
+      "firstHighlightAfterProvisionalOnset": 3.62,
+      "candidateGroupWithinFiveSeconds": true,
+      "nonTargetTopTentatives": [],
+      "groupsMissingTarget": [],
+      "tentativeIntervals": [
+        {
+          "reference": "112:4",
+          "candidates": [
+            "112:4"
+          ],
+          "startSeconds": 3.2,
+          "endSeconds": 3.8,
+          "durationSeconds": 0.6,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "112:4",
+          "candidates": [
+            "112:4"
+          ],
+          "startSeconds": 3.8,
+          "endSeconds": 3.8,
+          "durationSeconds": 0,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "112:4",
+          "candidates": [
+            "112:4"
+          ],
+          "startSeconds": 5.4,
+          "endSeconds": 6.6,
+          "durationSeconds": 1.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        }
+      ],
+      "nonTargetTopTentativeSeconds": 0,
+      "tentativeMissingTargetSeconds": 0,
+      "wrongConfirmed": [],
+      "events": [
+        {
+          "type": "tentative",
+          "atSeconds": 3.2,
+          "audioEndSeconds": 3.038,
+          "reference": "112:4",
+          "candidates": [
+            "112:4"
+          ],
+          "score": 0.9262598778598713,
+          "reason": "partial-match"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 3.8,
+          "audioEndSeconds": 3.6383125,
+          "reference": "112:4",
+          "candidates": [
+            "112:4"
+          ],
+          "score": 1,
+          "reason": "partial-match"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 3.8,
+          "reference": "112:4",
+          "wordReference": "112:4",
+          "wordIndex": 3,
+          "audioEndSeconds": 2.87
+        },
+        {
+          "type": "progress",
+          "atSeconds": 4.6,
+          "reference": "112:4",
+          "wordReference": "112:4",
+          "wordIndex": 4,
+          "audioEndSeconds": 4.151
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 5.4,
+          "audioEndSeconds": 4.8343125,
+          "reference": "112:4",
+          "candidates": [
+            "112:4"
+          ],
+          "score": 1,
+          "reason": "partial-match"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 6.6,
+          "reference": "112:4",
+          "wordReference": "112:4",
+          "wordIndex": 5,
+          "audioEndSeconds": 6.073
+        },
+        {
+          "type": "ayah-complete",
+          "atSeconds": 6.6,
+          "reference": "112:4",
+          "wordReference": "112:4",
+          "wordIndex": 5,
+          "audioEndSeconds": 6.075
+        }
+      ],
+      "wallProcessingMs": 980.6214,
+      "firstUsefulLocationAfterProvisionalOnset": 3.02,
+      "usefulLocationWithinFiveSeconds": true
+    },
+    {
+      "reference": "1:2",
+      "source": "https://everyayah.com/data/Husary_128kbps/001002.mp3",
+      "fixture": "001002.f32",
+      "fixtureSha256": "ba953aa8667f39fe042be7ff44628b9d92cee119533e03a0d245f41bde58179e",
+      "inputPcmWithSilenceSha256": "6dd0ef465ca9bbd0330c218011b8a1f415365de9c060df5542412f8fc1e7b456",
+      "clipAudioSeconds": 6.269375,
+      "provisionalSpeechOnsetSeconds": 0.68,
+      "firstAnyTentativeSeconds": 2.2,
+      "firstTargetTentativeSeconds": 2.2,
+      "firstTargetCandidateGroupSeconds": 2.2,
+      "firstConfirmedSeconds": null,
+      "firstHighlightSeconds": null,
+      "firstTargetTentativeAfterProvisionalOnset": 1.52,
+      "firstTargetGroupAfterProvisionalOnset": 1.52,
+      "firstConfirmedAfterProvisionalOnset": null,
+      "firstHighlightAfterProvisionalOnset": null,
+      "candidateGroupWithinFiveSeconds": true,
+      "nonTargetTopTentatives": [],
+      "groupsMissingTarget": [],
+      "tentativeIntervals": [
+        {
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "startSeconds": 2.2,
+          "endSeconds": 2.4,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "startSeconds": 2.4,
+          "endSeconds": 2.6,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "startSeconds": 2.6,
+          "endSeconds": 2.8,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "startSeconds": 2.8,
+          "endSeconds": 3,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "startSeconds": 3,
+          "endSeconds": 3.2,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "startSeconds": 3.2,
+          "endSeconds": 3.4,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "startSeconds": 3.4,
+          "endSeconds": 3.6,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "startSeconds": 3.6,
+          "endSeconds": 3.8,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "startSeconds": 3.8,
+          "endSeconds": 4,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "startSeconds": 4,
+          "endSeconds": 4.2,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "startSeconds": 4.2,
+          "endSeconds": 8.269375,
+          "durationSeconds": 4.0694,
+          "targetIncluded": true,
+          "topIsTarget": true
+        }
+      ],
+      "nonTargetTopTentativeSeconds": 0,
+      "tentativeMissingTargetSeconds": 0,
+      "wrongConfirmed": [],
+      "events": [
+        {
+          "type": "tentative",
+          "atSeconds": 2.2,
+          "audioEndSeconds": 2.0370625,
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 2.4,
+          "audioEndSeconds": 2.2373125,
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 2.6,
+          "audioEndSeconds": 2.4375,
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 2.8,
+          "audioEndSeconds": 2.6376875,
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 3,
+          "audioEndSeconds": 2.8378125,
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 3.2,
+          "audioEndSeconds": 3.038,
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 3.4,
+          "audioEndSeconds": 3.238125,
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 3.6,
+          "audioEndSeconds": 3.4381875,
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 3.8,
+          "audioEndSeconds": 3.6383125,
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 4,
+          "audioEndSeconds": 3.798,
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 4.2,
+          "audioEndSeconds": 3.8365625,
+          "reference": "1:2",
+          "candidates": [
+            "1:2",
+            "10:10",
+            "39:75",
+            "40:65"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        }
+      ],
+      "wallProcessingMs": 970.7213,
+      "firstUsefulLocationAfterProvisionalOnset": 1.52,
+      "usefulLocationWithinFiveSeconds": true
+    },
+    {
+      "reference": "2:255",
+      "source": "https://everyayah.com/data/Husary_128kbps/002255.mp3",
+      "fixture": "002255.f32",
+      "fixtureSha256": "da252dacd5c897a1d45629b957baca4f5753d20424000c8b908fe0753e28374b",
+      "inputPcmWithSilenceSha256": "75ee766767b93bfa3bbacd20a60a76c5f1a88f3008df7c630f5275c0434704c8",
+      "clipAudioSeconds": 9.18,
+      "provisionalSpeechOnsetSeconds": 1.18,
+      "firstAnyTentativeSeconds": 6,
+      "firstTargetTentativeSeconds": 6,
+      "firstTargetCandidateGroupSeconds": 6,
+      "firstConfirmedSeconds": null,
+      "firstHighlightSeconds": null,
+      "firstTargetTentativeAfterProvisionalOnset": 4.82,
+      "firstTargetGroupAfterProvisionalOnset": 4.82,
+      "firstConfirmedAfterProvisionalOnset": null,
+      "firstHighlightAfterProvisionalOnset": null,
+      "candidateGroupWithinFiveSeconds": true,
+      "nonTargetTopTentatives": [],
+      "groupsMissingTarget": [],
+      "tentativeIntervals": [
+        {
+          "reference": "2:255",
+          "candidates": [
+            "2:255",
+            "3:2",
+            "20:8",
+            "28:70"
+          ],
+          "startSeconds": 6,
+          "endSeconds": 6.2,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "2:255",
+          "candidates": [
+            "2:255",
+            "3:2"
+          ],
+          "startSeconds": 6.2,
+          "endSeconds": 6.8,
+          "durationSeconds": 0.6,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "2:255",
+          "candidates": [
+            "2:255",
+            "3:2"
+          ],
+          "startSeconds": 6.8,
+          "endSeconds": 7,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "2:255",
+          "candidates": [
+            "2:255",
+            "3:2"
+          ],
+          "startSeconds": 7,
+          "endSeconds": 7.2,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "2:255",
+          "candidates": [
+            "2:255",
+            "3:2"
+          ],
+          "startSeconds": 7.2,
+          "endSeconds": 7.4,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "2:255",
+          "candidates": [
+            "2:255",
+            "3:2"
+          ],
+          "startSeconds": 7.4,
+          "endSeconds": 7.6,
+          "durationSeconds": 0.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "2:255",
+          "candidates": [
+            "2:255",
+            "3:2"
+          ],
+          "startSeconds": 7.6,
+          "endSeconds": 8.8,
+          "durationSeconds": 1.2,
+          "targetIncluded": true,
+          "topIsTarget": true
+        },
+        {
+          "reference": "2:255",
+          "candidates": [
+            "2:255",
+            "3:2"
+          ],
+          "startSeconds": 8.8,
+          "endSeconds": 11.18,
+          "durationSeconds": 2.38,
+          "targetIncluded": true,
+          "topIsTarget": true
+        }
+      ],
+      "nonTargetTopTentativeSeconds": 0,
+      "tentativeMissingTargetSeconds": 0,
+      "wrongConfirmed": [],
+      "events": [
+        {
+          "type": "tentative",
+          "atSeconds": 6,
+          "audioEndSeconds": 5.8384375,
+          "reference": "2:255",
+          "candidates": [
+            "2:255",
+            "3:2",
+            "20:8",
+            "28:70"
+          ],
+          "score": 0.906731695326105,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 6.2,
+          "audioEndSeconds": 6.0385625,
+          "reference": "2:255",
+          "candidates": [
+            "2:255",
+            "3:2"
+          ],
+          "score": 0.9658614778039418,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 6.8,
+          "audioEndSeconds": 6.6386875,
+          "reference": "2:255",
+          "candidates": [
+            "2:255",
+            "3:2"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 7,
+          "audioEndSeconds": 6.7984375,
+          "reference": "2:255",
+          "candidates": [
+            "2:255",
+            "3:2"
+          ],
+          "score": 0.9895473451784239,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 7.2,
+          "audioEndSeconds": 6.9985,
+          "reference": "2:255",
+          "candidates": [
+            "2:255",
+            "3:2"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 7.4,
+          "audioEndSeconds": 7.15825,
+          "reference": "2:255",
+          "candidates": [
+            "2:255",
+            "3:2"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 7.6,
+          "audioEndSeconds": 7.19725,
+          "reference": "2:255",
+          "candidates": [
+            "2:255",
+            "3:2"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 8.8,
+          "audioEndSeconds": 7.2295,
+          "reference": "2:255",
+          "candidates": [
+            "2:255",
+            "3:2"
+          ],
+          "score": 1,
+          "reason": "shared-phrase"
+        }
+      ],
+      "wallProcessingMs": 2166.1992,
+      "firstUsefulLocationAfterProvisionalOnset": 4.82,
+      "usefulLocationWithinFiveSeconds": true
+    },
+    {
+      "reference": "55:13",
+      "source": "https://everyayah.com/data/Husary_128kbps/055013.mp3",
+      "fixture": "055013.f32",
+      "fixtureSha256": "4ad0185e368835c21810ddadab47e5f131319a7d243f3b5b4b44f9e045079496",
+      "inputPcmWithSilenceSha256": "f538f6346570b96423156bbb03264924a9fd4ef5172ff77e0edda2ad532e5422",
+      "clipAudioSeconds": 8.36,
+      "provisionalSpeechOnsetSeconds": 0.36,
+      "firstAnyTentativeSeconds": null,
+      "firstTargetTentativeSeconds": null,
+      "firstTargetCandidateGroupSeconds": null,
+      "firstConfirmedSeconds": null,
+      "firstHighlightSeconds": null,
+      "firstTargetTentativeAfterProvisionalOnset": null,
+      "firstTargetGroupAfterProvisionalOnset": null,
+      "firstConfirmedAfterProvisionalOnset": null,
+      "firstHighlightAfterProvisionalOnset": null,
+      "candidateGroupWithinFiveSeconds": false,
+      "nonTargetTopTentatives": [],
+      "groupsMissingTarget": [],
+      "tentativeIntervals": [],
+      "nonTargetTopTentativeSeconds": 0,
+      "tentativeMissingTargetSeconds": 0,
+      "wrongConfirmed": [],
+      "events": [],
+      "wallProcessingMs": 2105.2606,
+      "firstUsefulLocationAfterProvisionalOnset": null,
+      "usefulLocationWithinFiveSeconds": false
+    }
+  ],
+  "failures": [],
+  "sourceHashesAfter": {
+    "acquisition.js": "cfc3f2f66d2f347dacf8f744de058c4823245bad79e9fc6dd2556400c02f4136",
+    "ayah-completion.js": "6f5421c279d98a403b54c39cc8007e6a7da0f41464234c73bf0de78127d5afed",
+    "config.js": "494c17720cd11832c61d0147f965e46112df23301debc45ab036f869b74003bb",
+    "context-matcher.js": "a5137f5c5184cf90ab48c8739c32f3f32a80305a7cd60a780013eb01244a3165",
+    "engine.js": "e7467f18695fc1ae54a0f182706ef101c881ca9be1664a168ed96b3a34bc8e02",
+    "fbank.js": "f073d2e74c730d0299006a5e831ac585c18fbbcf9a1c1748b42922d8a27c0e6d",
+    "node-engine.js": "88ec063111febb7743562e1912be35d64073e1b9907bf2692e382cb2954914fc",
+    "quran-decoder.js": "4817962c808b6995d2eb22ab7e0840369e0e693ce9bdaaa9865988d33b088ced",
+    "quran-orthography.js": "a7eb8b42996b808cdd980ab534cdf90a078867cd0d06dfc1cc36134a43f72f71",
+    "streaming-engine.js": "d8fe27b289692b720d30a3682602b999433b2009ac92a7ab5f3cd64e9d7e9ae6",
+    "word-progress.js": "72029da8464a64a405a26765a4dba4a0bd70c1aac3a58d201f972d9530f0538c",
+    "worker.js": "fa0b322d3226932d060f17ef9b9b24b0dfea63ff5ad3d8683ba8ce235da2524d"
+  },
+  "sourceChanged": false,
+  "safetyPassed": true,
+  "fiveSecondCandidateCases": 5,
+  "fiveSecondUsefulLocationCases": 8
+}

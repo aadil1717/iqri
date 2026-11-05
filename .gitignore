@@ -1,0 +1,14 @@
+node_modules/
+models/
+tests/fixtures/
+.sites-runtime/
+*.log
+*.tar.gz
+*.zip
+.env*
+mobile-web/
+build/
+*.ipa
+*.p12
+*.mobileprovision
+*.p8

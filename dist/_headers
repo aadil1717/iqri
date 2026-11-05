@@ -1,0 +1,4 @@
+# Enables the browser's existing multi-threaded Quran model when supported.
+/*
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp

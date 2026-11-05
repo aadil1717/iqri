@@ -1,0 +1,172 @@
+{
+  "mode": "wasm",
+  "windowSeconds": "4 after matched / 8 recovery",
+  "timing": "Acoustic CTC emission estimates; not exact word timestamps",
+  "boundaries": [
+    {
+      "ayah": 1,
+      "start": 0,
+      "end": 5.8253125
+    },
+    {
+      "ayah": 2,
+      "start": 5.8253125,
+      "end": 10.8669375
+    },
+    {
+      "ayah": 3,
+      "start": 10.8669375,
+      "end": 16.79675
+    },
+    {
+      "ayah": 4,
+      "start": 16.79675,
+      "end": 24.9208125
+    }
+  ],
+  "observations": [
+    {
+      "seconds": 1.5,
+      "windowSeconds": 8,
+      "status": "uncertain",
+      "reference": "0:0",
+      "word": null,
+      "arabicWord": null,
+      "quality": null,
+      "transcript": "",
+      "processingMs": 1324
+    },
+    {
+      "seconds": 3.5,
+      "windowSeconds": 8,
+      "status": "uncertain",
+      "reference": "0:0",
+      "word": null,
+      "arabicWord": null,
+      "quality": null,
+      "transcript": "قل هوو الله",
+      "processingMs": 2379
+    },
+    {
+      "seconds": 5.5,
+      "windowSeconds": 8,
+      "status": "matched",
+      "reference": "112:1",
+      "word": "112:1/4",
+      "arabicWord": "احد",
+      "quality": "word-detected",
+      "transcript": "قل هو الله احد",
+      "processingMs": 2545
+    },
+    {
+      "seconds": 7.5,
+      "windowSeconds": 4,
+      "status": "uncertain",
+      "reference": "0:0",
+      "word": null,
+      "arabicWord": null,
+      "quality": null,
+      "transcript": "هو احد الله",
+      "processingMs": 2269
+    },
+    {
+      "seconds": 9.5,
+      "windowSeconds": 8,
+      "status": "matched",
+      "reference": "112:2",
+      "word": "112:2/2",
+      "arabicWord": "الصمد",
+      "quality": "word-detected",
+      "transcript": "هو الله احد الله الصمد",
+      "processingMs": 3011
+    },
+    {
+      "seconds": 11.5,
+      "windowSeconds": 4,
+      "status": "matched",
+      "reference": "112:2",
+      "word": "112:2/2",
+      "arabicWord": "الصمد",
+      "quality": "word-detected",
+      "transcript": "الله الصمد.",
+      "processingMs": 2013
+    },
+    {
+      "seconds": 13.5,
+      "windowSeconds": 4,
+      "status": "uncertain",
+      "reference": "0:0",
+      "word": null,
+      "arabicWord": null,
+      "quality": null,
+      "transcript": "لم يلد ول",
+      "processingMs": 2040
+    },
+    {
+      "seconds": 15.5,
+      "windowSeconds": 8,
+      "status": "matched",
+      "reference": "112:3",
+      "word": "112:3/4",
+      "arabicWord": "يولد",
+      "quality": "word-detected",
+      "transcript": "الله الصمد لم يلد ولم يولد",
+      "processingMs": 3439
+    },
+    {
+      "seconds": 17.5,
+      "windowSeconds": 4,
+      "status": "matched",
+      "reference": "112:3",
+      "word": "112:3/4",
+      "arabicWord": "يولد",
+      "quality": "word-detected",
+      "transcript": "ولم يولد",
+      "processingMs": 1648
+    },
+    {
+      "seconds": 19.5,
+      "windowSeconds": 4,
+      "status": "matched",
+      "reference": "112:4",
+      "word": "112:4/3",
+      "arabicWord": "له",
+      "quality": "word-detected",
+      "transcript": "ولم يكن له",
+      "processingMs": 1394
+    },
+    {
+      "seconds": 21.5,
+      "windowSeconds": 4,
+      "status": "uncertain",
+      "reference": "0:0",
+      "word": null,
+      "arabicWord": null,
+      "quality": null,
+      "transcript": "لم يكن له كفوا",
+      "processingMs": 1960
+    },
+    {
+      "seconds": 23.5,
+      "windowSeconds": 8,
+      "status": "matched",
+      "reference": "112:4",
+      "word": "112:4/5",
+      "arabicWord": "احد",
+      "quality": "word-detected",
+      "transcript": "ولم يكن له كفوا احد",
+      "processingMs": 3141
+    },
+    {
+      "seconds": 24.92,
+      "windowSeconds": 4,
+      "status": "uncertain",
+      "reference": "0:0",
+      "word": null,
+      "arabicWord": null,
+      "quality": null,
+      "transcript": "عفو احد",
+      "processingMs": 2212
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "methodology": "Public EveryAyah Husary fixtures only. Pauses are actual zero-valued audio; no successor ayah is supplied. Processing runs faster than wall clock.",
+  "passed": true,
+  "cases": [
+    {
+      "name": "completed-first-ayah",
+      "expectedCompletion": true,
+      "passed": true,
+      "suppliedAudioSeconds": 6.8253125,
+      "events": [
+        {
+          "verseKey": "112:1",
+          "atSeconds": 5.2,
+          "acousticEndSeconds": 4.547,
+          "occurrenceId": "completed-first-ayah:1"
+        }
+      ]
+    },
+    {
+      "name": "pause-in-middle",
+      "expectedCompletion": false,
+      "passed": true,
+      "suppliedAudioSeconds": 3.7,
+      "events": []
+    },
+    {
+      "name": "pause-in-partial-final-word",
+      "expectedCompletion": false,
+      "passed": true,
+      "suppliedAudioSeconds": 4.8,
+      "events": []
+    },
+    {
+      "name": "completed-last-ayah",
+      "expectedCompletion": true,
+      "passed": true,
+      "suppliedAudioSeconds": 9.1240625,
+      "events": [
+        {
+          "verseKey": "112:4",
+          "atSeconds": 6.6,
+          "acousticEndSeconds": 6.075,
+          "occurrenceId": "completed-last-ayah:1"
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

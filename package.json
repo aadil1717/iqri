@@ -1,0 +1,30 @@
+{
+  "name": "iqri",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "fetch:models": "node scripts/model-assets.mjs",
+    "fetch:translations": "node scripts/fetch-translations.mjs",
+    "mobile:prepare": "node scripts/mobile-prepare.mjs",
+    "mobile:sync": "node scripts/mobile-prepare.mjs --sync",
+    "ios:open": "cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/app": "8.1.2",
+    "@capacitor/core": "8.6.0",
+    "@capacitor/ios": "8.6.0",
+    "@tilawi/quran-asr": "0.1.0",
+    "onnxruntime-node": "1.31.1",
+    "onnxruntime-web": "1.31.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.6.0",
+    "@resvg/resvg-js": "2.6.2",
+    "esbuild": "0.28.2"
+  }
+}

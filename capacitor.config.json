@@ -1,0 +1,12 @@
+{
+  "appId": "com.aadil1717.iqri",
+  "appName": "Iqri",
+  "webDir": "mobile-web",
+  "backgroundColor": "#f8f7f2",
+  "ios": {
+    "contentInset": "never",
+    "preferredContentMode": "mobile",
+    "allowsLinkPreview": false,
+    "webContentsDebuggingEnabled": false
+  }
+}

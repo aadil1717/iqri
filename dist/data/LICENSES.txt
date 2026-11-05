@@ -1,0 +1,20 @@
+Tanzil Quran Text. Copyright (C) 2007-2021 Tanzil Project. License: Creative Commons Attribution 3.0. This copy of the Quran text is carefully produced, highly verified and continuously monitored by a group of specialists in Tanzil Project. TERMS OF USE: Permission is granted to copy and distribute verbatim copies of this text, but CHANGING IT IS NOT ALLOWED. This Quran text can be used in any website or application, provided that its source (Tanzil Project) is clearly indicated, and a link is made to tanzil.net to enable users to keep track of changes. This copyright notice shall be included in all verbatim copies of the text, and shall be reproduced appropriately in all files derived from or containing substantial portion of this text. Please check updates at: http://tanzil.net/updates/
+
+Structured Quran dataset: Risan Bagja Pradana, https://github.com/risan/quran-json (CC BY-SA 4.0).
+Dataset licence: https://github.com/risan/quran-json/blob/main/LICENSE.txt
+
+QuranEnc editions: preserve the publisher transcript and version embedded in each edition's _meta field. Terms: https://quranenc.com/en/home/about
+1. Preserve the translation content without changes, additions or deletions.
+2. Credit the publisher and QuranEnc.com.
+3. State the publisher version number.
+4. Keep transcript information with the translation data.
+5. Report translation issues to QuranEnc.com.
+6. Refresh the text when the publisher releases corrections.
+7. Do not display inappropriate advertisements with the translation.
+
+Translation by Talal Itani, ClearQuran.com
+CC BY-ND 4.0 and additional publisher permission for conversion and reformatting without changing translation words. https://clearquran.com/download/
+
+Marmaduke Pickthall: original 1930 translation, public domain. Structured dataset packaging remains attributed above.
+
+See catalog.json and provenance.json for edition-specific versions, download URLs and hashes.
