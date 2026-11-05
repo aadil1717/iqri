@@ -1,0 +1,6130 @@
+{
+  "model": "Abdou/quran-asr-small",
+  "revision": "004f898639f3127a74eac1b898a2cb3ef0b5268d",
+  "created": "2026-11-04T21:16:12.101Z",
+  "methodology": "Independent cached EveryAyah Husary studio fixtures, not the private recording. Native CPU inference. Streams feed 100 ms contiguous chunks without wall-clock sleeps; timings measure processing, not microphone-to-highlight latency. Full-clip tests exclude loading and audio acquisition. These narrow fixtures do not establish general accuracy.",
+  "fullClip": [
+    {
+      "name": "unique-112:1-anywhere",
+      "passed": true,
+      "expectedStatus": "matched",
+      "expectedReference": "112:1",
+      "status": "matched",
+      "reference": "112:1",
+      "transcript": "قل هو الله احد",
+      "candidates": [
+        {
+          "surah": 112,
+          "ayah": 1,
+          "ayah_end": null
+        }
+      ],
+      "wordProgress": {
+        "verseKey": "112:1",
+        "surah": 112,
+        "ayah": 1,
+        "wordIndex": 4,
+        "wordCount": 4,
+        "arabicWord": "احد",
+        "observedWord": "احد",
+        "canonicalText": "قل هو الله احد",
+        "canonicalWords": [
+          "قل",
+          "هو",
+          "الله",
+          "احد"
+        ],
+        "source": "acoustic-ctc-alignment",
+        "quality": "word-detected",
+        "estimatedAudioStartMs": 3616,
+        "estimatedAudioEndMs": 4500,
+        "clipDurationMs": 5584,
+        "timingIsApproximate": true,
+        "matchedCharacters": 14
+      },
+      "processingMs": 73
+    },
+    {
+      "name": "1:2-selected-surah",
+      "passed": true,
+      "expectedStatus": "matched",
+      "expectedReference": "1:2",
+      "status": "matched",
+      "reference": "1:2",
+      "transcript": "الحمد لله رب العلمين",
+      "candidates": [
+        {
+          "surah": 1,
+          "ayah": 2,
+          "ayah_end": null
+        }
+      ],
+      "wordProgress": {
+        "verseKey": "1:2",
+        "surah": 1,
+        "ayah": 2,
+        "wordIndex": 4,
+        "wordCount": 4,
+        "arabicWord": "العالمين",
+        "observedWord": "العلم",
+        "canonicalText": "الحمد لله رب العالمين",
+        "canonicalWords": [
+          "الحمد",
+          "لله",
+          "رب",
+          "العالمين"
+        ],
+        "source": "acoustic-ctc-alignment",
+        "quality": "partial-word",
+        "estimatedAudioStartMs": 2853,
+        "estimatedAudioEndMs": 3818,
+        "clipDurationMs": 6028,
+        "timingIsApproximate": true,
+        "matchedCharacters": 18
+      },
+      "processingMs": 54
+    },
+    {
+      "name": "1:2-anywhere-shared-phrase",
+      "passed": true,
+      "expectedStatus": [
+        "ambiguous",
+        "uncertain"
+      ],
+      "expectedReference": null,
+      "status": "uncertain",
+      "reference": null,
+      "transcript": "الحمد لله رب العلمين",
+      "candidates": [],
+      "wordProgress": null,
+      "processingMs": 182
+    },
+    {
+      "name": "2:255-excerpt",
+      "passed": true,
+      "expectedStatus": "matched",
+      "expectedReference": "2:255",
+      "status": "matched",
+      "reference": "2:255",
+      "transcript": "الله لا اله الا هو الحي القيوم",
+      "candidates": [
+        {
+          "surah": 2,
+          "ayah": 255,
+          "ayah_end": null
+        }
+      ],
+      "wordProgress": {
+        "verseKey": "2:255",
+        "surah": 2,
+        "ayah": 255,
+        "wordIndex": 7,
+        "wordCount": 50,
+        "arabicWord": "القيوم",
+        "observedWord": "القي",
+        "canonicalText": "الله لا اله الا هو الحي القيوم لا تاخذه سنه ولا نوم له ما في السماوات وما في الارض من ذا الذي يشفع عنده الا باذنه يعلم ما بين ايديهم وما خلفهم ولا يحيطون بشيء من علمه الا بما شاء وسع كرسيه السماوات والارض ولا يئوده حفظهما وهو العلي العظيم",
+        "canonicalWords": [
+          "الله",
+          "لا",
+          "اله",
+          "الا",
+          "هو",
+          "الحي",
+          "القيوم",
+          "لا",
+          "تاخذه",
+          "سنه",
+          "ولا",
+          "نوم",
+          "له",
+          "ما",
+          "في",
+          "السماوات",
+          "وما",
+          "في",
+          "الارض",
+          "من",
+          "ذا",
+          "الذي",
+          "يشفع",
+          "عنده",
+          "الا",
+          "باذنه",
+          "يعلم",
+          "ما",
+          "بين",
+          "ايديهم",
+          "وما",
+          "خلفهم",
+          "ولا",
+          "يحيطون",
+          "بشيء",
+          "من",
+          "علمه",
+          "الا",
+          "بما",
+          "شاء",
+          "وسع",
+          "كرسيه",
+          "السماوات",
+          "والارض",
+          "ولا",
+          "يئوده",
+          "حفظهما",
+          "وهو",
+          "العلي",
+          "العظيم"
+        ],
+        "source": "acoustic-ctc-alignment",
+        "quality": "partial-word",
+        "estimatedAudioStartMs": 6502,
+        "estimatedAudioEndMs": 7184,
+        "clipDurationMs": 11759,
+        "timingIsApproximate": true,
+        "matchedCharacters": 28
+      },
+      "processingMs": 85
+    },
+    {
+      "name": "55:13-refrain-ambiguous",
+      "passed": true,
+      "expectedStatus": "ambiguous",
+      "expectedReference": null,
+      "status": "ambiguous",
+      "reference": null,
+      "transcript": "فباي ءالاء ربكما تكذبان",
+      "candidates": [
+        {
+          "surah": 55,
+          "ayah": 13,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 16,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 18,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 21,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 23,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 25,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 28,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 30,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 32,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 34,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 36,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 38,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 40,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 42,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 45,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 47,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 49,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 51,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 53,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 55,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 57,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 59,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 61,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 63,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 65,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 67,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 69,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 71,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 73,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 75,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 77,
+          "ayah_end": null
+        }
+      ],
+      "wordProgress": null,
+      "processingMs": 92
+    },
+    {
+      "name": "55:13-anywhere-ambiguous",
+      "passed": true,
+      "expectedStatus": "ambiguous",
+      "expectedReference": null,
+      "status": "ambiguous",
+      "reference": null,
+      "transcript": "فباي ءالاء ربكما تكذبان",
+      "candidates": [
+        {
+          "surah": 55,
+          "ayah": 13,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 16,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 18,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 21,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 23,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 25,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 28,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 30,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 32,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 34,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 36,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 38,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 40,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 42,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 45,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 47,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 49,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 51,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 53,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 55,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 57,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 59,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 61,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 63,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 65,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 67,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 69,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 71,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 73,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 75,
+          "ayah_end": null
+        },
+        {
+          "surah": 55,
+          "ayah": 77,
+          "ayah_end": null
+        }
+      ],
+      "wordProgress": null,
+      "processingMs": 103
+    },
+    {
+      "name": "55:13-resolves-after-55:12",
+      "passed": true,
+      "expectedStatus": "matched",
+      "expectedReference": "55:13",
+      "status": "matched",
+      "reference": "55:13",
+      "transcript": "فباي ءالاء ربكما تكذبان",
+      "candidates": [
+        {
+          "surah": 55,
+          "ayah": 13,
+          "ayah_end": null
+        }
+      ],
+      "wordProgress": null,
+      "processingMs": 98
+    },
+    {
+      "name": "wrong-selected-surah",
+      "passed": true,
+      "expectedStatus": "uncertain",
+      "expectedReference": null,
+      "status": "uncertain",
+      "reference": null,
+      "transcript": "الحمد لله رب العلمين",
+      "candidates": [],
+      "wordProgress": null,
+      "processingMs": 42
+    },
+    {
+      "name": "silence",
+      "passed": true,
+      "expectedStatus": "silence",
+      "expectedReference": null,
+      "status": "silence",
+      "reference": null,
+      "transcript": "",
+      "wordProgress": null,
+      "processingMs": 1
+    }
+  ],
+  "streams": [
+    {
+      "name": "112-sequence",
+      "passed": true,
+      "durationSeconds": 25.9208125,
+      "expectedReferences": [
+        "112:1",
+        "112:2",
+        "112:3",
+        "112:4"
+      ],
+      "seenReferences": [
+        "112:1",
+        "112:2",
+        "112:3",
+        "112:4"
+      ],
+      "confirmedReferences": [
+        "112:1",
+        "112:2",
+        "112:3",
+        "112:4"
+      ],
+      "permittedProvisional": [],
+      "unexpectedReferences": [],
+      "requireFinalWord": "112:4/5",
+      "finalSeen": true,
+      "progressCount": 10,
+      "medianProcessingMs": 26,
+      "p95ProcessingMs": 67,
+      "events": [
+        {
+          "type": "status",
+          "atSeconds": 0.8,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.2,
+          "reference": null,
+          "transcript": "طور"
+        },
+        {
+          "type": "status",
+          "atSeconds": 1.2,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "طور",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.4,
+          "reference": null,
+          "transcript": "ط"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.6,
+          "reference": null,
+          "transcript": "ق ال"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.8,
+          "reference": null,
+          "transcript": "قل ال"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2,
+          "reference": null,
+          "transcript": "ق"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.2,
+          "reference": null,
+          "transcript": "قل ه"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.4,
+          "reference": null,
+          "transcript": "قله"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.6,
+          "reference": null,
+          "transcript": "قل ه"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.8,
+          "reference": null,
+          "transcript": "قل هو ا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3,
+          "reference": null,
+          "transcript": "قل هو اله د"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.2,
+          "reference": null,
+          "transcript": "قل هو الله احد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.4,
+          "reference": null,
+          "transcript": "قل هو الله"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 3.4,
+          "status": "matched",
+          "reference": "112:1",
+          "transcript": "قل هو الله",
+          "wordProgress": {
+            "verseKey": "112:1",
+            "surah": 112,
+            "ayah": 1,
+            "wordIndex": 3,
+            "wordCount": 4,
+            "arabicWord": "الله",
+            "observedWord": "الله",
+            "canonicalText": "قل هو الله احد",
+            "canonicalWords": [
+              "قل",
+              "هو",
+              "الله",
+              "احد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 2105,
+            "estimatedAudioEndMs": 2874,
+            "clipDurationMs": 3157,
+            "timingIsApproximate": true,
+            "matchedCharacters": 4,
+            "audioEndSample": 45984
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.6,
+          "reference": null,
+          "transcript": "واليه"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.8,
+          "reference": null,
+          "transcript": "والاه"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4,
+          "reference": null,
+          "transcript": "قل الله د"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.2,
+          "reference": null,
+          "transcript": "قل الله اد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.4,
+          "reference": null,
+          "transcript": "قل الله احد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.6,
+          "reference": null,
+          "transcript": "ق ه احد"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 4.6,
+          "status": "matched",
+          "reference": "112:1",
+          "transcript": "ق ه احد",
+          "wordProgress": {
+            "verseKey": "112:1",
+            "surah": 112,
+            "ayah": 1,
+            "wordIndex": 4,
+            "wordCount": 4,
+            "arabicWord": "احد",
+            "observedWord": "اح",
+            "canonicalText": "قل هو الله احد",
+            "canonicalWords": [
+              "قل",
+              "هو",
+              "الله",
+              "احد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "partial-word",
+            "estimatedAudioStartMs": 1224,
+            "estimatedAudioEndMs": 1592,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 2,
+            "audioEndSample": 67072
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.8,
+          "reference": null,
+          "transcript": "قل له احد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5,
+          "reference": null,
+          "transcript": "قل ه احد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.2,
+          "reference": null,
+          "transcript": "قه احد"
+        },
+        {
+          "type": "ayah-complete",
+          "atSeconds": 5.2,
+          "status": "matched",
+          "reference": "112:1",
+          "transcript": "قه احد",
+          "wordProgress": {
+            "verseKey": "112:1",
+            "surah": 112,
+            "ayah": 1,
+            "wordIndex": 4,
+            "wordCount": 4,
+            "arabicWord": "احد",
+            "observedWord": "احد",
+            "canonicalText": "قل هو الله احد",
+            "canonicalWords": [
+              "قل",
+              "هو",
+              "الله",
+              "احد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 612,
+            "estimatedAudioEndMs": 1347,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 3,
+            "audioEndSample": 72752
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.4,
+          "reference": null,
+          "transcript": "احد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.6,
+          "reference": null,
+          "transcript": "اهد"
+        },
+        {
+          "type": "status",
+          "atSeconds": 5.8,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 6.6,
+          "reference": null,
+          "transcript": "ال"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 6.8,
+          "reference": null,
+          "transcript": "الم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7,
+          "reference": null,
+          "transcript": "ام"
+        },
+        {
+          "type": "status",
+          "atSeconds": 7,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "ام",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.4,
+          "reference": null,
+          "transcript": "ا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.6,
+          "reference": null,
+          "transcript": "اله الصمد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.8,
+          "reference": null,
+          "transcript": "الهم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8,
+          "reference": null,
+          "transcript": "الل"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8.2,
+          "reference": null,
+          "transcript": "اللم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8.6,
+          "reference": null,
+          "transcript": "الله اد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8.8,
+          "reference": null,
+          "transcript": "الله الصمد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 9,
+          "reference": null,
+          "transcript": "الله المد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 9.2,
+          "reference": null,
+          "transcript": "الله الصمد"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 10,
+          "status": "matched",
+          "reference": "112:2",
+          "transcript": "الله الصمد",
+          "wordProgress": {
+            "verseKey": "112:2",
+            "surah": 112,
+            "ayah": 2,
+            "wordIndex": 2,
+            "wordCount": 2,
+            "arabicWord": "الصمد",
+            "observedWord": "الصمد",
+            "canonicalText": "الله الصمد",
+            "canonicalWords": [
+              "الله",
+              "الصمد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 3067,
+            "estimatedAudioEndMs": 4116,
+            "clipDurationMs": 4358,
+            "timingIsApproximate": true,
+            "matchedCharacters": 5,
+            "audioEndSample": 152256
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 10.2,
+          "reference": null,
+          "transcript": "الصمد"
+        },
+        {
+          "type": "ayah-complete",
+          "atSeconds": 10.2,
+          "status": "matched",
+          "reference": "112:2",
+          "transcript": "الصمد",
+          "wordProgress": {
+            "verseKey": "112:2",
+            "surah": 112,
+            "ayah": 2,
+            "wordIndex": 2,
+            "wordCount": 2,
+            "arabicWord": "الصمد",
+            "observedWord": "الصمد",
+            "canonicalText": "الله الصمد",
+            "canonicalWords": [
+              "الله",
+              "الصمد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 286,
+            "estimatedAudioEndMs": 1306,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 5,
+            "audioEndSample": 152096
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 10.6,
+          "reference": null,
+          "transcript": "ومد"
+        },
+        {
+          "type": "status",
+          "atSeconds": 10.8,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11.4,
+          "reference": null,
+          "transcript": "ا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11.8,
+          "reference": null,
+          "transcript": "لم"
+        },
+        {
+          "type": "status",
+          "atSeconds": 11.8,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "لم",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 12.2,
+          "reference": null,
+          "transcript": "لم لد"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 12.2,
+          "status": "matched",
+          "reference": "112:3",
+          "transcript": "لم لد",
+          "wordProgress": {
+            "verseKey": "112:3",
+            "surah": 112,
+            "ayah": 3,
+            "wordIndex": 1,
+            "wordCount": 4,
+            "arabicWord": "لم",
+            "observedWord": "لم",
+            "canonicalText": "لم يلد ولم يولد",
+            "canonicalWords": [
+              "لم",
+              "يلد",
+              "ولم",
+              "يولد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 1143,
+            "estimatedAudioEndMs": 1429,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 2,
+            "audioEndSample": 186064
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 12.4,
+          "reference": null,
+          "transcript": "لم يلد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 12.6,
+          "reference": null,
+          "transcript": "لم يولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 12.8,
+          "reference": null,
+          "transcript": "لم يلد"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 13,
+          "status": "matched",
+          "reference": "112:3",
+          "transcript": "لم يلد",
+          "wordProgress": {
+            "verseKey": "112:3",
+            "surah": 112,
+            "ayah": 3,
+            "wordIndex": 2,
+            "wordCount": 4,
+            "arabicWord": "يلد",
+            "observedWord": "يلد",
+            "canonicalText": "لم يلد ولم يولد",
+            "canonicalWords": [
+              "لم",
+              "يلد",
+              "ولم",
+              "يولد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 1020,
+            "estimatedAudioEndMs": 1755,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 3,
+            "audioEndSample": 204080
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 13.4,
+          "reference": null,
+          "transcript": "لم يل يد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 13.6,
+          "reference": null,
+          "transcript": "لم يلد لم يولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 13.8,
+          "reference": null,
+          "transcript": "لم يلد ل يولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 14,
+          "reference": null,
+          "transcript": "لم يلد ليلد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 14.2,
+          "reference": null,
+          "transcript": "لم يد وللد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 14.4,
+          "reference": null,
+          "transcript": "مد ولم يول"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 14.6,
+          "reference": null,
+          "transcript": "لد ولم يولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 14.8,
+          "reference": null,
+          "transcript": "ولم يولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 15,
+          "reference": null,
+          "transcript": "لم يولد"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 15.2,
+          "status": "matched",
+          "reference": "112:3",
+          "transcript": "لم يولد",
+          "wordProgress": {
+            "verseKey": "112:3",
+            "surah": 112,
+            "ayah": 3,
+            "wordIndex": 4,
+            "wordCount": 4,
+            "arabicWord": "يولد",
+            "observedWord": "يو",
+            "canonicalText": "لم يلد ولم يولد",
+            "canonicalWords": [
+              "لم",
+              "يلد",
+              "ولم",
+              "يولد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "partial-word",
+            "estimatedAudioStartMs": 1143,
+            "estimatedAudioEndMs": 1714,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 2,
+            "audioEndSample": 238624
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 15.8,
+          "reference": null,
+          "transcript": "لم يلد يولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 16,
+          "reference": null,
+          "transcript": "لم يلد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 16.2,
+          "reference": null,
+          "transcript": "م ي لد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 16.4,
+          "reference": null,
+          "transcript": "مولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 16.6,
+          "reference": null,
+          "transcript": "ل"
+        },
+        {
+          "type": "status",
+          "atSeconds": 16.8,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 17.2,
+          "reference": null,
+          "transcript": "الد"
+        },
+        {
+          "type": "status",
+          "atSeconds": 17.2,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "الد",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 17.4,
+          "reference": null,
+          "transcript": "لم س"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 17.6,
+          "reference": null,
+          "transcript": "و النر"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 17.8,
+          "reference": null,
+          "transcript": "ل لد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 18,
+          "reference": null,
+          "transcript": "لم يلد ولم يولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 18.2,
+          "reference": null,
+          "transcript": "لم يلد ولم يدم يولد"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 18.2,
+          "status": "matched",
+          "reference": "112:3",
+          "transcript": "لم يلد ولم يدم يولد",
+          "wordProgress": {
+            "verseKey": "112:3",
+            "surah": 112,
+            "ayah": 3,
+            "wordIndex": 3,
+            "wordCount": 4,
+            "arabicWord": "ولم",
+            "observedWord": "ولم",
+            "canonicalText": "لم يلد ولم يولد",
+            "canonicalWords": [
+              "لم",
+              "يلد",
+              "ولم",
+              "يولد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 1824,
+            "estimatedAudioEndMs": 2230,
+            "clipDurationMs": 2757,
+            "timingIsApproximate": true,
+            "matchedCharacters": 3,
+            "audioEndSample": 278880
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 18.4,
+          "reference": null,
+          "transcript": "ولم يولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 18.8,
+          "reference": null,
+          "transcript": "ولم يك و"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 19,
+          "reference": null,
+          "transcript": "ولم يك يود"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 19.2,
+          "reference": null,
+          "transcript": "لم يك لم يولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 19.6,
+          "reference": null,
+          "transcript": "لم يد ل ولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 19.8,
+          "reference": null,
+          "transcript": "لم يكن هولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 20,
+          "reference": null,
+          "transcript": "ولم يكن لفوا احد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 20.2,
+          "reference": null,
+          "transcript": "كن له اد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 20.4,
+          "reference": null,
+          "transcript": "كله"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 20.6,
+          "reference": null,
+          "transcript": "قل له ط"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 20.6,
+          "reference": null
+        },
+        {
+          "type": "progress",
+          "atSeconds": 20.6,
+          "status": "matched",
+          "reference": "112:4",
+          "transcript": "ولم يكن له كفوا احد",
+          "wordProgress": {
+            "verseKey": "112:4",
+            "surah": 112,
+            "ayah": 4,
+            "wordIndex": 2,
+            "wordCount": 5,
+            "arabicWord": "يكن",
+            "observedWord": "يكن",
+            "canonicalText": "ولم يكن له كفوا احد",
+            "canonicalWords": [
+              "ولم",
+              "يكن",
+              "له",
+              "كفوا",
+              "احد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 1495,
+            "estimatedAudioEndMs": 2222,
+            "clipDurationMs": 3758,
+            "timingIsApproximate": true,
+            "matchedCharacters": 3,
+            "audioEndSample": 301152
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 20.8,
+          "reference": null,
+          "transcript": "لهط"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 21,
+          "reference": null,
+          "transcript": "له طف"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 21.2,
+          "reference": null,
+          "transcript": "له كفر"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 21.4,
+          "reference": null,
+          "transcript": "ه كفر"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 21.4,
+          "status": "matched",
+          "reference": "112:4",
+          "transcript": "ه كفر",
+          "wordProgress": {
+            "verseKey": "112:4",
+            "surah": 112,
+            "ayah": 4,
+            "wordIndex": 4,
+            "wordCount": 5,
+            "arabicWord": "كفوا",
+            "observedWord": "كف",
+            "canonicalText": "ولم يكن له كفوا احد",
+            "canonicalWords": [
+              "ولم",
+              "يكن",
+              "له",
+              "كفوا",
+              "احد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "partial-word",
+            "estimatedAudioStartMs": 1102,
+            "estimatedAudioEndMs": 1551,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 2,
+            "audioEndSample": 335216
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 21.6,
+          "reference": null,
+          "transcript": "اكفو"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 21.8,
+          "reference": null,
+          "transcript": "ضفوت"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 22,
+          "reference": null,
+          "transcript": "قفوا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 22.2,
+          "reference": null,
+          "transcript": "قفعا"
+        },
+        {
+          "type": "status",
+          "atSeconds": 22.2,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "قفعا",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 22.4,
+          "reference": null,
+          "transcript": "كفعا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 22.6,
+          "reference": null,
+          "transcript": ""
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 22.8,
+          "reference": null,
+          "transcript": "كفوا احدا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 23,
+          "reference": null,
+          "transcript": "كفوا احد"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 23.4,
+          "status": "matched",
+          "reference": "112:4",
+          "transcript": "كفوا احد",
+          "wordProgress": {
+            "verseKey": "112:4",
+            "surah": 112,
+            "ayah": 4,
+            "wordIndex": 5,
+            "wordCount": 5,
+            "arabicWord": "احد",
+            "observedWord": "احد",
+            "canonicalText": "ولم يكن له كفوا احد",
+            "canonicalWords": [
+              "ولم",
+              "يكن",
+              "له",
+              "كفوا",
+              "احد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 1985,
+            "estimatedAudioEndMs": 2673,
+            "clipDurationMs": 2957,
+            "timingIsApproximate": true,
+            "matchedCharacters": 3,
+            "audioEndSample": 365968
+          }
+        },
+        {
+          "type": "ayah-complete",
+          "atSeconds": 23.4,
+          "status": "matched",
+          "reference": "112:4",
+          "transcript": "له كفوا احد",
+          "wordProgress": {
+            "verseKey": "112:4",
+            "surah": 112,
+            "ayah": 4,
+            "wordIndex": 5,
+            "wordCount": 5,
+            "arabicWord": "احد",
+            "observedWord": "احد",
+            "canonicalText": "ولم يكن له كفوا احد",
+            "canonicalWords": [
+              "ولم",
+              "يكن",
+              "له",
+              "كفوا",
+              "احد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 2747,
+            "estimatedAudioEndMs": 3475,
+            "clipDurationMs": 3758,
+            "timingIsApproximate": true,
+            "matchedCharacters": 3,
+            "audioEndSample": 366000
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 23.6,
+          "reference": null,
+          "transcript": "م احد"
+        },
+        {
+          "type": "status",
+          "atSeconds": 23.8,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        }
+      ]
+    },
+    {
+      "name": "2:255-excerpt",
+      "passed": true,
+      "durationSeconds": 13,
+      "expectedReferences": [
+        "2:255"
+      ],
+      "seenReferences": [
+        "2:255"
+      ],
+      "confirmedReferences": [
+        "2:255"
+      ],
+      "permittedProvisional": [],
+      "unexpectedReferences": [],
+      "requireFinalWord": null,
+      "finalSeen": true,
+      "progressCount": 4,
+      "medianProcessingMs": 37,
+      "p95ProcessingMs": 91,
+      "events": [
+        {
+          "type": "status",
+          "atSeconds": 0.8,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.6,
+          "reference": null,
+          "transcript": "ال صمد"
+        },
+        {
+          "type": "status",
+          "atSeconds": 1.6,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "ال صمد",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.8,
+          "reference": null,
+          "transcript": "الله الصمد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.6,
+          "reference": null,
+          "transcript": "الله المد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.8,
+          "reference": null,
+          "transcript": "الله الد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3,
+          "reference": null,
+          "transcript": "الله ال"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.2,
+          "reference": null,
+          "transcript": "الله الا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.4,
+          "reference": null,
+          "transcript": "الله لا ا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.6,
+          "reference": null,
+          "transcript": "الله لا لال"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.8,
+          "reference": null,
+          "transcript": "الله لا اله حس"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5,
+          "reference": null,
+          "transcript": "الله لا اله احا سحس"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 5.2,
+          "reference": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.2,
+          "reference": null,
+          "transcript": "الله لا اله ا اعحذي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.4,
+          "reference": null,
+          "transcript": "الله لا اله الا انا الحقي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.6,
+          "reference": null,
+          "transcript": "الله لا اله الا احزي الحقي"
+        },
+        {
+          "type": "status",
+          "atSeconds": 5.6,
+          "status": "matched",
+          "reference": "2:255",
+          "transcript": "الله لا اله الا احزي الحقي",
+          "wordProgress": null,
+          "candidates": [
+            {
+              "surah": 2,
+              "ayah": 255,
+              "ayah_end": null
+            }
+          ]
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.8,
+          "reference": null,
+          "transcript": "الله لا اله الا اهاحز الحقي"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 5.8,
+          "status": "matched",
+          "reference": "2:255",
+          "transcript": "الله لا اله الا اهاحز الحقي",
+          "wordProgress": {
+            "verseKey": "2:255",
+            "surah": 2,
+            "ayah": 255,
+            "wordIndex": 3,
+            "wordCount": 50,
+            "arabicWord": "اله",
+            "observedWord": "اله",
+            "canonicalText": "الله لا اله الا هو الحي القيوم لا تاخذه سنه ولا نوم له ما في السماوات وما في الارض من ذا الذي يشفع عنده الا باذنه يعلم ما بين ايديهم وما خلفهم ولا يحيطون بشيء من علمه الا بما شاء وسع كرسيه السماوات والارض ولا يئوده حفظهما وهو العلي العظيم",
+            "canonicalWords": [
+              "الله",
+              "لا",
+              "اله",
+              "الا",
+              "هو",
+              "الحي",
+              "القيوم",
+              "لا",
+              "تاخذه",
+              "سنه",
+              "ولا",
+              "نوم",
+              "له",
+              "ما",
+              "في",
+              "السماوات",
+              "وما",
+              "في",
+              "الارض",
+              "من",
+              "ذا",
+              "الذي",
+              "يشفع",
+              "عنده",
+              "الا",
+              "باذنه",
+              "يعلم",
+              "ما",
+              "بين",
+              "ايديهم",
+              "وما",
+              "خلفهم",
+              "ولا",
+              "يحيطون",
+              "بشيء",
+              "من",
+              "علمه",
+              "الا",
+              "بما",
+              "شاء",
+              "وسع",
+              "كرسيه",
+              "السماوات",
+              "والارض",
+              "ولا",
+              "يئوده",
+              "حفظهما",
+              "وهو",
+              "العلي",
+              "العظيم"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 3988,
+            "estimatedAudioEndMs": 4592,
+            "clipDurationMs": 5558,
+            "timingIsApproximate": true,
+            "matchedCharacters": 3,
+            "audioEndSample": 73472
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 6,
+          "reference": null,
+          "transcript": "له له الا هو الحي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 6.2,
+          "reference": null,
+          "transcript": "له اله الا هو الحي الحيم"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 6.2,
+          "status": "matched",
+          "reference": "2:255",
+          "transcript": "له اله الا هو الحي الحيم",
+          "wordProgress": {
+            "verseKey": "2:255",
+            "surah": 2,
+            "ayah": 255,
+            "wordIndex": 5,
+            "wordCount": 50,
+            "arabicWord": "هو",
+            "observedWord": "هو",
+            "canonicalText": "الله لا اله الا هو الحي القيوم لا تاخذه سنه ولا نوم له ما في السماوات وما في الارض من ذا الذي يشفع عنده الا باذنه يعلم ما بين ايديهم وما خلفهم ولا يحيطون بشيء من علمه الا بما شاء وسع كرسيه السماوات والارض ولا يئوده حفظهما وهو العلي العظيم",
+            "canonicalWords": [
+              "الله",
+              "لا",
+              "اله",
+              "الا",
+              "هو",
+              "الحي",
+              "القيوم",
+              "لا",
+              "تاخذه",
+              "سنه",
+              "ولا",
+              "نوم",
+              "له",
+              "ما",
+              "في",
+              "السماوات",
+              "وما",
+              "في",
+              "الارض",
+              "من",
+              "ذا",
+              "الذي",
+              "يشفع",
+              "عنده",
+              "الا",
+              "باذنه",
+              "يعلم",
+              "ما",
+              "بين",
+              "ايديهم",
+              "وما",
+              "خلفهم",
+              "ولا",
+              "يحيطون",
+              "بشيء",
+              "من",
+              "علمه",
+              "الا",
+              "بما",
+              "شاء",
+              "وسع",
+              "كرسيه",
+              "السماوات",
+              "والارض",
+              "ولا",
+              "يئوده",
+              "حفظهما",
+              "وهو",
+              "العلي",
+              "العظيم"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 1224,
+            "estimatedAudioEndMs": 1347,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 2,
+            "audioEndSample": 88752
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 6.4,
+          "reference": null,
+          "transcript": "لا اله الا هو الوح الحميم"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 6.6,
+          "reference": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 6.6,
+          "reference": null,
+          "transcript": "لا اله الا هو الحي القوم"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 6.8,
+          "reference": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 6.8,
+          "reference": null,
+          "transcript": "الا هو الحي القور"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 6.8,
+          "status": "matched",
+          "reference": "2:255",
+          "transcript": "الا هو الحي القور",
+          "wordProgress": {
+            "verseKey": "2:255",
+            "surah": 2,
+            "ayah": 255,
+            "wordIndex": 6,
+            "wordCount": 50,
+            "arabicWord": "الحي",
+            "observedWord": "الحي",
+            "canonicalText": "الله لا اله الا هو الحي القيوم لا تاخذه سنه ولا نوم له ما في السماوات وما في الارض من ذا الذي يشفع عنده الا باذنه يعلم ما بين ايديهم وما خلفهم ولا يحيطون بشيء من علمه الا بما شاء وسع كرسيه السماوات والارض ولا يئوده حفظهما وهو العلي العظيم",
+            "canonicalWords": [
+              "الله",
+              "لا",
+              "اله",
+              "الا",
+              "هو",
+              "الحي",
+              "القيوم",
+              "لا",
+              "تاخذه",
+              "سنه",
+              "ولا",
+              "نوم",
+              "له",
+              "ما",
+              "في",
+              "السماوات",
+              "وما",
+              "في",
+              "الارض",
+              "من",
+              "ذا",
+              "الذي",
+              "يشفع",
+              "عنده",
+              "الا",
+              "باذنه",
+              "يعلم",
+              "ما",
+              "بين",
+              "ايديهم",
+              "وما",
+              "خلفهم",
+              "ولا",
+              "يحيطون",
+              "بشيء",
+              "من",
+              "علمه",
+              "الا",
+              "بما",
+              "شاء",
+              "وسع",
+              "كرسيه",
+              "السماوات",
+              "والارض",
+              "ولا",
+              "يئوده",
+              "حفظهما",
+              "وهو",
+              "العلي",
+              "العظيم"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 1061,
+            "estimatedAudioEndMs": 1592,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 4,
+            "audioEndSample": 102272
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7,
+          "reference": null,
+          "transcript": "ال هو لحي القون"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.2,
+          "reference": null,
+          "transcript": "هو الحي القيم"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 7.2,
+          "status": "matched",
+          "reference": "2:255",
+          "transcript": "هو الحي القيم",
+          "wordProgress": {
+            "verseKey": "2:255",
+            "surah": 2,
+            "ayah": 255,
+            "wordIndex": 7,
+            "wordCount": 50,
+            "arabicWord": "القيوم",
+            "observedWord": "الق",
+            "canonicalText": "الله لا اله الا هو الحي القيوم لا تاخذه سنه ولا نوم له ما في السماوات وما في الارض من ذا الذي يشفع عنده الا باذنه يعلم ما بين ايديهم وما خلفهم ولا يحيطون بشيء من علمه الا بما شاء وسع كرسيه السماوات والارض ولا يئوده حفظهما وهو العلي العظيم",
+            "canonicalWords": [
+              "الله",
+              "لا",
+              "اله",
+              "الا",
+              "هو",
+              "الحي",
+              "القيوم",
+              "لا",
+              "تاخذه",
+              "سنه",
+              "ولا",
+              "نوم",
+              "له",
+              "ما",
+              "في",
+              "السماوات",
+              "وما",
+              "في",
+              "الارض",
+              "من",
+              "ذا",
+              "الذي",
+              "يشفع",
+              "عنده",
+              "الا",
+              "باذنه",
+              "يعلم",
+              "ما",
+              "بين",
+              "ايديهم",
+              "وما",
+              "خلفهم",
+              "ولا",
+              "يحيطون",
+              "بشيء",
+              "من",
+              "علمه",
+              "الا",
+              "بما",
+              "شاء",
+              "وسع",
+              "كرسيه",
+              "السماوات",
+              "والارض",
+              "ولا",
+              "يئوده",
+              "حفظهما",
+              "وهو",
+              "العلي",
+              "العظيم"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "partial-word",
+            "estimatedAudioStartMs": 1388,
+            "estimatedAudioEndMs": 1633,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 3,
+            "audioEndSample": 109328
+          }
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 7.4,
+          "reference": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.4,
+          "reference": null,
+          "transcript": "لهو الحي القيون"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 7.6,
+          "reference": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.6,
+          "reference": null,
+          "transcript": "وهو الحي القيون"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.8,
+          "reference": null,
+          "transcript": "وحي القيرون"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8,
+          "reference": null,
+          "transcript": "حي القيون"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8.2,
+          "reference": null,
+          "transcript": "ين القيرون"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8.4,
+          "reference": null,
+          "transcript": "الون"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8.6,
+          "reference": null,
+          "transcript": "طون"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8.8,
+          "reference": null,
+          "transcript": "طوم"
+        },
+        {
+          "type": "status",
+          "atSeconds": 8.8,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "طوم",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 9,
+          "reference": null,
+          "transcript": "ن"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 9.2,
+          "reference": null,
+          "transcript": "ح"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 9.4,
+          "reference": null,
+          "transcript": "طنوه"
+        },
+        {
+          "type": "status",
+          "atSeconds": 9.6,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 10.4,
+          "reference": null,
+          "transcript": "طي"
+        },
+        {
+          "type": "status",
+          "atSeconds": 10.4,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "طي",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 10.6,
+          "reference": null,
+          "transcript": "ط"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11,
+          "reference": null,
+          "transcript": "ط لا ظ"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11.2,
+          "reference": null,
+          "transcript": "خين لا تاخون"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11.4,
+          "reference": null,
+          "transcript": "خلين لا تاخدن"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11.6,
+          "reference": null,
+          "transcript": "خالين لا تاخد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11.8,
+          "reference": null,
+          "transcript": "خاليون لا تاخد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 12,
+          "reference": null,
+          "transcript": "اليونلا تاخذس"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 12.2,
+          "reference": null,
+          "transcript": "لاليون لا تاخذهس"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 12.4,
+          "reference": null,
+          "transcript": "واليوم لا تاخذهسر"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 12.6,
+          "reference": null,
+          "transcript": "وايوم لا تاخذهسر"
+        },
+        {
+          "type": "status",
+          "atSeconds": 12.8,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        }
+      ]
+    },
+    {
+      "name": "55-refrain-no-context",
+      "passed": true,
+      "durationSeconds": 15.6024375,
+      "expectedReferences": [],
+      "seenReferences": [],
+      "confirmedReferences": [],
+      "permittedProvisional": [],
+      "unexpectedReferences": [],
+      "requireFinalWord": null,
+      "finalSeen": true,
+      "progressCount": 0,
+      "medianProcessingMs": 66,
+      "p95ProcessingMs": 91,
+      "events": [
+        {
+          "type": "transcript",
+          "atSeconds": 0.8,
+          "reference": null,
+          "transcript": "س"
+        },
+        {
+          "type": "status",
+          "atSeconds": 0.8,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "س",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1,
+          "reference": null,
+          "transcript": "حدي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.2,
+          "reference": null,
+          "transcript": "سد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.4,
+          "reference": null,
+          "transcript": "وباي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.6,
+          "reference": null,
+          "transcript": "فباي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2,
+          "reference": null,
+          "transcript": "وباي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.2,
+          "reference": null,
+          "transcript": "فباي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.8,
+          "reference": null,
+          "transcript": "فباياي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3,
+          "reference": null,
+          "transcript": "فبايان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.2,
+          "reference": null,
+          "transcript": "فباياب"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.4,
+          "reference": null,
+          "transcript": "فباي اني"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.6,
+          "reference": null,
+          "transcript": "فباي الي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.2,
+          "reference": null,
+          "transcript": "فباي ءالي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.6,
+          "reference": null,
+          "transcript": "فباي ال"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5,
+          "reference": null,
+          "transcript": "فباي الاء"
+        },
+        {
+          "type": "status",
+          "atSeconds": 5,
+          "status": "ambiguous",
+          "reference": null,
+          "transcript": "فباي الاء",
+          "wordProgress": null,
+          "candidates": [
+            {
+              "surah": 55,
+              "ayah": 13,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 16,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 18,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 21,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 23,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 25,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 28,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 30,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 32,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 34,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 36,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 38,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 40,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 42,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 45,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 47,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 49,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 51,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 53,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 55,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 57,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 59,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 61,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 63,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 65,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 67,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 69,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 71,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 73,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 75,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 77,
+              "ayah_end": null
+            }
+          ]
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.2,
+          "reference": null,
+          "transcript": "فباي ءالاء"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.4,
+          "reference": null,
+          "transcript": "فباي ءالاءر"
+        },
+        {
+          "type": "status",
+          "atSeconds": 5.4,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "فباي ءالاءر",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.6,
+          "reference": null,
+          "transcript": "فباي ءالاءره"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 6,
+          "reference": null,
+          "transcript": "فباي ءالاء ركن"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 6.2,
+          "reference": null,
+          "transcript": "فباي ءالاء ربذكن"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 6.4,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 6.6,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما"
+        },
+        {
+          "type": "status",
+          "atSeconds": 6.6,
+          "status": "ambiguous",
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما",
+          "wordProgress": null,
+          "candidates": [
+            {
+              "surah": 55,
+              "ayah": 13,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 16,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 18,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 21,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 23,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 25,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 28,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 30,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 32,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 34,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 36,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 38,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 40,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 42,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 45,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 47,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 49,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 51,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 53,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 55,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 57,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 59,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 61,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 63,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 65,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 67,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 69,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 71,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 73,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 75,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 77,
+              "ayah_end": null
+            }
+          ]
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.2,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما كبن"
+        },
+        {
+          "type": "status",
+          "atSeconds": 7.2,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما كبن",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.4,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما تكان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.6,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما تكبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.8,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما تذبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8,
+          "reference": null,
+          "transcript": "فبي ءالاء ربكما تكذبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8.2,
+          "reference": null,
+          "transcript": "ب ءالاء ربكما تكذبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8.4,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما تكذبان"
+        },
+        {
+          "type": "status",
+          "atSeconds": 8.4,
+          "status": "ambiguous",
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما تكذبان",
+          "wordProgress": null,
+          "candidates": [
+            {
+              "surah": 55,
+              "ayah": 13,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 16,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 18,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 21,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 23,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 25,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 28,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 30,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 32,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 34,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 36,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 38,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 40,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 42,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 45,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 47,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 49,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 51,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 53,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 55,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 57,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 59,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 61,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 63,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 65,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 67,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 69,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 71,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 73,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 75,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 77,
+              "ayah_end": null
+            }
+          ]
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 10.8,
+          "reference": null,
+          "transcript": "فباي الاءربكما تكذبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11,
+          "reference": null,
+          "transcript": "فبالابكما تكذبان"
+        },
+        {
+          "type": "status",
+          "atSeconds": 11,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "فبالابكما تكذبان",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "status",
+          "atSeconds": 11.2,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        }
+      ]
+    },
+    {
+      "name": "55-refrain-anywhere-no-context",
+      "passed": true,
+      "durationSeconds": 15.6024375,
+      "expectedReferences": [],
+      "seenReferences": [],
+      "confirmedReferences": [],
+      "permittedProvisional": [],
+      "unexpectedReferences": [],
+      "requireFinalWord": null,
+      "finalSeen": true,
+      "progressCount": 0,
+      "medianProcessingMs": 66,
+      "p95ProcessingMs": 245,
+      "events": [
+        {
+          "type": "transcript",
+          "atSeconds": 0.8,
+          "reference": null,
+          "transcript": "س"
+        },
+        {
+          "type": "status",
+          "atSeconds": 0.8,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "س",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1,
+          "reference": null,
+          "transcript": "حدي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.2,
+          "reference": null,
+          "transcript": "سد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.4,
+          "reference": null,
+          "transcript": "وباي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.6,
+          "reference": null,
+          "transcript": "فباي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2,
+          "reference": null,
+          "transcript": "وباي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.2,
+          "reference": null,
+          "transcript": "فباي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.8,
+          "reference": null,
+          "transcript": "فباياي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3,
+          "reference": null,
+          "transcript": "فبايان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.2,
+          "reference": null,
+          "transcript": "فباياب"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.4,
+          "reference": null,
+          "transcript": "فباي اني"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.6,
+          "reference": null,
+          "transcript": "فباي الي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.2,
+          "reference": null,
+          "transcript": "فباي ءالي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.6,
+          "reference": null,
+          "transcript": "فباي ال"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5,
+          "reference": null,
+          "transcript": "فباي الاء"
+        },
+        {
+          "type": "status",
+          "atSeconds": 5,
+          "status": "ambiguous",
+          "reference": null,
+          "transcript": "فباي الاء",
+          "wordProgress": null,
+          "candidates": [
+            {
+              "surah": 53,
+              "ayah": 55,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 13,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 16,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 18,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 21,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 23,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 25,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 28,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 30,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 32,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 34,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 36,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 38,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 40,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 42,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 45,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 47,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 49,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 51,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 53,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 55,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 57,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 59,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 61,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 63,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 65,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 67,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 69,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 71,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 73,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 75,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 77,
+              "ayah_end": null
+            }
+          ]
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.2,
+          "reference": null,
+          "transcript": "فباي ءالاء"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.4,
+          "reference": null,
+          "transcript": "فباي ءالاءر"
+        },
+        {
+          "type": "status",
+          "atSeconds": 5.4,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "فباي ءالاءر",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.6,
+          "reference": null,
+          "transcript": "فباي ءالاءره"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 6,
+          "reference": null,
+          "transcript": "فباي ءالاء ركن"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 6.2,
+          "reference": null,
+          "transcript": "فباي ءالاء ربذكن"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 6.4,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 6.6,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما"
+        },
+        {
+          "type": "status",
+          "atSeconds": 6.6,
+          "status": "ambiguous",
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما",
+          "wordProgress": null,
+          "candidates": [
+            {
+              "surah": 55,
+              "ayah": 13,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 16,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 18,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 21,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 23,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 25,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 28,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 30,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 32,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 34,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 36,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 38,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 40,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 42,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 45,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 47,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 49,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 51,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 53,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 55,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 57,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 59,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 61,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 63,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 65,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 67,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 69,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 71,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 73,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 75,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 77,
+              "ayah_end": null
+            }
+          ]
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.2,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما كبن"
+        },
+        {
+          "type": "status",
+          "atSeconds": 7.2,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما كبن",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.4,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما تكان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.6,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما تكبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.8,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما تذبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8,
+          "reference": null,
+          "transcript": "فبي ءالاء ربكما تكذبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8.2,
+          "reference": null,
+          "transcript": "ب ءالاء ربكما تكذبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8.4,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما تكذبان"
+        },
+        {
+          "type": "status",
+          "atSeconds": 8.4,
+          "status": "ambiguous",
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما تكذبان",
+          "wordProgress": null,
+          "candidates": [
+            {
+              "surah": 55,
+              "ayah": 13,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 16,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 18,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 21,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 23,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 25,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 28,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 30,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 32,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 34,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 36,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 38,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 40,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 42,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 45,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 47,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 49,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 51,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 53,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 55,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 57,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 59,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 61,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 63,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 65,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 67,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 69,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 71,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 73,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 75,
+              "ayah_end": null
+            },
+            {
+              "surah": 55,
+              "ayah": 77,
+              "ayah_end": null
+            }
+          ]
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 10.8,
+          "reference": null,
+          "transcript": "فباي الاءربكما تكذبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11,
+          "reference": null,
+          "transcript": "فبالابكما تكذبان"
+        },
+        {
+          "type": "status",
+          "atSeconds": 11,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "فبالابكما تكذبان",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "status",
+          "atSeconds": 11.2,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        }
+      ]
+    },
+    {
+      "name": "55-refrain-after-context",
+      "passed": true,
+      "durationSeconds": 15.6024375,
+      "expectedReferences": [
+        "55:13"
+      ],
+      "seenReferences": [
+        "55:13"
+      ],
+      "confirmedReferences": [
+        "55:13"
+      ],
+      "permittedProvisional": [],
+      "unexpectedReferences": [],
+      "requireFinalWord": null,
+      "finalSeen": true,
+      "progressCount": 1,
+      "medianProcessingMs": 56,
+      "p95ProcessingMs": 77,
+      "events": [
+        {
+          "type": "transcript",
+          "atSeconds": 0.8,
+          "reference": null,
+          "transcript": "س"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1,
+          "reference": null,
+          "transcript": "حدي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.2,
+          "reference": null,
+          "transcript": "سد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.4,
+          "reference": null,
+          "transcript": "وباي"
+        },
+        {
+          "type": "status",
+          "atSeconds": 1.4,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "وباي",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.6,
+          "reference": null,
+          "transcript": "فباي"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 1.8,
+          "status": "matched",
+          "reference": "55:13",
+          "transcript": "فباي",
+          "wordProgress": {
+            "verseKey": "55:13",
+            "surah": 55,
+            "ayah": 13,
+            "wordIndex": 1,
+            "wordCount": 4,
+            "arabicWord": "فباي",
+            "observedWord": "فبا",
+            "canonicalText": "فباي الاء ربكما تكذبان",
+            "canonicalWords": [
+              "فباي",
+              "الاء",
+              "ربكما",
+              "تكذبان"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "partial-word",
+            "estimatedAudioStartMs": 368,
+            "estimatedAudioEndMs": 1023,
+            "clipDurationMs": 1555,
+            "timingIsApproximate": true,
+            "matchedCharacters": 3,
+            "audioEndSample": 16368
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2,
+          "reference": null,
+          "transcript": "وباي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.2,
+          "reference": null,
+          "transcript": "فباي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.4,
+          "reference": null,
+          "transcript": "فباياب"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.6,
+          "reference": null,
+          "transcript": "ب دي ا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.8,
+          "reference": null,
+          "transcript": "اي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3,
+          "reference": null,
+          "transcript": "ايا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.2,
+          "reference": null,
+          "transcript": "يان"
+        },
+        {
+          "type": "status",
+          "atSeconds": 3.2,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "يان",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.8,
+          "reference": null,
+          "transcript": "اي ان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4,
+          "reference": null,
+          "transcript": "ي ان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.2,
+          "reference": null,
+          "transcript": "يان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5,
+          "reference": null,
+          "transcript": "بلاي اياه"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.2,
+          "reference": null,
+          "transcript": "بي الا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.4,
+          "reference": null,
+          "transcript": "اي الاء"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.6,
+          "reference": null,
+          "transcript": "باي ءالاءب"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.8,
+          "reference": null,
+          "transcript": "فباي ءالاء رذبا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 6,
+          "reference": null,
+          "transcript": "فباي ءالاء رذبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 6.2,
+          "reference": null,
+          "transcript": "فباي ءالاء رذكبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 6.4,
+          "reference": null,
+          "transcript": "فباي ءالاء ركم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 6.6,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما ن"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.2,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما كبن"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.4,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما تكان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.6,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما تكبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.8,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما تذبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8,
+          "reference": null,
+          "transcript": "فبي ءالاء ربكما تكذبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8.2,
+          "reference": null,
+          "transcript": "ب ءالاء ربكما تكذبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8.4,
+          "reference": null,
+          "transcript": "فباي ءالاء ربكما تكذبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 10.8,
+          "reference": null,
+          "transcript": "فباي الاءربكما تكذبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11,
+          "reference": null,
+          "transcript": "فبالابكما تكذبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11.2,
+          "reference": null,
+          "transcript": "فربكما تكذبان"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11.4,
+          "reference": null,
+          "transcript": "فبي ربكما تكذبان"
+        },
+        {
+          "type": "status",
+          "atSeconds": 11.6,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        }
+      ]
+    },
+    {
+      "name": "silence-only",
+      "passed": true,
+      "durationSeconds": 4,
+      "expectedReferences": [],
+      "seenReferences": [],
+      "confirmedReferences": [],
+      "permittedProvisional": [],
+      "unexpectedReferences": [],
+      "requireFinalWord": null,
+      "finalSeen": true,
+      "progressCount": 0,
+      "medianProcessingMs": 0,
+      "p95ProcessingMs": 0,
+      "events": [
+        {
+          "type": "status",
+          "atSeconds": 0.8,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        }
+      ]
+    },
+    {
+      "name": "112-repeat-after-pause",
+      "passed": true,
+      "durationSeconds": 13.08325,
+      "expectedReferences": [
+        "112:2"
+      ],
+      "seenReferences": [
+        "112:2"
+      ],
+      "confirmedReferences": [
+        "112:2"
+      ],
+      "permittedProvisional": [],
+      "unexpectedReferences": [],
+      "requireFinalWord": null,
+      "finalSeen": true,
+      "progressCount": 3,
+      "medianProcessingMs": 35,
+      "p95ProcessingMs": 63,
+      "events": [
+        {
+          "type": "status",
+          "atSeconds": 0.8,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1,
+          "reference": null,
+          "transcript": "الم"
+        },
+        {
+          "type": "status",
+          "atSeconds": 1,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "الم",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.2,
+          "reference": null,
+          "transcript": "طم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.4,
+          "reference": null,
+          "transcript": "حم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.6,
+          "reference": null,
+          "transcript": "ا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.8,
+          "reference": null,
+          "transcript": "ال"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2,
+          "reference": null,
+          "transcript": "النا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.2,
+          "reference": null,
+          "transcript": "ا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.4,
+          "reference": null,
+          "transcript": "ال"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.6,
+          "reference": null,
+          "transcript": "اللم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.8,
+          "reference": null,
+          "transcript": "الله"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3,
+          "reference": null,
+          "transcript": "اللهص"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.2,
+          "reference": null,
+          "transcript": "الله المد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.4,
+          "reference": null,
+          "transcript": "الله الصمد"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 4.2,
+          "status": "matched",
+          "reference": "112:2",
+          "transcript": "الله الصمد",
+          "wordProgress": {
+            "verseKey": "112:2",
+            "surah": 112,
+            "ayah": 2,
+            "wordIndex": 2,
+            "wordCount": 2,
+            "arabicWord": "الصمد",
+            "observedWord": "الصمد",
+            "canonicalText": "الله الصمد",
+            "canonicalWords": [
+              "الله",
+              "الصمد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 2625,
+            "estimatedAudioEndMs": 3675,
+            "clipDurationMs": 3958,
+            "timingIsApproximate": true,
+            "matchedCharacters": 5,
+            "audioEndSample": 58800
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.4,
+          "reference": null,
+          "transcript": "الصمد"
+        },
+        {
+          "type": "ayah-complete",
+          "atSeconds": 4.4,
+          "status": "matched",
+          "reference": "112:2",
+          "transcript": "الصمد",
+          "wordProgress": {
+            "verseKey": "112:2",
+            "surah": 112,
+            "ayah": 2,
+            "wordIndex": 2,
+            "wordCount": 2,
+            "arabicWord": "الصمد",
+            "observedWord": "الصمد",
+            "canonicalText": "الله الصمد",
+            "canonicalWords": [
+              "الله",
+              "الصمد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 245,
+            "estimatedAudioEndMs": 1265,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 5,
+            "audioEndSample": 58640
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.6,
+          "reference": null,
+          "transcript": "الطمد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.8,
+          "reference": null,
+          "transcript": "ومد"
+        },
+        {
+          "type": "status",
+          "atSeconds": 5,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.8,
+          "reference": null,
+          "transcript": ""
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8,
+          "reference": null,
+          "transcript": "الحمد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8.2,
+          "reference": null,
+          "transcript": "ا"
+        },
+        {
+          "type": "status",
+          "atSeconds": 8.2,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "ا",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8.4,
+          "reference": null,
+          "transcript": ""
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8.6,
+          "reference": null,
+          "transcript": "الر"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8.8,
+          "reference": null,
+          "transcript": "الد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 9,
+          "reference": null,
+          "transcript": "النا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 9.2,
+          "reference": null,
+          "transcript": "الله"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 9.4,
+          "reference": null,
+          "transcript": "الل"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 9.6,
+          "reference": null,
+          "transcript": "اللم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 9.8,
+          "reference": null,
+          "transcript": "الله الصد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 10,
+          "reference": null,
+          "transcript": "الله اصمد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 10.2,
+          "reference": null,
+          "transcript": "الله الصمد"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 11.2,
+          "status": "matched",
+          "reference": "112:2",
+          "transcript": "الله الصمد",
+          "wordProgress": {
+            "verseKey": "112:2",
+            "surah": 112,
+            "ayah": 2,
+            "wordIndex": 1,
+            "wordCount": 2,
+            "arabicWord": "الله",
+            "observedWord": "الله",
+            "canonicalText": "الله الصمد",
+            "canonicalWords": [
+              "الله",
+              "الصمد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 1211,
+            "estimatedAudioEndMs": 2825,
+            "clipDurationMs": 4358,
+            "timingIsApproximate": true,
+            "matchedCharacters": 4,
+            "audioEndSample": 150800
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11.4,
+          "reference": null,
+          "transcript": "الصمد"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 11.4,
+          "status": "matched",
+          "reference": "112:2",
+          "transcript": "الصمد",
+          "wordProgress": {
+            "verseKey": "112:2",
+            "surah": 112,
+            "ayah": 2,
+            "wordIndex": 2,
+            "wordCount": 2,
+            "arabicWord": "الصمد",
+            "observedWord": "الصمد",
+            "canonicalText": "الله الصمد",
+            "canonicalWords": [
+              "الله",
+              "الصمد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 286,
+            "estimatedAudioEndMs": 1306,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 5,
+            "audioEndSample": 171296
+          }
+        },
+        {
+          "type": "ayah-complete",
+          "atSeconds": 11.4,
+          "status": "matched",
+          "reference": "112:2",
+          "transcript": "الله الصمد",
+          "wordProgress": {
+            "verseKey": "112:2",
+            "surah": 112,
+            "ayah": 2,
+            "wordIndex": 2,
+            "wordCount": 2,
+            "arabicWord": "الصمد",
+            "observedWord": "الصمد",
+            "canonicalText": "الله الصمد",
+            "canonicalWords": [
+              "الله",
+              "الصمد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 2263,
+            "estimatedAudioEndMs": 3313,
+            "clipDurationMs": 3758,
+            "timingIsApproximate": true,
+            "matchedCharacters": 5,
+            "audioEndSample": 171408
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11.8,
+          "reference": null,
+          "transcript": "ومد"
+        },
+        {
+          "type": "status",
+          "atSeconds": 12,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        }
+      ]
+    },
+    {
+      "name": "112-pause-then-next-ayah",
+      "passed": true,
+      "durationSeconds": 13.9714375,
+      "expectedReferences": [
+        "112:2",
+        "112:3"
+      ],
+      "seenReferences": [
+        "112:2",
+        "112:3"
+      ],
+      "confirmedReferences": [
+        "112:2",
+        "112:3"
+      ],
+      "permittedProvisional": [],
+      "unexpectedReferences": [],
+      "requireFinalWord": "112:3/4",
+      "finalSeen": true,
+      "progressCount": 4,
+      "medianProcessingMs": 28,
+      "p95ProcessingMs": 68,
+      "events": [
+        {
+          "type": "status",
+          "atSeconds": 0.8,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1,
+          "reference": null,
+          "transcript": "الم"
+        },
+        {
+          "type": "status",
+          "atSeconds": 1,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "الم",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.2,
+          "reference": null,
+          "transcript": "طم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.4,
+          "reference": null,
+          "transcript": "حم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.6,
+          "reference": null,
+          "transcript": "ا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.8,
+          "reference": null,
+          "transcript": "ال"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2,
+          "reference": null,
+          "transcript": "النا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.2,
+          "reference": null,
+          "transcript": "ا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.4,
+          "reference": null,
+          "transcript": "ال"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.6,
+          "reference": null,
+          "transcript": "اللم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.8,
+          "reference": null,
+          "transcript": "الله"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3,
+          "reference": null,
+          "transcript": "اللهص"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.2,
+          "reference": null,
+          "transcript": "الله المد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.4,
+          "reference": null,
+          "transcript": "الله الصمد"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 4.2,
+          "status": "matched",
+          "reference": "112:2",
+          "transcript": "الله الصمد",
+          "wordProgress": {
+            "verseKey": "112:2",
+            "surah": 112,
+            "ayah": 2,
+            "wordIndex": 2,
+            "wordCount": 2,
+            "arabicWord": "الصمد",
+            "observedWord": "الصمد",
+            "canonicalText": "الله الصمد",
+            "canonicalWords": [
+              "الله",
+              "الصمد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 2625,
+            "estimatedAudioEndMs": 3675,
+            "clipDurationMs": 3958,
+            "timingIsApproximate": true,
+            "matchedCharacters": 5,
+            "audioEndSample": 58800
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.4,
+          "reference": null,
+          "transcript": "الصمد"
+        },
+        {
+          "type": "ayah-complete",
+          "atSeconds": 4.4,
+          "status": "matched",
+          "reference": "112:2",
+          "transcript": "الصمد",
+          "wordProgress": {
+            "verseKey": "112:2",
+            "surah": 112,
+            "ayah": 2,
+            "wordIndex": 2,
+            "wordCount": 2,
+            "arabicWord": "الصمد",
+            "observedWord": "الصمد",
+            "canonicalText": "الله الصمد",
+            "canonicalWords": [
+              "الله",
+              "الصمد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 245,
+            "estimatedAudioEndMs": 1265,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 5,
+            "audioEndSample": 58640
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.6,
+          "reference": null,
+          "transcript": "الطمد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.8,
+          "reference": null,
+          "transcript": "ومد"
+        },
+        {
+          "type": "status",
+          "atSeconds": 5,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.6,
+          "reference": null,
+          "transcript": ""
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 7.8,
+          "reference": null,
+          "transcript": "ل"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8,
+          "reference": null,
+          "transcript": "لم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8.2,
+          "reference": null,
+          "transcript": "لم يولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 8.8,
+          "reference": null,
+          "transcript": "لم يلد"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 9.2,
+          "status": "matched",
+          "reference": "112:3",
+          "transcript": "لم يلد",
+          "wordProgress": {
+            "verseKey": "112:3",
+            "surah": 112,
+            "ayah": 3,
+            "wordIndex": 2,
+            "wordCount": 4,
+            "arabicWord": "يلد",
+            "observedWord": "يلد",
+            "canonicalText": "لم يلد ولم يولد",
+            "canonicalWords": [
+              "لم",
+              "يلد",
+              "ولم",
+              "يولد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 980,
+            "estimatedAudioEndMs": 1755,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 3,
+            "audioEndSample": 143280
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 9.6,
+          "reference": null,
+          "transcript": "لم يل ول"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 9.8,
+          "reference": null,
+          "transcript": "لم يلد لم يولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 10.2,
+          "reference": null,
+          "transcript": "لم يلد ولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 10.4,
+          "reference": null,
+          "transcript": "لميد ولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 10.6,
+          "reference": null,
+          "transcript": "د ولم يول"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 10.6,
+          "status": "matched",
+          "reference": "112:3",
+          "transcript": "د ولم يول",
+          "wordProgress": {
+            "verseKey": "112:3",
+            "surah": 112,
+            "ayah": 3,
+            "wordIndex": 3,
+            "wordCount": 4,
+            "arabicWord": "ولم",
+            "observedWord": "ولم",
+            "canonicalText": "لم يلد ولم يولد",
+            "canonicalWords": [
+              "لم",
+              "يلد",
+              "ولم",
+              "يولد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 776,
+            "estimatedAudioEndMs": 1551,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 3,
+            "audioEndSample": 162416
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 10.8,
+          "reference": null,
+          "transcript": "لد ولم يولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11,
+          "reference": null,
+          "transcript": "ولم يولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11.2,
+          "reference": null,
+          "transcript": "لم يولد"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 11.4,
+          "status": "matched",
+          "reference": "112:3",
+          "transcript": "لم يولد",
+          "wordProgress": {
+            "verseKey": "112:3",
+            "surah": 112,
+            "ayah": 3,
+            "wordIndex": 4,
+            "wordCount": 4,
+            "arabicWord": "يولد",
+            "observedWord": "يو",
+            "canonicalText": "لم يلد ولم يولد",
+            "canonicalWords": [
+              "لم",
+              "يلد",
+              "ولم",
+              "يولد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "partial-word",
+            "estimatedAudioStartMs": 1143,
+            "estimatedAudioEndMs": 1714,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 2,
+            "audioEndSample": 177824
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 12,
+          "reference": null,
+          "transcript": "لم لد يولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 12.2,
+          "reference": null,
+          "transcript": "لم يولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 12.4,
+          "reference": null,
+          "transcript": "م ي لد"
+        },
+        {
+          "type": "ayah-complete",
+          "atSeconds": 12.4,
+          "status": "matched",
+          "reference": "112:3",
+          "transcript": "لد ولم يولد",
+          "wordProgress": {
+            "verseKey": "112:3",
+            "surah": 112,
+            "ayah": 3,
+            "wordIndex": 4,
+            "wordCount": 4,
+            "arabicWord": "يولد",
+            "observedWord": "يولد",
+            "canonicalText": "لم يلد ولم يولد",
+            "canonicalWords": [
+              "لم",
+              "يلد",
+              "ولم",
+              "يولد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 2182,
+            "estimatedAudioEndMs": 3475,
+            "clipDurationMs": 3758,
+            "timingIsApproximate": true,
+            "matchedCharacters": 4,
+            "audioEndSample": 190000
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 12.6,
+          "reference": null,
+          "transcript": "مولد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 12.8,
+          "reference": null,
+          "transcript": "ل"
+        },
+        {
+          "type": "status",
+          "atSeconds": 13,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        }
+      ]
+    },
+    {
+      "name": "auto-jump-112-to-2:255",
+      "passed": true,
+      "durationSeconds": 28.8253125,
+      "expectedReferences": [
+        "112:1",
+        "2:255"
+      ],
+      "seenReferences": [
+        "112:1",
+        "112:2",
+        "2:255"
+      ],
+      "confirmedReferences": [
+        "112:1",
+        "112:2",
+        "2:255"
+      ],
+      "permittedProvisional": [
+        {
+          "reference": "112:2",
+          "wordIndex": 1,
+          "untilSeconds": 10.825312499999999
+        }
+      ],
+      "unexpectedReferences": [],
+      "requireFinalWord": null,
+      "finalSeen": true,
+      "progressCount": 6,
+      "medianProcessingMs": 46,
+      "p95ProcessingMs": 222,
+      "events": [
+        {
+          "type": "status",
+          "atSeconds": 0.8,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.2,
+          "reference": null,
+          "transcript": "طور"
+        },
+        {
+          "type": "status",
+          "atSeconds": 1.2,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "طور",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.4,
+          "reference": null,
+          "transcript": "ط"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.6,
+          "reference": null,
+          "transcript": "ق ال"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.8,
+          "reference": null,
+          "transcript": "قل ال"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2,
+          "reference": null,
+          "transcript": "ق"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.2,
+          "reference": null,
+          "transcript": "قل ه"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.4,
+          "reference": null,
+          "transcript": "قله"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.6,
+          "reference": null,
+          "transcript": "قل ه"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2.8,
+          "reference": null,
+          "transcript": "قل هو ا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3,
+          "reference": null,
+          "transcript": "قل هو اله د"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.2,
+          "reference": null,
+          "transcript": "قل هو الله احد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.4,
+          "reference": null,
+          "transcript": "قل هو الله"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 3.4,
+          "status": "matched",
+          "reference": "112:1",
+          "transcript": "قل هو الله",
+          "wordProgress": {
+            "verseKey": "112:1",
+            "surah": 112,
+            "ayah": 1,
+            "wordIndex": 3,
+            "wordCount": 4,
+            "arabicWord": "الله",
+            "observedWord": "الله",
+            "canonicalText": "قل هو الله احد",
+            "canonicalWords": [
+              "قل",
+              "هو",
+              "الله",
+              "احد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 2105,
+            "estimatedAudioEndMs": 2874,
+            "clipDurationMs": 3157,
+            "timingIsApproximate": true,
+            "matchedCharacters": 4,
+            "audioEndSample": 45984
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.6,
+          "reference": null,
+          "transcript": "واليه"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 3.8,
+          "reference": null,
+          "transcript": "والاه"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4,
+          "reference": null,
+          "transcript": "قل الله د"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.2,
+          "reference": null,
+          "transcript": "قل الله اد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.4,
+          "reference": null,
+          "transcript": "قل الله احد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.6,
+          "reference": null,
+          "transcript": "ق ه احد"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 4.6,
+          "status": "matched",
+          "reference": "112:1",
+          "transcript": "ق ه احد",
+          "wordProgress": {
+            "verseKey": "112:1",
+            "surah": 112,
+            "ayah": 1,
+            "wordIndex": 4,
+            "wordCount": 4,
+            "arabicWord": "احد",
+            "observedWord": "اح",
+            "canonicalText": "قل هو الله احد",
+            "canonicalWords": [
+              "قل",
+              "هو",
+              "الله",
+              "احد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "partial-word",
+            "estimatedAudioStartMs": 1224,
+            "estimatedAudioEndMs": 1592,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 2,
+            "audioEndSample": 67072
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 4.8,
+          "reference": null,
+          "transcript": "قل له احد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5,
+          "reference": null,
+          "transcript": "قل ه احد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.2,
+          "reference": null,
+          "transcript": "قه احد"
+        },
+        {
+          "type": "ayah-complete",
+          "atSeconds": 5.2,
+          "status": "matched",
+          "reference": "112:1",
+          "transcript": "قه احد",
+          "wordProgress": {
+            "verseKey": "112:1",
+            "surah": 112,
+            "ayah": 1,
+            "wordIndex": 4,
+            "wordCount": 4,
+            "arabicWord": "احد",
+            "observedWord": "احد",
+            "canonicalText": "قل هو الله احد",
+            "canonicalWords": [
+              "قل",
+              "هو",
+              "الله",
+              "احد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 612,
+            "estimatedAudioEndMs": 1347,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 3,
+            "audioEndSample": 72752
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.4,
+          "reference": null,
+          "transcript": "احد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 5.6,
+          "reference": null,
+          "transcript": "اهد"
+        },
+        {
+          "type": "status",
+          "atSeconds": 5.8,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 9.2,
+          "reference": null,
+          "transcript": ""
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 9.4,
+          "reference": null,
+          "transcript": "اله مد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 9.6,
+          "reference": null,
+          "transcript": "الله الصمد"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 10,
+          "status": "matched",
+          "reference": "112:2",
+          "transcript": "الله الصمد",
+          "wordProgress": {
+            "verseKey": "112:2",
+            "surah": 112,
+            "ayah": 2,
+            "wordIndex": 1,
+            "wordCount": 2,
+            "arabicWord": "الله",
+            "observedWord": "الله",
+            "canonicalText": "الله الصمد",
+            "canonicalWords": [
+              "الله",
+              "الصمد"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 1020,
+            "estimatedAudioEndMs": 1551,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 4,
+            "audioEndSample": 152816
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 10.4,
+          "reference": null,
+          "transcript": "الله المد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 10.6,
+          "reference": null,
+          "transcript": "الله الد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 10.8,
+          "reference": null,
+          "transcript": "الله ال"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11,
+          "reference": null,
+          "transcript": "الله الد"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11.2,
+          "reference": null,
+          "transcript": "الله ال"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11.4,
+          "reference": null,
+          "transcript": "ه الا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 11.6,
+          "reference": null,
+          "transcript": "ال"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 12,
+          "reference": null,
+          "transcript": ""
+        },
+        {
+          "type": "status",
+          "atSeconds": 12,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 12.4,
+          "reference": null,
+          "transcript": "ن"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 12.6,
+          "reference": null,
+          "transcript": "اله"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 12.8,
+          "reference": null,
+          "transcript": "والهس"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 13,
+          "reference": null,
+          "transcript": "ال اله الا اسي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 13.2,
+          "reference": null,
+          "transcript": "الذ اله الا ا ذ"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 13.4,
+          "reference": null,
+          "transcript": "الذاله الا هو القوي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 13.6,
+          "reference": null,
+          "transcript": "الذاله الا هو الوقي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 13.8,
+          "reference": null,
+          "transcript": "الذه اله الا هو اوز الحي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 14,
+          "reference": null,
+          "transcript": "الذه اله الا هو الزيز الحيم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 14.2,
+          "reference": null,
+          "transcript": "اله لا اله الا هو الشيع الحميم"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 14.4,
+          "reference": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 14.4,
+          "reference": null,
+          "transcript": "الله لا اله الا هو الحي الحسويم"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 14.6,
+          "reference": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 14.6,
+          "reference": null,
+          "transcript": "الله لا اله الا هو الحي القسويم"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 14.8,
+          "reference": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 14.8,
+          "reference": null,
+          "transcript": "الله لا اله الا هو الحي القويم"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 15,
+          "reference": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 15,
+          "reference": null,
+          "transcript": "الله لا اله الا هو الحي القيوم"
+        },
+        {
+          "type": "status",
+          "atSeconds": 15,
+          "status": "ambiguous",
+          "reference": null,
+          "transcript": "الله لا اله الا هو الحي القيوم",
+          "wordProgress": null,
+          "candidates": [
+            {
+              "surah": 2,
+              "ayah": 255,
+              "ayah_end": null
+            },
+            {
+              "surah": 3,
+              "ayah": 2,
+              "ayah_end": null
+            }
+          ]
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 15.2,
+          "reference": null
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 15.6,
+          "reference": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 17.2,
+          "reference": null,
+          "transcript": "الهلا اله الا هو الحي القيوم"
+        },
+        {
+          "type": "status",
+          "atSeconds": 17.2,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "الهلا اله الا هو الحي القيوم",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 17.4,
+          "reference": null,
+          "transcript": "لا اله الا هو الحي القيوم"
+        },
+        {
+          "type": "status",
+          "atSeconds": 17.4,
+          "status": "ambiguous",
+          "reference": null,
+          "transcript": "لا اله الا هو الحي القيوم",
+          "wordProgress": null,
+          "candidates": [
+            {
+              "surah": 2,
+              "ayah": 255,
+              "ayah_end": null
+            },
+            {
+              "surah": 3,
+              "ayah": 2,
+              "ayah_end": null
+            }
+          ]
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 17.6,
+          "reference": null,
+          "transcript": "الله لا اله الا هو الحي القيوم"
+        },
+        {
+          "type": "status",
+          "atSeconds": 17.8,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 18.2,
+          "reference": null,
+          "transcript": "له اله الا هو الحي القيوم"
+        },
+        {
+          "type": "status",
+          "atSeconds": 18.2,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "له اله الا هو الحي القيوم",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 18.4,
+          "reference": null,
+          "transcript": "لها اله الا هو الحي القيوم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 18.6,
+          "reference": null,
+          "transcript": "قلا هو الحي القيوم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 18.8,
+          "reference": null,
+          "transcript": "ن لا هو الحي القيوم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 19,
+          "reference": null,
+          "transcript": "ا هو لحي القين"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 19.2,
+          "reference": null,
+          "transcript": "ولحي القيومن"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 19.4,
+          "reference": null,
+          "transcript": "لحي القيوم لا ترا"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 19.6,
+          "reference": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 19.6,
+          "reference": null,
+          "transcript": "والحي القيوم لا تاخ"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 19.8,
+          "reference": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 19.8,
+          "reference": null,
+          "transcript": "لحي القيوم لا تاخه ه سرا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 20,
+          "reference": null,
+          "transcript": "لالقيوم لا تاخذهسالا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 20.2,
+          "reference": null,
+          "transcript": "القك ليوم لا تاخذه ن الا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 20.4,
+          "reference": null,
+          "transcript": "الك اليوم لا تاخذه سينها"
+        },
+        {
+          "type": "status",
+          "atSeconds": 20.4,
+          "status": "matched",
+          "reference": "2:255",
+          "transcript": "الك اليوم لا تاخذه سينها",
+          "wordProgress": null,
+          "candidates": [
+            {
+              "surah": 2,
+              "ayah": 255,
+              "ayah_end": null
+            }
+          ]
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 20.6,
+          "reference": null,
+          "transcript": "اليوم لا تاخذه سنه ا"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 20.6,
+          "status": "matched",
+          "reference": "2:255",
+          "transcript": "اليوم لا تاخذه سنه ا",
+          "wordProgress": {
+            "verseKey": "2:255",
+            "surah": 2,
+            "ayah": 255,
+            "wordIndex": 9,
+            "wordCount": 50,
+            "arabicWord": "تاخذه",
+            "observedWord": "تاخذه",
+            "canonicalText": "الله لا اله الا هو الحي القيوم لا تاخذه سنه ولا نوم له ما في السماوات وما في الارض من ذا الذي يشفع عنده الا باذنه يعلم ما بين ايديهم وما خلفهم ولا يحيطون بشيء من علمه الا بما شاء وسع كرسيه السماوات والارض ولا يئوده حفظهما وهو العلي العظيم",
+            "canonicalWords": [
+              "الله",
+              "لا",
+              "اله",
+              "الا",
+              "هو",
+              "الحي",
+              "القيوم",
+              "لا",
+              "تاخذه",
+              "سنه",
+              "ولا",
+              "نوم",
+              "له",
+              "ما",
+              "في",
+              "السماوات",
+              "وما",
+              "في",
+              "الارض",
+              "من",
+              "ذا",
+              "الذي",
+              "يشفع",
+              "عنده",
+              "الا",
+              "باذنه",
+              "يعلم",
+              "ما",
+              "بين",
+              "ايديهم",
+              "وما",
+              "خلفهم",
+              "ولا",
+              "يحيطون",
+              "بشيء",
+              "من",
+              "علمه",
+              "الا",
+              "بما",
+              "شاء",
+              "وسع",
+              "كرسيه",
+              "السماوات",
+              "والارض",
+              "ولا",
+              "يئوده",
+              "حفظهما",
+              "وهو",
+              "العلي",
+              "العظيم"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 3866,
+            "estimatedAudioEndMs": 4711,
+            "clipDurationMs": 5758,
+            "timingIsApproximate": true,
+            "matchedCharacters": 5,
+            "audioEndSample": 308976
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 20.8,
+          "reference": null,
+          "transcript": "قله سنه"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 20.8,
+          "status": "matched",
+          "reference": "2:255",
+          "transcript": "قله سنه",
+          "wordProgress": {
+            "verseKey": "2:255",
+            "surah": 2,
+            "ayah": 255,
+            "wordIndex": 10,
+            "wordCount": 50,
+            "arabicWord": "سنه",
+            "observedWord": "سنه",
+            "canonicalText": "الله لا اله الا هو الحي القيوم لا تاخذه سنه ولا نوم له ما في السماوات وما في الارض من ذا الذي يشفع عنده الا باذنه يعلم ما بين ايديهم وما خلفهم ولا يحيطون بشيء من علمه الا بما شاء وسع كرسيه السماوات والارض ولا يئوده حفظهما وهو العلي العظيم",
+            "canonicalWords": [
+              "الله",
+              "لا",
+              "اله",
+              "الا",
+              "هو",
+              "الحي",
+              "القيوم",
+              "لا",
+              "تاخذه",
+              "سنه",
+              "ولا",
+              "نوم",
+              "له",
+              "ما",
+              "في",
+              "السماوات",
+              "وما",
+              "في",
+              "الارض",
+              "من",
+              "ذا",
+              "الذي",
+              "يشفع",
+              "عنده",
+              "الا",
+              "باذنه",
+              "يعلم",
+              "ما",
+              "بين",
+              "ايديهم",
+              "وما",
+              "خلفهم",
+              "ولا",
+              "يحيطون",
+              "بشيء",
+              "من",
+              "علمه",
+              "الا",
+              "بما",
+              "شاء",
+              "وسع",
+              "كرسيه",
+              "السماوات",
+              "والارض",
+              "ولا",
+              "يئوده",
+              "حفظهما",
+              "وهو",
+              "العلي",
+              "العظيم"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 816,
+            "estimatedAudioEndMs": 1306,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 3,
+            "audioEndSample": 321696
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 21,
+          "reference": null,
+          "transcript": "هو سنه"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 21.2,
+          "reference": null,
+          "transcript": ""
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 21.4,
+          "reference": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 21.6,
+          "reference": null,
+          "transcript": "ده ولا ن"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 21.8,
+          "reference": null,
+          "transcript": "ند ولا ن"
+        },
+        {
+          "type": "progress",
+          "atSeconds": 21.8,
+          "status": "matched",
+          "reference": "2:255",
+          "transcript": "ند ولا ن",
+          "wordProgress": {
+            "verseKey": "2:255",
+            "surah": 2,
+            "ayah": 255,
+            "wordIndex": 11,
+            "wordCount": 50,
+            "arabicWord": "ولا",
+            "observedWord": "ولا",
+            "canonicalText": "الله لا اله الا هو الحي القيوم لا تاخذه سنه ولا نوم له ما في السماوات وما في الارض من ذا الذي يشفع عنده الا باذنه يعلم ما بين ايديهم وما خلفهم ولا يحيطون بشيء من علمه الا بما شاء وسع كرسيه السماوات والارض ولا يئوده حفظهما وهو العلي العظيم",
+            "canonicalWords": [
+              "الله",
+              "لا",
+              "اله",
+              "الا",
+              "هو",
+              "الحي",
+              "القيوم",
+              "لا",
+              "تاخذه",
+              "سنه",
+              "ولا",
+              "نوم",
+              "له",
+              "ما",
+              "في",
+              "السماوات",
+              "وما",
+              "في",
+              "الارض",
+              "من",
+              "ذا",
+              "الذي",
+              "يشفع",
+              "عنده",
+              "الا",
+              "باذنه",
+              "يعلم",
+              "ما",
+              "بين",
+              "ايديهم",
+              "وما",
+              "خلفهم",
+              "ولا",
+              "يحيطون",
+              "بشيء",
+              "من",
+              "علمه",
+              "الا",
+              "بما",
+              "شاء",
+              "وسع",
+              "كرسيه",
+              "السماوات",
+              "والارض",
+              "ولا",
+              "يئوده",
+              "حفظهما",
+              "وهو",
+              "العلي",
+              "العظيم"
+            ],
+            "source": "acoustic-ctc-alignment",
+            "quality": "word-detected",
+            "estimatedAudioStartMs": 1061,
+            "estimatedAudioEndMs": 1469,
+            "clipDurationMs": 1755,
+            "timingIsApproximate": true,
+            "matchedCharacters": 3,
+            "audioEndSample": 340304
+          }
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 22,
+          "reference": null,
+          "transcript": "و ولا نا"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 22.2,
+          "reference": null,
+          "transcript": "ولا نا"
+        },
+        {
+          "type": "status",
+          "atSeconds": 22.6,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "ولا نا",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 22.8,
+          "reference": null,
+          "transcript": "ولا ن"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 23,
+          "reference": null,
+          "transcript": "ولم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 23.2,
+          "reference": null,
+          "transcript": "ونوم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 23.4,
+          "reference": null,
+          "transcript": "ون"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 23.6,
+          "reference": null,
+          "transcript": ""
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 23.8,
+          "reference": null,
+          "transcript": "ح"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 24.2,
+          "reference": null,
+          "transcript": ""
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 25.2,
+          "reference": null,
+          "transcript": "ه"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 25.6,
+          "reference": null,
+          "transcript": "له ما في السر"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 25.8,
+          "reference": null,
+          "transcript": "له ما في السم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 26,
+          "reference": null,
+          "transcript": "له ما في السماء"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 26.2,
+          "reference": null,
+          "transcript": "له ما في السما"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 26.8,
+          "reference": null,
+          "transcript": "له ما في السمو ا الي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 27,
+          "reference": null,
+          "transcript": "له ما في السموت وا في العوي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 27.2,
+          "reference": null,
+          "transcript": "له ما في السمو ا ا العلي"
+        },
+        {
+          "type": "tentative",
+          "atSeconds": 27.4,
+          "reference": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 27.4,
+          "reference": null,
+          "transcript": "له ما في السمواا ا ا الالوي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 27.6,
+          "reference": null,
+          "transcript": "له ما في السم ا الا ض ال ثوي"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 27.8,
+          "reference": null,
+          "transcript": "له ما في السموت ا والا اله الاعوم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 28,
+          "reference": null,
+          "transcript": "له ما في السموت ا ت وا العثوم"
+        },
+        {
+          "type": "status",
+          "atSeconds": 28.2,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        }
+      ]
+    },
+    {
+      "name": "wrong-scope",
+      "passed": true,
+      "durationSeconds": 7.269375,
+      "expectedReferences": [],
+      "seenReferences": [],
+      "confirmedReferences": [],
+      "permittedProvisional": [],
+      "unexpectedReferences": [],
+      "requireFinalWord": null,
+      "finalSeen": true,
+      "progressCount": 0,
+      "medianProcessingMs": 49,
+      "p95ProcessingMs": 67,
+      "events": [
+        {
+          "type": "status",
+          "atSeconds": 0.8,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1,
+          "reference": null,
+          "transcript": "ال"
+        },
+        {
+          "type": "status",
+          "atSeconds": 1,
+          "status": "uncertain",
+          "reference": null,
+          "transcript": "ال",
+          "wordProgress": null,
+          "candidates": []
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.2,
+          "reference": null,
+          "transcript": "الحمر"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.6,
+          "reference": null,
+          "transcript": "الحم"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 1.8,
+          "reference": null,
+          "transcript": "الحم ل العلمين"
+        },
+        {
+          "type": "transcript",
+          "atSeconds": 2,
+          "reference": null,
+          "transcript": "الحمد لله رب العلمين"
+        },
+        {
+          "type": "status",
+          "atSeconds": 6.2,
+          "status": "silence",
+          "reference": null,
+          "transcript": "",
+          "wordProgress": null
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "sourceHashes": {
+    "streaming-engine.js": "d8fe27b289692b720d30a3682602b999433b2009ac92a7ab5f3cd64e9d7e9ae6",
+    "word-progress.js": "72029da8464a64a405a26765a4dba4a0bd70c1aac3a58d201f972d9530f0538c",
+    "context-matcher.js": "a5137f5c5184cf90ab48c8739c32f3f32a80305a7cd60a780013eb01244a3165",
+    "acquisition.js": "cfc3f2f66d2f347dacf8f744de058c4823245bad79e9fc6dd2556400c02f4136",
+    "ayah-completion.js": "6f5421c279d98a403b54c39cc8007e6a7da0f41464234c73bf0de78127d5afed"
+  },
+  "passed": true
+}
